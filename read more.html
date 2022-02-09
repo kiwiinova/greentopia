@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<!-- for bacon-->
+<head>
+    <style>
+        /* Initially, hide the extra text that
+            can be revealed with the button */
+        #moreText {
+  
+            /* Display nothing for the element */
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        DuBreton Organic Bacon is certified Humane® (animal welfare)
+        <span id="points">...</span>
+        <!-- Define the text that would be 
+            hidden by default and only shown 
+            when clicked on the button -->
+        <span id="moreText"> and comes from pork raised without antibiotics. It is naturally smoked and contains no added nitrites or nitrates.
+        </span>
+    </p>
+  
+  
+    <!-- Trigger toggleText() when the 
+        button is clicked -->
+    <button onclick="toggleText()" id="textButton">
+        Show More
+    </button>
+  
+    <script>
+        function toggleText() {
+  
+            // Get all the elements from the page
+            var points = 
+                document.getElementById("points");
+  
+            var showMoreText =
+                document.getElementById("moreText");
+  
+            var buttonText =
+                document.getElementById("textButton");
+  
+            // If the display property of the dots 
+            // to be displayed is already set to 
+            // 'none' (that is hidden) then this 
+            // section of code triggers
+            if (points.style.display === "none") {
+  
+                // Hide the text between the span
+                // elements
+                showMoreText.style.display = "none";
+  
+                // Show the dots after the text
+                points.style.display = "inline";
+  
+                // Change the text on button to 
+                // 'Show More'
+                buttonText.innerHTML = "Show More";
+            }
+  
+            // If the hidden portion is revealed,
+            // we will change it back to be hidden
+            else {
+  
+                // Show the text between the
+                // span elements
+                showMoreText.style.display = "inline";
+  
+                // Hide the dots after the text
+                points.style.display = "none";
+  
+                // Change the text on button
+                // to 'Show Less'
+                buttonText.innerHTML = "Show Less";
+            }
+        }
+    </script>
+</body>
+
+<!-- for beef-->
+<head>
+    <style>
+        /* Initially, hide the extra text that
+            can be revealed with the button */
+        #moreText {
+  
+            /* Display nothing for the element */
+            display: none;
+        }
+    </style>
+</head>
+  
+<body>
+    <p>
+        The prime rib roast is the creme de la creme of roasts. Recognized for being tender and juicy, accompany it with
+        <span id="points1">...</span>
+        <!-- Define the text that would be 
+            hidden by default and only shown 
+            when clicked on the button -->
+        <span id="moreText1"> with bran au jus for even more flavor. We suggest baking at 325°F or if you have more time, at 275°F. The roast will be very juicy, provided it does not exceed the internal temperature of 71°C (160°F), which is equivalent to a “medium” degree of doneness. (Internal temperature for a medium-rare: 63°C or 145°F.) To make your roast even better, let it rest for about twenty minutes in aluminum foil after cooking. This last step will make all the difference.
+        </span>
+    </p>
+  
+  
+    <!-- Trigger toggleText() when the 
+        button is clicked -->
+    <button onclick="toggleText()" id="textButton1">
+        Show More
+    </button>
+  
+    <script>
+        function toggleText() {
+  
+            // Get all the elements from the page
+            var points = 
+                document.getElementById("points1");
+  
+            var showMoreText =
+                document.getElementById("moreText1");
+  
+            var buttonText =
+                document.getElementById("textButton1");
+  
+            // If the display property of the dots 
+            // to be displayed is already set to 
+            // 'none' (that is hidden) then this 
+            // section of code triggers
+            if (points.style.display === "none") {
+  
+                // Hide the text between the span
+                // elements
+                showMoreText1.style.display = "none";
+  
+                // Show the dots after the text
+                points1.style.display = "inline";
+  
+                // Change the text on button to 
+                // 'Show More'
+                buttonText1.innerHTML = "Show More";
+            }
+  
+            // If the hidden portion is revealed,
+            // we will change it back to be hidden
+            else {
+  
+                // Show the text between the
+                // span elements
+                showMoreText1.style.display = "inline";
+  
+                // Hide the dots after the text
+                points1.style.display = "none";
+  
+                // Change the text on button
+                // to 'Show Less'
+                buttonText1.innerHTML = "Show Less";
+            }
+        }
+    </script>
+</body>
+</html>

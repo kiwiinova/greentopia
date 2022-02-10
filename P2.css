@@ -1,13 +1,17 @@
 @charset "utf-8";
 
-
 body{
 	margin: 0;
 	color: black;
-	background-color: #AFE1AF;
+	background-color: rgb(0,128,0);
 	width: 100%;
 	heigth: 100%;
 	font: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+}
+
+.header{
+	text-align: left;
+	padding: 0px;
 }
 		
 *{
@@ -26,12 +30,11 @@ h2{
 }	
 		
 img{
-	border: 6px outset #F6AA49;
+	border: 6px outset antiquewhite;
 	width: 200px;
-	height: 200px;
+	height: auto;
 	max-width: 100%;
 }
-	
 
 /*-------------Layout Styles--------------*/
 .navbar{
@@ -41,24 +44,17 @@ img{
 		
 .column{
 	float: left;
-	width: 20%;
-	padding: 10px;
-		}
+	width: 33%;
+	padding: 15px;
+ 	text-align: center;
+}
 		
 .row{
 	float: left;
 	width: 100%;
-	padding: 2px;
+	padding: 20px;
 }
 		
-/*------------Header----------------*/
-
-
-
-
-
-
-
 /*-------------Navigation Bar-------------*/	
 
 ul.nav{
@@ -95,8 +91,47 @@ ul.nav li.right {
 	float: left;
 }
 
-@media screen and (max-width : 800px ){
-  ul.nav li.right, ul.nav li {
-	  float: none;
+
+/*-------------Product Name-------------------*/
+
+.column a{
+	display: inline;
+	color: antiquewhite;
+	text-align: center;
+	text-decoration: none;
+}
+
+.column a:hover:not(.active) {
+	background-color: lightsalmon;
+}
+
+.column a.active {
+	background-color: lightcoral;
+}
+	
+/*-------------Responsive CSS-----------------*/
+
+/*For navigation bar*/
+
+@media screen and (max-width: 600px){
+	.navbar a, ul.nav li.right, ul.nav li {
+		float: none;
+		width: 100%;
+		text-align: center;
 	}
 }
+
+/* For the columns*/
+@media screen and (max-width: 800px){
+	.column{
+		width: 50%;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	.column{
+		width: 100%;
+	}
+}
+

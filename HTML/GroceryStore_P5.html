@@ -8,21 +8,41 @@
     
 </head>
     
-<body>
+
+<style> body
+        {
+        width: 300px;
+        border: 10px solid #12A4B9;
+        padding: 5px solid #12A4B9;
+        margin: 5px solid black;
+        }  </style> 
+    
+<table class="myTable" style="border: 1px solid black" >
+    
+    <tr style="background-color: #12A4B9">
+        <th> 
+            
+            <body>
     
     <div>
+    
     <label for="Email Adress"> Email Adress: </label>
-        <input type="text" id="Email Adress" name="Email Adress" placeholder="Email Adress" >
-    </div>
     
-    <div>
+        <input style="margin-bottom: 5px; margin-top: 5px" type="text" id="Email Adress" name="Email Adress" placeholder="Email Adress" >
+    
         <label for="Password"> Password: </label>
-        <input type="password" id="Password" name="Password" required placeholder="Password">
+        <input style="margin-bottom: 5px" type="password" id="Password" name="Password" required placeholder="Password">
     </div>
     
-    <input type="Submit" value="Submit">
-     <input type="Reset" value="Reset Password">
+    
+    <button class="Password" >Submit</button>
+    <button class="Reset" >Reset Password</button>
+     
     
     </body>
+            
+        </th>
+    </tr>
+    </table>
     
 </html>

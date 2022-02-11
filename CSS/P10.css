@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	color: black;
+	background-color: rgb(0,128,0);
+	width: 100%;
+	heigth: 100%;
+	font: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+}
+
+.header{
+	text-align: left;
+	padding: 0px;
+}
+		
+*{
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+	background-color: #FFA07A;
+}
+		
+h3{
+	text-align: center;
+	background-color: #FFDAB9;
+}	
+
+.column{
+	float: left;
+	width: 50%;
+	padding: 15px;
+ 	text-align: center;
+}
+
+label{
+	color: white;
+}
+
+.btn{
+	padding: 5px;
+}
+
+
+/*---------------Responsive CSS----------------*/
+
+@media screen and (max-width: 800px){
+	.column{
+		width: 50%;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	.column{
+		width: 100%;
+	}
+}

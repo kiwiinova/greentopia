@@ -9,9 +9,12 @@ body{
 	font: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
 
-.header{
-	text-align: left;
-	padding: 0px;
+.logo img{
+	float: left;
+	width: 145px;
+	height: auto;
+	padding-left: 5px;
+  	display: inline-block;
 }
 		
 *{
@@ -29,14 +32,21 @@ h2{
 	background-color: #FFDAB9;
 }	
 		
-img{
+.column img{
 	border: 6px outset antiquewhite;
 	width: 200px;
 	height: auto;
 	max-width: 100%;
 }
 
+
 /*-------------Layout Styles--------------*/
+.header{
+	text-align: left;
+	padding: 0px;
+	align-content: center;
+}
+
 .navbar{
 	text-align: center;
 	background-color: antiquewhite;
@@ -52,7 +62,7 @@ img{
 .row{
 	float: left;
 	width: 100%;
-	padding: 20px;
+	padding: 10px;
 }
 		
 /*-------------Navigation Bar-------------*/	
@@ -74,7 +84,7 @@ ul.nav li a {
 	color: black;
 	text-align: center;
 	font-weight: bold;
-	padding: 15px;
+	padding: 20px;
 	text-decoration: none;
 	
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+   <link href="https://fonts.googleapis.com/css?
+  family=Poppins:700|Work+Sans&display=swap" rel="stylesheet"> 
+  <!-- Stylesheet -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                                                                            <link rel="stylesheet" href="styleproducts.css">
+<body>
+    <section>
+        <div class="post">
+            <h1> Banana </h1>
+            *The average diet contains 6 to 8 bananas.
+            <span class = "dots">...</span>
+            <span class = "more"> 
+                <br>
+                The banana is between 15 and 25 cm (6 and 9 in.) long and its green color indicates that it is not yet ripe. Bananas are at their best when their skin turns yellow and becomes dotted with dark spots.
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+        <div class="post">
+            <h1> Apple </h1>
+            The Red Delicious apple, dark red in color, has a crunchy yellow flesh that softens when cooked.
+            <span class = "dots">...</span>
+            <span class = "more"> 
+                It can be enjoyed as is, as a snack with peanut butter or sliced in a salad with grilled nuts.
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+         <div class="post">
+            <h1> Orange </h1> 
+             Navel orange has a bright orange peel that is easy to peel and a sweet seedless pulp.
+            <span class = "dots">...</span>
+            <span class = "more"> 
+                This popular orange, champion of snacks, is also used to lacquer chicken, duck and pork.
+            </span>
+             
+            <button class="read">read more
+            </button>
+        </div>
+         <div class="post">
+            <h1> Lettuce </h1> 
+             The iceberg lettuce roundlet, or head lettuce, consists of densely grouped pale leaves with a discreet taste.
+            <span class = "dots">...</span>
+            <span class = "more"> 
+                It is mostly used fresh because of its crispy texture. Grate it to include it in a green or cabbage salad, unless you cut it into fleshy quarters and season with a blue cheese vinaigrette.
+            </span>
+             
+            <button class="read">read more
+            </button>
+        </div>
+        <div class="post"> 
+            <h1> Tomato </h1>
+            Bright red when ripe, the greenhouse tomato has a firm, fleshy flesh that predestines it to garnish burgers or a traditional BLT sandwich.
+            <span class = "dots">...</span>
+            <span class = "more"> 
+               It can also be hollowed out and used for a stuffed tomato recipe.
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+        <div class="post">
+            <h1> Cucumber </h1> 
+            The English (or greenhouse) cucumber is a cylindrical fruit with green skin and crunchy white flesh sprinkled with edible seeds.
+            <span class = "dots">...</span>
+            <span class = "more"> 
+                It is usually eaten raw, with or without the skin. Add a few slices to a vegetable platter or enjoy it in a salad with mint and lemon juice.
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $(".read").click(function(){
+                $(this).prev().toggle();
+                $(this).siblings('.dots').
+                toggle();
+                if ($(this).text()=='read less'){
+                    $(this).text('read more');
+                }
+                else {
+                    $(this).text('read less');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

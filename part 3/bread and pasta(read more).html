@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <link href="https://fonts.googleapis.com/css?
+  family=Poppins:700|Work+Sans&display=swap" rel="stylesheet"> 
+  <!-- Stylesheet -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                                                                            <link rel="stylesheet" href="styleproducts.css">
+<body>
+    <section>
+        <div class="post">
+            <h1> White bread </h1>
+            
+            <span class = "dots">...</span>
+            <span class = "more"> 
+               
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+        <div class="post">
+            <h1> Brown bread </h1>
+            
+            <span class = "dots">...</span>
+            <span class = "more"> 
+                
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+         <div class="post">
+            <h1> Baguette </h1> 
+             
+            <span class = "dots">...</span>
+            <span class = "more"> 
+            
+            </span>
+             
+            <button class="read">read more
+            </button>
+        </div>
+         <div class="post">
+            <h1> Lasagna </h1> 
+             Lasagna is a wide, flat pasta with often wavy edges.
+            <span class = "dots">...</span>
+            <span class = "more"> 
+                To be enjoyed in the dish of the same name, made of layers of pasta, cheese and meat sauce, and baked.
+            </span>
+             
+            <button class="read">read more
+            </button>
+        </div>
+        <div class="post"> 
+            <h1> Macaroni </h1>
+            Want to increase fiber intake from your family's diet? Nothing could be simpler, thanks to our macaroni pasta. 
+            <span class = "dots">...</span>
+            <span class = "more"> 
+               They're as delicious as traditional white pasta, but each 85g serving provides up to 32% of the recommended daily intake of fiber.* And your kids will love them.
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+        <div class="post">
+            <h1> Spaghetti </h1> 
+            Made with 100% durum wheat semolina. 
+            <span class = "dots">...</span>
+            <span class = "more"> 
+              Pasta similar to traditional spaghetti, but thinner and faster to cook. Deliciously accompany seafood in an oil-based sauce.
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $(".read").click(function(){
+                $(this).prev().toggle();
+                $(this).siblings('.dots').
+                toggle();
+                if ($(this).text()=='read less'){
+                    $(this).text('read more');
+                }
+                else {
+                    $(this).text('read less');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

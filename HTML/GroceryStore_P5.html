@@ -1,49 +1,51 @@
-<!DOCTYPE html>
-
-<html lang = "en">
+<!DOCTYPE html> 
+<html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>P5</title>
-    
+<title>P5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+        .center{
+            height: 200px;
+            width: 400px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -200px;
+            font-size: 1.5vw;   
+            
+        }
+        
+        .button{
+            cursor: pointer;
+            width: 60px;
+           
+        }
+        .space{
+            padding-bottom:5px;
+           
+        }  
+    </style>
 </head>
-    
+<body>
+    <div class="center">
+<fieldset >
+ <legend>Login:</legend>
+ <form target="_self" autocomplete="on">
+     <div class="space">
+<label for="email">Email Address:</label><br>
+<input type="text" id="email" name="email" placeholder="Enter your Email Address" size="25"><br>
+     </div>
+     <div class="space">
+<label for="password">Password (8 characters minimum):</label><br>
+<input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25"><br>
+     </div>
+<input type="submit" value="Submit" class="button" >
+ <button type="submit" class="Forgot Password">Forgot Password</button><br>   
+ </form>
+</fieldset>
+     </div>
+</body>
 
-<style> body
-        {
-        width: 300px;
-        border: 10px solid #12A4B9;
-        padding: 5px solid #12A4B9;
-        margin: 5px solid black;
-        }  </style> 
-    
-<div style="overflow-x:auto;">  
-<table class="myTable" style="border: 1px solid black" >
-    
-    <tr style="background-color: #12A4B9">
-        <th> 
-            
-            <body>
-    
-    <div>
-    
-    <label for="Email Address"> Email Address: </label>
-    
-        <input style="margin-bottom: 5px; margin-top: 5px" type="text" id="Email Address" name="Email Address" placeholder="Email Address" >
-    
-        <label for="Password"> Password: </label>
-        <input style="margin-bottom: 5px" type="password" id="Password" name="Password" required placeholder="Password">
-    </div>
-    
-    
-    <button class="Password" >Submit</button>
-    <button class="Reset" >Reset Password</button>
-     
-    
-    </body>
-            
-        </th>
-    </tr>
-    </table>
-</div>    
 </html>

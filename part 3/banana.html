@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+   <meta charser = "UTF-8">
+   <meta http-equiv = "X-UA-Compatible" content="IE-edge"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?
+  family=Poppins:700|Work+Sans&display=swap" rel="stylesheet"> 
+  <!-- Stylesheet -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                <link rel="stylesheet" href="styleproducts.css">
+   <link rel="stylesheet" href="imagepages.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+      <div class="product">
+        <div class="product-img">
+            <div class="zoom">
+            <img src= "..\Images\Banana.jpg" alt="Banana" title="Product">
+            </div>
+        </div>
+        <div class="meta">
+            <span class="category"><a href="#">Fruits and Veggies</a></span>
+        </div>
+        <div class="product-info">
+            <h3>Bananas</h3>
+            <div class="price"><span class="base">$7.00</span><span class="discount">$4.99</span>
+            </div>
+        </div>
+        <div class="product-btns">
+             <ul>
+                <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                 <select number="number of items">
+                    <option value ="tag">Choose your quantity</option>
+                    <option value= "1">1</option>
+                    <option value= "2">2</option>
+                    <option value= "3">3</option>
+                    <option value= "4">4</option> 
+                    <option value= "5">5</option>
+                    <option value= "6">6</option>
+                    <option value= "7">7</option>
+                    <option value= "8">8</option> 
+                </select>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <div class="post">
+            <h1> Product Description </h1>
+            *The average diet contains 6 to 8 bananas.
+            <span class ="dots">...</span>
+            <span class = "more"> 
+                <br>
+                The banana is between 15 and 25 cm (6 and 9 in.) long and its green color indicates that it is not yet ripe. Bananas are at their best when their skin turns yellow and becomes dotted with dark spots.
+            </span>
+            
+            <button class="read">read more
+            </button>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $(".read").click(function(){
+                $(this).prev().toggle();
+                $(this).siblings('.dots').
+                toggle();
+                if ($(this).text()=='read less'){
+                    $(this).text('read more');
+                }
+                else {
+                    $(this).text('read less');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

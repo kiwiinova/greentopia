@@ -41,10 +41,18 @@
 		
 		<!-- Save Button-->
 		<div class="btn">
-			<button type="submit" value="save">Save</button>
+			<input type="button" value="Save" onclick="SavedSuccessfully()">	
 		</div>
 
 	</div>	
+	
+	<script>
+	function SavedSuccessfully(){
+		var success = window.confirm("Your profile has been updated!");
+	}
+	
+	</script>
+	
 	
 	<footer>
       <div class="footer">

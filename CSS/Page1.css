@@ -9,9 +9,8 @@
   text-decoration: none;
 }
 
-body {
+body{
   min-height: 100vh;
-  background: url(Banner.png) no-repeat;
   background-size: cover;
   background-position: center;
 }

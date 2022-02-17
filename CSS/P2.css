@@ -12,7 +12,7 @@ body{
 .logo img{
 	float: left;
 	position: relative;
-	bottom: -9px;
+	bottom: -15px;
 	width: 130px;
 	height: auto;
 	padding-left: 5px;
@@ -24,14 +24,27 @@ body{
 	box-sizing: border-box;
 }
 
+.row a{
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+
+.navbar a{
+	font-weight: bold;
+	font-size: 25px;
+}
+
 h1{
 	text-align: center;
+	font-size: 40px;
 	background-color: #FFDAB9;
 }
 		
 h2{
 	text-align: center;
 	background-color: beige;
+	font-size: 25px;
 }
 
 h3{

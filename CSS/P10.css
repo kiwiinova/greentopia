@@ -4,7 +4,7 @@
 body{
 	margin: 0;
 	color: black;
-	background-color: #8FBC8F;
+	background-color: white;
 	width: 100%;
 	heigth: 100%;
 	font-family: "Shadows Into Light Two";
@@ -41,42 +41,83 @@ h5{
 	bottom: -15px;
 }
 
-.column{
+.column1 {
 	float: left;
 	width: 50%;
-	padding: 15px;
+	position: relative;
+	right: -25px; 
+ 	text-align: center;
+	
+}
+
+.column2{
+	float: left;
+	width: 50%;
+	position: relative;
+	left: -25px;
  	text-align: center;
 }
 
+section{
+	width: 100%;
+	height: auto;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	gap: 80px;
+	grid-auto-flow: column;
+}
+
+ul.col{
+	list-style-type: none;
+}
+
 label{
-	color: white;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	left: 50px;
 }
 
-.btn{
-	padding: 5px; 
+.button{
+	padding-top: 30px; 
+	position: relative;
+	left: 33px;
+	top: 5px;
+	background-color: #4CAF50;
+	border: none;
+	color: black;
+	padding: 10px 50px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
-.column #username{
+.column1 #username{
 	width: 200px;
 	height: 30px;
 }
 
-.column #email{
+.column1 #email{
 	width: 200px;
 	height: 30px;
 }
 
-.column #pwd{
+.column1 #pwd{
 	width: 200px;
 	height: 30px;
 }
 
-.column #address{
+.column2 #address{
 	width: 200px;
 	height: 30px;
 }
 
-.column #pcode{
+.column2 #pcode{
 	width: 200px;
 	height: 30px;
 }
@@ -85,14 +126,15 @@ label{
 /*---------------Responsive CSS----------------*/
 
 @media screen and (max-width: 800px){
-	.column{
+	section{
 		width: 50%;
 	}
 }
 
-
 @media screen and (max-width: 600px){
-	.column{
+	ul.col a, ul.col li.right, ul.col li {
+		float: none;
 		width: 100%;
+		text-align: center;
 	}
 }

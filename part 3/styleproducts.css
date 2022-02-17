@@ -1,49 +1,58 @@
-body{
+body {
     background-color: white;
     padding: 0;
     margin: 0;
 }
+
 section {
     padding: 20px;
 }
-h1{
+
+h1 {
     margin: 0 0 15px 0;
     color: black;
     font-size: 28px;
-    font-weight:700;
+    font-weight: 700;
     font-family: TT Commons;
     text-transform: uppercase;
     letter-spacing: 1.0px;
+    text-align: center;
 }
+
 .more {
     display: none
 }
-.post{
+
+.post {
     color: black;
     font-size: 18px;
     text-align: justify;
     line-height: 25px;
+    max-width: 400px;
     font-family: TT Commons;
 }
+
 .post:not(:last-child) {
     margin-bottom: 30px;
 }
+
 button {
     margin-top: 15px;
     display: block;
     background-color: green;
     color: white;
-    border:none;
+    border: none;
     outline: none;
     padding: 8px 20px;
     text-transform: capitalize;
     cursor: pointer;
     font-size: 20px;
 }
+
 .number of items {
     height: 60px;
     width: 130px;
     border: 1px solid black;
     font-family: cursive;
-    text-align:center;
-    }
+    text-align: center;
+}

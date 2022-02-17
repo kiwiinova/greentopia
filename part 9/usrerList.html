@@ -1,127 +1,122 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>User List </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="deletebutton.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap">
 </head>
-<style type="text/css">
-.con{
-   display: inline-flex;
-   padding: 5px;
-   background-color: #f8f8f8;
-   padding-Left: 20px;
-   width: 300px;
-   border-radius: 3%;
-    }
- .con1 {
-   width: 80px;
-   height: 80px;
-   background-color: pink;
-   border-radius: 50%;
-   text-align: center;
-   border: 2px solid lightgreen;
-   display: inline-flex;
-    }
-.con:hover:nth-child(1) {
-   box-shadow: 10px 10px 10 px #f8f8f84d;
-   margin-left: -15px;
-    }
-.userimg {
-   width : 100%;
-   height : 100%;
-   border-radius: 50%;
-    }
-.innercon{
-   width: 10px;
-   height: 10px;
-   background-color:seagreen;
-   margin-top:72px;
-   margin-left:-20px;
-   border-radius:50%;
-    }
-.sidebox {
-    margin-top: -5px;
-    display: inline-block;
-    padding-top: 15px;
-    width: 250px;
-    } 
-.spanstyle {
-    text-align: left;
-    font-size: 18px;
-    font-weight:1;
-    text-align: left;
-    margin-left:-122px;
-    font-family: "Open Sans Condensed";
-    }
-.spanstyle2 {
-    font-size: 15px;
-    margin-left:12px;
-    float: left;
-    margin-top:10px;
-    color:green;
-    font-family: "Open Sans Condensed";
-    }
-</style>
+<header>
+    <div class="logo">
+        <img src="Logo.png" style="width: 250px; height: auto; padding: 20px; display: block; margin-left:auto; margin-right: auto">
+    </div>
+</header>
+
 <body>
-<center>
-    <h1>User list</h1>
-  <ul style= "list-style-type:none;">
-   <li>
-        <div class="con">
-            <div class="con1">
-                <img src ="Images/male.jpg" class="userimg">
-                <div class ="innercon">
+    <h1 id="user-text" style="text-align: center; font-family: Open Sans Condensed; font-weight: 600">
+        User Profile
+    </h1>
+
+    <center style="margin:0; padding:20px">
+        <ul style="list-style-type:none;">
+            <li>
+                <div class="con">
+                    <div class="con1">
+                        <img src="Images/male.jpg" class="userimg">
+                        <div class="innercon">
+                        </div>
+                    </div>
+                    <div class="sidebox">
+                        <span class="spanstyle">
+                            <b> Min Yoongi </b>
+                        </span> <br>
+
+                        <span class="spanstyle2">
+                            Shopper
+                        </span>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+                        </button>
+                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                    </div>
                 </div>
-            </div>
-            
-            <div class = "sidebox">
-            <span class ="spanstyle">
-                  <b> Min Yoongi </b>
-            </span> <br>
-       
-            <span class="spanstyle2">
-                  Shopper
-                  </span>
-            </div>   
-        </div>
-    </li><li>
-      <div class="con">
-            <div class="con1">
-                <img src ="Images/female.png" class="userimg">
-                <div class ="innercon">
+            </li>
+            <li>
+                <div class="con">
+                    <div class="con1">
+                        <img src="Images/female.png" class="userimg">
+                        <div class="innercon">
+                        </div>
+                    </div>
+
+                    <div class="sidebox">
+                        <span class="spanstyle">
+                            <b>Nicki Minaj</b>
+                        </span> <br>
+
+                        <span class="spanstyle2">
+                            Shopper
+                        </span>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+                        </button>
+                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                    </div>
                 </div>
-            </div>
-            
-            <div class = "sidebox">
-            <span class ="spanstyle">
-                  <b>Nicki Minaj</b>
-            </span> <br>
-       
-            <span class="spanstyle2">
-                  Shopper
-                  </span>
-            </div>   
-        </div>
-      </li>
-      <li>
-      <div class="con">
-            <div class="con1">
-                <img src ="Images/male.jpg" class="userimg">
-                <div class ="innercon">
+            </li>
+            <li>
+                <div class="con">
+                    <div class="con1">
+                        <img src="Images/male.jpg" class="userimg">
+                        <div class="innercon">
+                        </div>
+                    </div>
+
+                    <div class="sidebox">
+                        <span class="spanstyle">
+                            <b>Park Jimin</b>
+                        </span> <br>
+
+                        <span class="spanstyle2">
+                            Shopper
+                        </span>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+                        </button>
+                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                    </div>
                 </div>
-            </div>
-            
-            <div class = "sidebox">
-            <span class ="spanstyle">
-                  <b>Park Jimin</b>
-            </span> <br>
-       
-            <span class="spanstyle2">
-                  Shopper
-                  </span>
-            </div>   
+            </li>
+        </ul>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>Delete Account</h1>
+                    <p>Are you sure you want to delete your account?</p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Delete</button>
+                    </div>
+                </div>
+            </form>
         </div>
-      </li>
-  </ul>
-</center>
+        <button type="button" class="adduser">Add User</button>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+    </center>
 </body>
+
 </html>

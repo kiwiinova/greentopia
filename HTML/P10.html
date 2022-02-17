@@ -8,15 +8,15 @@
 	<link rel="stylesheet" href="../CSS/P10.css">
 	
 </head>
-
+	
 	<!-- Header -->
 	<h1>Edit User Profile</h1>
 	<h3>Please enter the following informations: </h3>
 	
 <body>
-	
-	
-	<div class="column">
+	<ul class="col">
+	<section class="column-center">
+	<li><div class="column1">
 		<!-- Username Property -->
 		<label for="username">Username: </label><br>
 		<input type="text" id="username" name="username"> <br> <br>
@@ -29,8 +29,10 @@
 		<label for="pwd">Password: </label> <br>
 		<input type="password" id="pwd" name="pwd" minlength="8" required> <br> <br>
 	</div>
+		</li>
 	
-	<div class="column">
+	<li>
+	<div class="column2">
 		<!-- Address Property -->
 		<label for="address">Address: </label> <br>
 		<input type="text" id="address" name="address"> <br> <br>
@@ -40,12 +42,12 @@
 		<input type="text" id="pcode" name="pcode"> <br> <br>
 		
 		<!-- Save Button-->
-		<div class="btn">
-			<input type="button" value="Save" onclick="SavedSuccessfully()">	
-		</div>
-
-	</div>	
-	
+		<button class="button" onclick="SavedSuccessfully()">Save</button>
+		
+	</div>
+	</li>
+	</section>
+	</ul>
 	<script>
 	function SavedSuccessfully(){
 		var success = window.confirm("Your profile has been updated!");
@@ -53,7 +55,7 @@
 	
 	</script>
 	
-	
+	<!-- Footer -->
 	<footer>
       <div class="footer">
 		<h5>&copy; Copyright Reserved.</h5>

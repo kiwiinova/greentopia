@@ -1,98 +1,124 @@
-body {
-        background: #fff;
-        padding:5% 20%;
-        
-    }
-    .product{
-            display: block;
-            width: 300px; /*Width Can be removed if you are adding this block inside a Bootstrap Column*/
-            height: auto;
-            background: #fff;
-            padding: none;
-            border: 2px solid #fff;
-            font-family: TT Commons;
-            transition: ease-in-out 0.6s all 0s;
-        
-        }
-        .product .product-img img{
-            display: block;
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-        }
-        .product .meta{
-            position: absolute;
-            top: 6.4%;
-            left: 21%;
-        }
-        .product .meta .category{
-            background: rgb(248, 78, 78);
-            padding: 5px 10px 3px 10px;
-            border-radius: 30px;
-        }
-        .product .meta .category a{
-            font-family: TT Commons;
-            font-size: 15px;
-            line-height: 20px;
-            text-decoration: none;
-            color: #fff;
-        }
-        .product .product-info{
-            padding: 5px 15px 0 15px;
-            text-align: center;
-        }
-        .product .product-info h3{
-            font-size: 18px;
-            line-height: 24px;
-            margin: auto;
-            color: #333;
-        }
-        .product .product-info .price{
-            padding: 5px 0;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .product .product-info .price .base{
-            text-decoration: line-through;
-            color: rgb(145, 145, 145);
-            padding-right:5px;
-        }
-        .product .product-info .price .discount{
-            color: rgb(231, 79, 79);
-        }
-        .product .product-btns{
-            display: block;
-            padding:0 15px;
-        }
-        .product .product-btns ul{
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        .product .product-btns ul li{
-            display: inline-block;
-            list-style: none;
-            padding-right: 10px;
-        }
-        .product .product-btns ul li a{
-            font-size: 16px;
-            color: #333;
-            display: block;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            line-height: 37px;
-            border: 2px dotted #333;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: ease-in 0.6s all 0s;
-        }
-        .product .product-btns ul li a:hover{
-            background: rgb(243, 82, 82);
-            color: #fff;
-            border: 2px dashed rgb(243, 82, 82);
-        }
+  body {
+      background: #fff;
+      padding: 0% 20%;
+  }
 
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+  .product {
+      display: block;
+      width: 300px;
+      height: auto;
+      background: #fff;
+      padding: 0;
+      border: 2px solid #fff;
+      font-family: TT Commons;
+      transition: ease-in-out 0.6s all 0s;
+  }
+
+  .product .product-img img {
+      display: block;
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .product .meta {
+      position: absolute;
+      margin: 0;
+      top: 16%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  }
+
+  .product .meta .category {
+      background-color: lightslategray;
+      padding: 5px 10px 3px 10px;
+      border-radius: 30px;
+  }
+
+  .product .meta .category a {
+      font-family: TT Commons;
+      font-size: 15px;
+      line-height: 20px;
+      text-decoration: none;
+      color: #fff;
+
+  }
+
+  .product .product-info {
+      padding: 5px 15px 0 15px;
+      text-align: center;
+  }
+
+  .product .product-info h3 {
+      font-size: 18px;
+      line-height: 24px;
+      margin: auto;
+      color: #333;
+  }
+
+  .product .product-info .price {
+      padding: 5px 0;
+      font-size: 16px;
+      font-weight: bold;
+  }
+
+  .product .product-info .price .base {
+      text-decoration: line-through;
+      color: rgb(145, 145, 145);
+      padding-right: 5px;
+  }
+
+  .product .product-info .price .discount {
+      color: rgb(231, 79, 79);
+  }
+
+  .product .product-btns {
+      display: block;
+      padding: 0 15px;
+  }
+
+  .product .product-btns ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+  }
+
+  .product .product-btns ul li {
+      display: inline-block;
+      list-style: none;
+      padding-right: 10px;
+  }
+
+  .product .product-btns ul li a {
+      font-size: 16px;
+      color: #333;
+      display: block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 37px;
+      border: 2px dotted #333;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: ease-in 0.6s all 0s;
+  }
+
+  .product .product-btns ul li a:hover {
+      background: rgb(243, 82, 82);
+      color: #fff;
+      border: 2px dashed rgb(243, 82, 82);
+  }
+
+  .zoom:hover {
+      transform: scale(1.5);
+      /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  @media screen and (max-width: 300px) {
+
+      .product .meta {
+          width: 100%;
+      }
+  }

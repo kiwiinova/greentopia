@@ -10,7 +10,8 @@
 }
 
 body{
-  min-height: 70%;
+  width:1920px;
+  height:1080px;
   background-size: contain;
   background-position: center;
 }
@@ -117,4 +118,15 @@ header label {
 
 footer{
 	float: center;
+}
+@media screen and (min-width: 500px) {
+   body {
+      width:420px;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   body {
+      width:720px;
+   }
 }

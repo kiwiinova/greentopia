@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Customize the User Order List|GreenTopia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <style>
+        table {
+            width: 1180px;
+        }
+
+        td,
+        th {
+            border: 1px;
+            padding: 8px;
+            height: 70px;
+        }
+
+        .flex-container {
+            display: flex;
+            margin: 30px;
+            border-style: groove;
+            border-radius: 7px;
+            padding: 10px;
+        }
+
+    </style>
+
+</head> <!-- this is the part after you click edit an order profile -->
+
+
+<body>
+    <h1 style="text-align: center">User's Product List</h1>
+    <div class="flex-container" style="overflow-x: auto">
+        <form oninput="a.value=(parseFloat(a1.value)*parseInt(a2.value)).toFixed(2); b.value=(parseFloat(b1.value)*parseInt(b2.value)).toFixed(2); c.value=(parseFloat(c1.value)*parseInt(c2.value)).toFixed(2); d.value=(parseFloat(d1.value)*parseInt(d2.value)).toFixed(2); e.value=(parseFloat(e1.value)*parseInt(e2.value)).toFixed(2); f.value=(parseFloat(f1.value)*parseInt(f2.value)).toFixed(2); g.value=(parseFloat(g1.value)*parseInt(g2.value)).toFixed(2); h.value=(parseFloat(h1.value)*parseInt(h2.value)).toFixed(2); i.value=(parseFloat(i1.value)*parseInt(i2.value)).toFixed(2); j.value=(parseFloat(j1.value)*parseInt(j2.value)).toFixed(2); k.value=(parseFloat(k1.value)*parseInt(k2.value)).toFixed(2); l.value=(parseFloat(l1.value)*parseInt(l2.value)).toFixed(2); m.value=(parseFloat(m1.value)*parseInt(m2.value)).toFixed(2); n.value=(parseFloat(n1.value)*parseInt(n2.value)).toFixed(2); o.value=(parseFloat(o1.value)*parseInt(o2.value)).toFixed(2); p.value=(parseFloat(p1.value)*parseInt(p2.value)).toFixed(2); q.value=(parseFloat(q1.value)*parseInt(q2.value)).toFixed(2); r.value=(parseFloat(r1.value)*parseInt(r2.value)).toFixed(2); s.value=(parseFloat(s1.value)*parseInt(s2.value)).toFixed(2); t.value=(parseFloat(t1.value)*parseInt(t2.value)).toFixed(2); u.value=(parseFloat(u1.value)*parseInt(u2.value)).toFixed(2); v.value=(parseFloat(v1.value)*parseInt(v2.value)).toFixed(2); w.value=(parseFloat(w1.value)*parseInt(w2.value)).toFixed(2); x.value=(parseFloat(x1.value)*parseInt(x2.value)).toFixed(2)">
+
+            <table style="text-align: center">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Quantity</th>
+                    <th>Total Product Price</th>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td><input type="number" step="0.01" id="a1" value="10.77" min="0">$
+                    </td>
+                    <td><input type="number" id="a2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalapple" name="a" for="a1 a2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td><input type="number" step="0.01" id="b1" value="3.50" min="0">$
+                    </td>
+                    <td><input type="number" id="b2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalbanana" name="b" for="b1 b2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cucumber</td>
+                    <td><input type="number" step="0.01" id="c1" value="3.55" min="0">$
+                    </td>
+                    <td><input type="number" id="c2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalcucumber" name="c" for="c1 c2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lettuce</td>
+                    <td><input type="number" step="0.01" id="d1" value="4.05" min="0">$
+                    </td>
+                    <td><input type="number" id="d2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totallettuce" name="d" for="d1 d2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td><input type="number" step="0.01" id="e1" value="4.70" min="0">$
+                    </td>
+                    <td><input type="number" id="e2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalorange" name="e" for="e1 e2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td><input type="number" step="0.01" id="f1" value="7.23" min="0">$
+                    </td>
+                    <td><input type="number" id="f2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totaltomato" name="f" for="f1 f2">0.00</output>$
+                    </td>
+                </tr>
+                <!--     Fruits & Veggies           -->
+                <tr>
+                    <td>Beef</td>
+                    <td><input type="number" step="0.01" id="g1" value="24.57" min="0">$
+                    </td>
+                    <td><input type="number" id="g2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalbeef" name="g" for="g1 g2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chicken</td>
+                    <td><input type="number" step="0.01" id="i1" value="16.34" min="0">$
+                    </td>
+                    <td><input type="number" id="i2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalchicken" name="i" for="i1 i2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fish Bass</td>
+                    <td><input type="number" step="0.01" id="j1" value="19.45" min="0">$
+                    </td>
+                    <td><input type="number" id="j2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalfishbass" name="j" for="j1 j2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Salmon</td>
+                    <td><input type="number" step="0.01" id="l1" value="27.87" min="0">$
+                    </td>
+                    <td><input type="number" id="l2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalsalmon" name="l" for="l1 l2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shrimp</td>
+                    <td><input type="number" step="0.01" id="k1" value="18.98" min="0">$
+                    </td>
+                    <td><input type="number" id="k2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalshrimp" name="k" for="k1 k2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Turkey</td>
+                    <td><input type="number" step="0.01" id="h1" value="42.00" min="0">$
+                    </td>
+                    <td><input type="number" id="h2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalturkey" name="h" for="h1 h2">0.00</output>$
+                    </td>
+                </tr>
+                <!--       Meats & Fish         -->
+                <tr>
+                    <td>Cream</td>
+                    <td><input type="number" step="0.01" id="m1" value="6.25" min="0">$
+                    </td>
+                    <td><input type="number" id="m2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalcream" name="m" for="m1 m2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Brown Rice</td>
+                    <td><input type="number" step="0.01" id="n1" value="6.50" min="0">$
+                    </td>
+                    <td><input type="number" id="n2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalbrice" name="n" for="n1 n2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Butter</td>
+                    <td><input type="number" step="0.01" id="o1" value="7.54" min="0">$
+                    </td>
+                    <td><input type="number" id="o2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalbutter" name="o" for="o1 o2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td><input type="number" step="0.01" id="p1" value="9.75" min="0">$
+                    </td>
+                    <td><input type="number" id="p2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalmilk" name="p" for="p1 p2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>White Egg</td>
+                    <td><input type="number" step="0.01" id="q1" value="5.40" min="0">$
+                    </td>
+                    <td><input type="number" id="q2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalwegg" name="q" for="q1 q2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yogourt</td>
+                    <td><input type="number" step="0.01" id="r1" value="5.98" min="0">$
+                    </td>
+                    <td><input type="number" id="r2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalyogourt" name="r" for="r1 r2">0.00</output>$
+                    </td>
+                </tr>
+                <!-- Dairy & Eggs   -->
+                <tr>
+                    <td>Baguette</td>
+                    <td><input type="number" step="0.01" id="s1" value="3.25" min="0">$
+                    </td>
+                    <td><input type="number" id="s2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalbaguette" name="s" for="s1 s2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Brown Bread</td>
+                    <td><input type="number" step="0.01" id="t1" value="5.65" min="0">$
+                    </td>
+                    <td><input type="number" id="t2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalbbread" name="t" for="t1 t2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lasagna</td>
+                    <td><input type="number" step="0.01" id="u1" value="17.22" min="0">$
+                    </td>
+                    <td><input type="number" id="u2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totallasagna" name="u" for="u1 u2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Macaroni</td>
+                    <td><input type="number" step="0.01" id="v1" value="4.10" min="0">$
+                    </td>
+                    <td><input type="number" id="v2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalmacaroni" name="v" for="v1 v2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spaghetti</td>
+                    <td><input type="number" step="0.01" id="w1" value="3.30" min="0">$
+                    </td>
+                    <td><input type="number" id="w2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalspaghetti" name="w" for="w1 w2">0.00</output>$
+                    </td>
+                </tr>
+                <tr>
+                    <td>White Bread</td>
+                    <td><input type="number" step="0.01" id="x1" value="4.48" min="0">$
+                    </td>
+                    <td><input type="number" id="x2" value="0" min="0">
+                    </td>
+                    <td>
+                        = <output id="totalwbread" name="x" for="x1 x2">0.00</output>$
+                    </td>
+                </tr>
+                <!--        Breads & Pasta        -->
+            </table>
+            <p style="text-align: center">TOTAL PRICE: <span></span></p>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -115,12 +115,6 @@ header label {
   }
 }
 
-footer {
-  height: 5vh;
-  bottom: 0;
-  position: absolute;
-  background-color: rgb(216, 199, 199);
-  width: 100%;
-  color: black;
-  font-size: small;
+footer{
+	float: center;
 }

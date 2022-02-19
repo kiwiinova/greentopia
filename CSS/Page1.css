@@ -10,7 +10,9 @@
 }
 
 body, html{
-  height: 100vh;
+/*   height: 100vh; */
+  max-width:100%;
+  height: auto;
   margin:0;
   background-attachment: fixed;
 }

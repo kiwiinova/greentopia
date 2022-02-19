@@ -41,36 +41,21 @@ header {
       margin-right: auto;
   }
 
-  .product .meta {
-      position: absolute;
-      margin: 0;
-      top: 16%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-  }
-
-  .product .meta .category {
-      background-color: lightslategray;
-      padding: 5px 10px 3px 10px;
-      border-radius: 30px;
-  }
-
-  .product .meta .category a {
+/*   .product .meta .category a {
       font-family: TT Commons;
       font-size: 15px;
       line-height: 20px;
       text-decoration: none;
       color: #fff;
-
   }
-
+ */
   .product .product-info {
       padding: 5px 15px 0 15px;
       text-align: center;
   }
 
   .product .product-info h3 {
-      font-size: 18px;
+      font-size: 30px;
       line-height: 24px;
       margin: auto;
       color: #333;
@@ -78,7 +63,7 @@ header {
 
   .product .product-info .price {
       padding: 5px 0;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: bold;
   }
 
@@ -110,7 +95,7 @@ header {
   }
 
   .product .product-btns ul li a {
-      font-size: 16px;
+      font-size: 30px;
       color: #333;
       display: block;
       width: 30px;

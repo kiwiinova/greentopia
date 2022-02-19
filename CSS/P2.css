@@ -24,27 +24,10 @@ body{
 	box-sizing: border-box;
 }
 
-.row a{
-	font-weight: bold;
-	font-size: 20px;
-	
-}
-
-.navbar a{
-	font-weight: bold;
-	font-size: 25px;
-}
-
 h1{
 	text-align: center;
 	font-size: 40px;
 	background-color: #FFDAB9;
-}
-		
-h2{
-	text-align: center;
-	background-color: beige;
-	font-size: 25px;
 }
 
 h3{
@@ -68,64 +51,17 @@ h3{
 	align-content: center;
 }
 
-.navbar{
-	text-align: center;
-}	
-		
 .column{
 	float: left;
 	width: 33%;
 	padding: 15px;
  	text-align: center;
 }
-		
-.row{
-	float: left;
-	width: 100%;
-	padding: 10px;
-}
 
 footer{
 	float: right;
 }
 		
-/*-------------Navigation Bar-------------*/	
-
-ul.nav{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: beige;
-}
-
-ul.nav li {
-	float: left;
-}
-
-ul.nav li a {
-	display: block;
-	color: black;
-	text-align: center;
-	font-weight: bold;
-	padding: 20px;
-	text-decoration: none;
-	
-}
-
-ul.nav li a:hover:not(.active) {
-	background-color: #FFDAB9;
-}
-
-ul.nav li a.active {
-	background-color: green;
-}
-
-ul.nav li.right {
-	float: left;
-}
-
-
 /*-------------Product Name-------------------*/
 
 .column a{
@@ -144,16 +80,6 @@ ul.nav li.right {
 }
 	
 /*-------------Responsive CSS-----------------*/
-
-/*For navigation bar*/
-
-@media screen and (max-width: 600px){
-	.navbar a, ul.nav li.right, ul.nav li {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-}
 
 /* For the columns*/
 @media screen and (max-width: 800px){

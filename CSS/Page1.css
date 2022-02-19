@@ -78,10 +78,10 @@ header label {
   display: none;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   header {
     padding: 20px;
-  }
+  } */
 
   header label {
     display: initial;
@@ -124,4 +124,14 @@ footer {
   color: black;
   font-size: small;
 }
+@media screen and (min-width: 500px) {
+   body {
+      width:420px;
+   }
+}
 
+@media screen and (min-width: 800px) {
+   body {
+      width:720px;
+   }
+}

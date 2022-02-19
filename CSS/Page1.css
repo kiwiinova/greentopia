@@ -86,9 +86,12 @@ header label {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   header {
-    padding: 20px;
+/*     padding: 20px; */
+    float: none;
+    display: block;
+    text-align: left;
   }
 
   header label {

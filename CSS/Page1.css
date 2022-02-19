@@ -118,7 +118,7 @@ header label {
 footer {
   height: 5vh;
   bottom: 0;
-  position: absolute;
+  position: relative;
   background-color: rgb(216, 199, 199);
   width: 100%;
   color: black;

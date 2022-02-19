@@ -79,11 +79,6 @@ header label {
   display: none;
 }
 
-@media (max-width: 991px) {
-  header {
-    padding: 20px;
-  }
-
   header label {
     display: initial;
   }

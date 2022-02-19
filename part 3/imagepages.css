@@ -3,6 +3,19 @@
       padding: 0% 20%;
   }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: green;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
   .product {
       display: block;
       width: 300px;

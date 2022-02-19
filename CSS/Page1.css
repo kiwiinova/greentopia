@@ -9,10 +9,17 @@
   text-decoration: none;
 }
 
-body{
-  min-height: 100vh;
-  background-size: contain;
+body, html{
+  height: 100vh;
+  margin:0;
+}
+
+.bg {
+  background-image: url("Images/Banner.png");
+  height: 100%; 
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {

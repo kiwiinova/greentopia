@@ -10,9 +10,8 @@
 }
 
 body{
-  width:1920px;
-  height:1080px;
-  background-size: contain;
+  min-height: 100vh;
+  background-size: cover;
   background-position: center;
 }
 
@@ -79,6 +78,11 @@ header label {
   display: none;
 }
 
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+
   header label {
     display: initial;
   }
@@ -111,17 +115,13 @@ header label {
   }
 }
 
-footer{
-	float: center;
-}
-@media screen and (min-width: 500px) {
-   body {
-      width:420px;
-   }
+footer {
+  height: 5vh;
+  bottom: 0;
+  position: absolute;
+  background-color: rgb(216, 199, 199);
+  width: 100%;
+  color: black;
+  font-size: small;
 }
 
-@media screen and (min-width: 800px) {
-   body {
-      width:720px;
-   }
-}

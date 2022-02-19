@@ -26,8 +26,8 @@ body, html{
 header {
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+/*   left: 0;
+  right: 0; */
   background: green;
   padding: 20px 7%;
   display: flex;

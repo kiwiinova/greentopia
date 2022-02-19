@@ -1,7 +1,10 @@
   body {
       background: #fff;
+      display:flex; 
+      flex-direction:column; 
+      justify-content:center;
+      min-height:100vh;
       padding: 0% 20%;
-      margin-top: 50px;
   }
 
 header {

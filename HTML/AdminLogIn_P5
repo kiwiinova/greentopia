@@ -62,7 +62,7 @@
                 </div>
 
                 <button type="submit" class="SubmitButton" value="Submit" >Submit
-                    <a href="part 9.html" class="form__link2"></a>
+                    <a href="Part6.html" class="form__link2"></a>
                 </button>
                 <button type="button" class="Forgot Password">Forgot Password</button>
                 <br>

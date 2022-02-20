@@ -7,7 +7,7 @@
       padding: 10% 20%;
   }
 
-header {
+/* header {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-}
+} */
 section {
     padding: 20px;
 }
@@ -178,10 +178,11 @@ button {
       }
   }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   header {
     padding: 20px;
     float: none;
     display: block;
     text-align: left;
   }
+ */

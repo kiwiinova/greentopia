@@ -7,15 +7,16 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
     <style>
-		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-        
-		table {
+        @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
+        table {
             width: 1180px;
         }
 
+        table,
         td,
         th {
-            border: 1px;
+            border: 5px;
             padding: 8px;
             height: 70px;
         }
@@ -27,10 +28,8 @@
             border-radius: 7px;
             padding: 10px;
         }
-		
-		*{
-			font-family: "Shadows Into Light Two";
-		}
+
+        font-family: "Shadows Into Light Two";
 
     </style>
 
@@ -40,7 +39,7 @@
 <body>
     <h1 style="text-align: center">User's Product List</h1>
     <div class="flex-container" style="overflow-x: auto">
-        <form oninput="a.value=(parseFloat(a1.value)*parseInt(a2.value)).toFixed(2); b.value=(parseFloat(b1.value)*parseInt(b2.value)).toFixed(2); c.value=(parseFloat(c1.value)*parseInt(c2.value)).toFixed(2); d.value=(parseFloat(d1.value)*parseInt(d2.value)).toFixed(2); e.value=(parseFloat(e1.value)*parseInt(e2.value)).toFixed(2); f.value=(parseFloat(f1.value)*parseInt(f2.value)).toFixed(2); g.value=(parseFloat(g1.value)*parseInt(g2.value)).toFixed(2); h.value=(parseFloat(h1.value)*parseInt(h2.value)).toFixed(2); i.value=(parseFloat(i1.value)*parseInt(i2.value)).toFixed(2); j.value=(parseFloat(j1.value)*parseInt(j2.value)).toFixed(2); k.value=(parseFloat(k1.value)*parseInt(k2.value)).toFixed(2); l.value=(parseFloat(l1.value)*parseInt(l2.value)).toFixed(2); m.value=(parseFloat(m1.value)*parseInt(m2.value)).toFixed(2); n.value=(parseFloat(n1.value)*parseInt(n2.value)).toFixed(2); o.value=(parseFloat(o1.value)*parseInt(o2.value)).toFixed(2); p.value=(parseFloat(p1.value)*parseInt(p2.value)).toFixed(2); q.value=(parseFloat(q1.value)*parseInt(q2.value)).toFixed(2); r.value=(parseFloat(r1.value)*parseInt(r2.value)).toFixed(2); s.value=(parseFloat(s1.value)*parseInt(s2.value)).toFixed(2); t.value=(parseFloat(t1.value)*parseInt(t2.value)).toFixed(2); u.value=(parseFloat(u1.value)*parseInt(u2.value)).toFixed(2); v.value=(parseFloat(v1.value)*parseInt(v2.value)).toFixed(2); w.value=(parseFloat(w1.value)*parseInt(w2.value)).toFixed(2); x.value=(parseFloat(x1.value)*parseInt(x2.value)).toFixed(2)">
+        <form oninput="a.value=(parseFloat(a1.value)*parseInt(a2.value)).toFixed(2); b.value=(parseFloat(b1.value)*parseInt(b2.value)).toFixed(2); c.value=(parseFloat(c1.value)*parseInt(c2.value)).toFixed(2); d.value=(parseFloat(d1.value)*parseInt(d2.value)).toFixed(2); e.value=(parseFloat(e1.value)*parseInt(e2.value)).toFixed(2); f.value=(parseFloat(f1.value)*parseInt(f2.value)).toFixed(2); g.value=(parseFloat(g1.value)*parseInt(g2.value)).toFixed(2); h.value=(parseFloat(h1.value)*parseInt(h2.value)).toFixed(2); i.value=(parseFloat(i1.value)*parseInt(i2.value)).toFixed(2); j.value=(parseFloat(j1.value)*parseInt(j2.value)).toFixed(2); k.value=(parseFloat(k1.value)*parseInt(k2.value)).toFixed(2); l.value=(parseFloat(l1.value)*parseInt(l2.value)).toFixed(2); m.value=(parseFloat(m1.value)*parseInt(m2.value)).toFixed(2); n.value=(parseFloat(n1.value)*parseInt(n2.value)).toFixed(2); o.value=(parseFloat(o1.value)*parseInt(o2.value)).toFixed(2); p.value=(parseFloat(p1.value)*parseInt(p2.value)).toFixed(2); q.value=(parseFloat(q1.value)*parseInt(q2.value)).toFixed(2); r.value=(parseFloat(r1.value)*parseInt(r2.value)).toFixed(2); s.value=(parseFloat(s1.value)*parseInt(s2.value)).toFixed(2); t.value=(parseFloat(t1.value)*parseInt(t2.value)).toFixed(2); u.value=(parseFloat(u1.value)*parseInt(u2.value)).toFixed(2); v.value=(parseFloat(v1.value)*parseInt(v2.value)).toFixed(2); w.value=(parseFloat(w1.value)*parseInt(w2.value)).toFixed(2); x.value=(parseFloat(x1.value)*parseInt(x2.value)).toFixed(2);">
 
             <table style="text-align: center">
                 <tr>
@@ -294,11 +293,28 @@
                 </tr>
                 <!--        Breads & Pasta        -->
             </table>
-            <p style="text-align: center">TOTAL PRICE: <span></span></p>
+            <div style="text-align: center">
+                <input type="button" onclick="total()" value="calculate">
+                <p>TOTAL PRICE: <span id="totalP"></span>$</p>
+            </div>
+
         </form>
 
     </div>
+    <script>
+        function total() {
 
+
+            var appleT = document.getElementById("totalapple").value;
+            var bananaT = document.getElementById("totalbanana").value;
+            var cucumberT = document.getElementById("totalcucumber").value;
+            var totalPrice = +appleT + +bananaT + +cucumberT;
+
+            document.getElementById("totalP").innerHTML = totalPrice.toFixed(2);
+
+        }
+
+    </script>
 
 </body>
 

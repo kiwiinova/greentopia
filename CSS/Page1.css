@@ -125,12 +125,7 @@ header label {
 
   #menu:checked ~ .navbar {
     display: initial;
-  }
-  
-  a.btnAdmin{
-  display:block;
-  margin:0.4em auto;
- }
+  } 
 }
 
 footer {

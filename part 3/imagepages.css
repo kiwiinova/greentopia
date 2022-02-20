@@ -178,7 +178,7 @@ button {
       }
   }
  @media screen and (min-width: 320px) and (max-width: 480px) {
-      .product-img {
+     .product .product-img img {
 /*       margin: 0 auto; */
       padding: 10% 20%;
       display: block;
@@ -190,7 +190,7 @@ button {
    }
    .post {
       text-align: justify;
-      max-width:400px;
+      max-width:430px;
    }
 }
 

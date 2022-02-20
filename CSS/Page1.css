@@ -139,11 +139,9 @@ footer {
 }
 
 @media only screen and (max-width:970px) {
-  :root {
   height: 100%; 
   max-width:50%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  }
 }

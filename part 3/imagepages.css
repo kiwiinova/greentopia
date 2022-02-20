@@ -176,12 +176,12 @@ button {
       top: 30%;
       transform: translate(-50%, -50%);
 
-/*    }
+    }
    .post {
+      display: inline-block;
       text-align: justify;
-      max-width:490px;  */
-      
-/*    } */
+      max-width:490px;  
+    }
 }
 
 /* @media (max-width: 500px) {

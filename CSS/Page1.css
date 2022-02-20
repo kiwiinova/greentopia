@@ -18,7 +18,6 @@ body, html{
 }
 
 .bg {
-  background-image: url("../Images/Banner.png");
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;

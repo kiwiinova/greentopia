@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <style>
-		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
         .center {
             height: 200px;
             width: 400px;
@@ -14,28 +15,28 @@
             display: flex;
             display: grid;
             font-size: 1.55;
-			font-family: "Shadows Into Light Two";
+            font-family: "Shadows Into Light Two";
         }
 
         .button {
             cursor: pointer;
             width: 60px;
-            
+
         }
 
         .space {
             padding-bottom: 5px;
 
         }
-		
-/*
+
+        /*
 		*{
 			font-family: "Shadows Into Light Two";
 		}
 */
 
     </style>
-    </head>
+</head>
 
 <body style="background-color: ">
     <header>
@@ -61,9 +62,8 @@
                     <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
 
-                <button type="submit" class="SubmitButton" value="Submit" >Submit
-                    <a href="Part6.html" class="form__link2"></a>
-                </button>
+                <a href="P7.html"> <button type="submit" class="SubmitButton" value="Submit">Submit
+                    </button></a>
                 <button type="button" class="Forgot Password">Forgot Password</button>
                 <br>
 

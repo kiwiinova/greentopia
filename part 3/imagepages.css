@@ -180,13 +180,13 @@ button {
  @media screen and (max-width: 768px) {
       .product-img {
 /*       margin: 0 auto; */
-      height: auto;
-      max-width: 100%;
-      border: none;
       display: block;
-      padding: 5px 0;
+      background-repeat: no-repeat;
+      background-size: contain ;
+      text-align: center;
       margin-left: auto;
       margin-right: auto;
+      height: auto;
    }
 }
 

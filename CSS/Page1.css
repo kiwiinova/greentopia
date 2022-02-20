@@ -138,7 +138,7 @@ footer {
   font-size: small;
 }
 
-@media only screen and (max-width:970px) {
+/* @media only screen and (max-width:970px) {
   .bg {
   height: auto; 
   max-width:auto;
@@ -146,4 +146,4 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   }
-}
+} */

@@ -166,9 +166,8 @@ button {
       }
   }
  @media screen and (min-width: 320px) and (max-width: 480px) { 
-   .product .product-img {
-     left: 50%;
-      top: 30%;
+     body{
+    padding: 10% 20%;
    }
 /*     .product .product-img img {
       max-width: 300px;

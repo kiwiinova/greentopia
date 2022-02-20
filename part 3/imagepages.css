@@ -177,7 +177,7 @@ button {
       display:flex; 
       justify-content:center; */
        
-    .product {
+    .product-img {
       max-width: 300px;
       margin: 0 auto; 
       height: 300px;

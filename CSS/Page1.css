@@ -139,7 +139,7 @@ footer {
 }
 
  .btnAdmin {
-  position: absolute;
+  position: fixed;
   font-size: 12px;
   font-weight: bold;
   background: green;

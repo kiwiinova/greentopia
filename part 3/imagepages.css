@@ -168,8 +168,6 @@ button {
   }
  @media screen and (min-width: 600px) {
 /*    (min-width: 320px) and (max-width: 480px) { */
-     body { 
-       flex-wrap : nowrap;
 /*       padding: 10% 20%;
       display: block;
       object-fit: cover;
@@ -179,15 +177,19 @@ button {
       height: auto; 
       display:flex; 
       justify-content:center; */
-   }
+       
     .product .product-img img {
-      display: block;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+/*       display: block;
       margin-left: auto;
-      margin-right: auto 
+      margin-right: auto  */
    }
    .post {
       text-align: justify;
-      max-width:470px;
+      max-width:480px;
    }
 }
 

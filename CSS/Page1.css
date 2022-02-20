@@ -138,6 +138,12 @@ footer {
   font-size: small;
 }
 
-@media (max-width: 768px) { 
-    background-size: contain;
- }
+@media only screen and (max-width:970px) {
+  :root {
+     background-image: url("../Images/Banner.png");
+  height: 100%; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+}

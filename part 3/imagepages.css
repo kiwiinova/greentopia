@@ -178,8 +178,12 @@ button {
       justify-content:center; */
        
     .product .product-img img {
-      max-width: 500px;
-      margin: auto;
+      max-width: 300px;
+/*       margin: auto; */
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 /*       position: fixed;
       left: 50%;
       top: 50%;

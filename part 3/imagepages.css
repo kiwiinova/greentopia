@@ -44,7 +44,7 @@ h1 {
     text-align: justify;
     line-height: 25px;
     max-width: 400px;
-/*     font-family: TT Commons; */
+
 }
 
 .post:not(:last-child) {
@@ -180,17 +180,17 @@ button {
  @media screen and (min-width: 320px) and (max-width: 480px) {
       .product-img {
 /*       margin: 0 auto; */
-      padding: 10% 20% 20%;
+      padding: 10% 20%;
       display: block;
-      background-repeat: no-repeat;
-      background-size: contain ;
+      object-fit: cover;
       text-align: center;
-/*       margin-left: auto;
+      margin-left: auto;
       margin-right: auto;
-      height: auto; */
+      height: auto;
    }
    .post {
-     font-size: 12px;
+      text-align: justify;
+      max-width:400px;
    }
 }
 

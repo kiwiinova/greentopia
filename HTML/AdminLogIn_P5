@@ -60,16 +60,13 @@
                 <div>
                     <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
-                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()"  href="part 9">
-                
+
+                <button type="submit" class="SubmitButton" value="Submit" >Submit
+                    <a href="part 9.html" class="form__link2"></a>
+                </button>
                 <button type="button" class="Forgot Password">Forgot Password</button>
                 <br>
-<!--
-                
-                <p class="form__text">
-            <a href="Part6.html" class="form__link">Don't have an account? Sign Up Now </a>
-        </p>
--->
+
             </form>
 
             <script>

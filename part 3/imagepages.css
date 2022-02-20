@@ -177,9 +177,9 @@ button {
       display:flex; 
       justify-content:center; */
        
-    .product .product-img img {
+    .product {
       max-width: 300px;
-/*       margin: auto; */
+      margin: 0 auto; 
       height: 300px;
       display: flex;
       align-items: center;
@@ -193,12 +193,9 @@ button {
       margin-right: auto  */
    }
    .post {
-/*       text-align: justify;
-      max-width:480px; */
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: justify;
+      max-width:490px; 
+      
    }
 }
 

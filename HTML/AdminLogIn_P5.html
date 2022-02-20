@@ -68,43 +68,7 @@
 
             </form>
 
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("password");
-                    var y = document.getElementById("cpassword");
-                    if (x.type == "password") {
-                        x.type = "text";
-                    } else {
-                        x.type = "password";
-                    }
-                    if (y.type == "password") {
-                        y.type = "text";
-                    } else {
-                        y.type = "password";
-                    }
-
-                }
-
-                function myFunctionC() {
-                    var y = document.getElementById("cpassword");
-                    if (y.type == "cpassword") {
-                        y.type = "text";
-                    } else {
-                        y.type = "cpassword";
-                    }
-                }
-
-                function confirmPassword() {
-                    var x = document.getElementById("password").value;
-                    var y = document.getElementById("cpassword").value;
-                    if (x != y) {
-                        alert("Passwords do not match! Please Try Again.");
-                        return false;
-                    }
-                    return true;
-                }
-
-            </script>
+            
         </fieldset><br>
     </div>
     <div>

@@ -166,36 +166,22 @@ button {
       }
   }
  @media screen and (min-width: 320px) and (max-width: 480px) { 
-/*       padding: 10% 20%;
-      display: block;
-      object-fit: cover;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      height: auto; 
-      display:flex; 
-      justify-content:center; */
-       
     .product .product-img img {
       max-width: 300px;
-/*       margin: 0 auto; 
       height: 300px;
       display: block;
-      align-items: center; */
-/*       justify-content: center; */
+      align-items: center; 
       position: absolute;
       left: 50%;
       top: 30%;
       transform: translate(-50%, -50%);
-/*       display: block;
-      margin-left: auto;
-      margin-right: auto  */
-   }
+
+/*    }
    .post {
       text-align: justify;
-      max-width:490px; 
+      max-width:490px;  */
       
-   }
+/*    } */
 }
 
 /* @media (max-width: 500px) {

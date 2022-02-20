@@ -138,6 +138,20 @@ footer {
   font-size: small;
 }
 
+.btnAdmin {
+  font-size: 12px;
+  font-weight: bold;
+  background: green;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* @media only screen and (max-width:970px) {
   .bg {
   height: auto; 

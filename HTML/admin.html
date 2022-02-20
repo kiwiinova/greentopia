@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Log In Admin | GreenTopia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+        .center {
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            display: flex;
+            display: grid;
+            font-size: 1.55;
+			font-family: "Shadows Into Light Two";
+        }
+
+        .button {
+            cursor: pointer;
+            width: 60px;
+            
+        }
+
+        .space {
+            padding-bottom: 5px;
+
+        }
+		
+/*
+		*{
+			font-family: "Shadows Into Light Two";
+		}
+*/
+
+    </style>
+    </head>
+
+<body style="background-color: ">
+    <header>
+        <div style="background-color: darkseagreen; font-family: cursive;"><br><br><br>
+            <p style="font-size: 40px; color: white; text-align: center;font-family: Shadows Into Light Two"> Administration Log In </p><br><br>
+        </div>
+    </header>
+
+    <div class="center">
+        <br>
+        <fieldset>
+            <legend>Log In:</legend>
+            <form target="_self" autocomplete="on">
+                <div class="space">
+                    <label for="email"><span style="color: red">*</span>Email Address:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required><br>
+                </div>
+                <div class="space">
+                    <label for="password"><span style="color: red">*</span>Password (8 characters minimum):</label><br>
+                    <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25"><br>
+                </div>
+                <div>
+                    <input type="checkbox" onclick="myFunction()">Show Password<br>
+                </div>
+
+                <button type="submit" class="SubmitButton" value="Submit" >Submit
+                    <a href="Part6.html" class="form__link2"></a>
+                </button>
+                <button type="button" class="Forgot Password">Forgot Password</button>
+                <br>
+
+            </form>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("password");
+                    var y = document.getElementById("cpassword");
+                    if (x.type == "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                    if (y.type == "password") {
+                        y.type = "text";
+                    } else {
+                        y.type = "password";
+                    }
+
+                }
+
+                function myFunctionC() {
+                    var y = document.getElementById("cpassword");
+                    if (y.type == "cpassword") {
+                        y.type = "text";
+                    } else {
+                        y.type = "cpassword";
+                    }
+                }
+
+                function confirmPassword() {
+                    var x = document.getElementById("password").value;
+                    var y = document.getElementById("cpassword").value;
+                    if (x != y) {
+                        alert("Passwords do not match! Please Try Again.");
+                        return false;
+                    }
+                    return true;
+                }
+
+            </script>
+        </fieldset><br>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>

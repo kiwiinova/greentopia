@@ -1,93 +1,116 @@
 <!DOCTYPE html>
+<html lang="en-us">
 
-<html lang = "en">
 <head>
-    <meta charset="utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>P5</title>
-    
-    
-</head>
-    
+    <title>Log In | GreenTopia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+        .center {
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            display: flex;
+            display: grid;
+            font-size: 1.55;
+			font-family: "Shadows Into Light Two";
+        }
 
-<style> 
-    @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-/*
-        .body
-        {
-        width: 400px;
-        border: 20px solid #8FBC8F;
-        position: fixed;
-        padding: 20px solid #8FBC8F;
-        font-family: 'Shadows Into Light Two';
-        } 
-*/
-        
-        .myTable
-    {
-        width: 300px;
-        height: 120px;
-        padding: 10px solid #8FBC8F;
-        position: fixed;
-        border: 15px solid beige;
-        font-family: "Shadows Into Light Two";
-    }
-    
-     @media screen (max-width: 880px){
-        .Fruits{width:50%}
-        .Vegetables{width:50%}
-        .Meat{width:50%}
-        .Fish{width:50%}
-        .Bread{width:auto}
-        .Pasra{width:auto}
-    }
-    
-    @media screen and (max-width: 600px)
-    {
-        .Fruits{width:100%}
-        .Vegetables{width:100%}
-        .Meat{width:100%}
-        .Fish{width:auto}
-        .Bread{width:auto}
-        .Pasra{width:auto}
-    }
-    
-    </style> 
-    
-<div style="overflow-x:auto;font-family: Shadows Into Light Two">  
-<table class="myTable" style="border: 3px solid black" >
-    
-    <tr style="background-color: #8FBC8F">
-        <th> 
-    
-    
-    <form autocomplete="on">
-       <body>
-           
-        <label for="Email Address"> Email Address:  </label>
-           <input style="margin-bottom: 5px; margin-top: 5px;font-family:"Shadows Into Light Two type="text" id="Email Address" name="Email Address" placeholder="Email Address" autocomplete="on">
-         <br>  
-        <label for="Password"> Password: </label>
-        <input style="margin-bottom: 5px " type="password" id="Password" name="Password" minlength="8" required placeholder="Password">
-        <br>
-        <button type="button" class="Submit" style="font-family: Shadows Into Light Two">Submit</button>
-        <button type="button" class="Forgot Password" style="font-family: Shadows Into Light Two">Forgot Password</button><br> 
-        
-        <p class="form__text">
-            <a href="P6.html" class="form__link">Don't have an account? Sign Up Now </a>
-        </p>
-           
-        </body> 
-    </form>
-    
-
+        .button {
+            cursor: pointer;
+            width: 60px;
             
-        </th>
-    </tr>
-    </table>
-</div>    
+        }
+
+        .space {
+            padding-bottom: 5px;
+
+        }
+		
+/*
+		*{
+			font-family: "Shadows Into Light Two";
+		}
+*/
+
+    </style>
+    </head>
+
+<body style="background-color: ">
+    <header>
+        <div style="background-color: darkseagreen; font-family: cursive;"><br><br><br>
+            <p style="font-size: 40px; color: white; text-align: center;font-family: Shadows Into Light Two"> Sign In to your Account </p><br><br>
+        </div>
+    </header>
+
+    <div class="center">
+        <br>
+        <fieldset>
+            <legend>Log In:</legend>
+            <form target="_self" autocomplete="on">
+                <div class="space">
+                    <label for="email"><span style="color: red">*</span>Email Address:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required><br>
+                </div>
+                <div class="space">
+                    <label for="password"><span style="color: red">*</span>Password (8 characters minimum):</label><br>
+                    <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25"><br>
+                </div>
+                <div>
+                    <input type="checkbox" onclick="myFunction()">Show Password<br>
+                </div>
+                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()" >
+                <button type="button" class="Forgot Password">Forgot Password</button>
+                <br>
+                
+                <p class="form__text">
+            <a href="Part6.html" class="form__link">Don't have an account? Sign Up Now </a>
+        </p>
+            </form>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("password");
+                    var y = document.getElementById("cpassword");
+                    if (x.type == "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                    if (y.type == "password") {
+                        y.type = "text";
+                    } else {
+                        y.type = "password";
+                    }
+
+                }
+
+                function myFunctionC() {
+                    var y = document.getElementById("cpassword");
+                    if (y.type == "cpassword") {
+                        y.type = "text";
+                    } else {
+                        y.type = "cpassword";
+                    }
+                }
+
+                function confirmPassword() {
+                    var x = document.getElementById("password").value;
+                    var y = document.getElementById("cpassword").value;
+                    if (x != y) {
+                        alert("Passwords do not match! Please Try Again.");
+                        return false;
+                    }
+                    return true;
+                }
+
+            </script>
+        </fieldset><br>
+    </div>
+    <div>
+
+    </div>
+</body>
+
 </html>
-
-
-     

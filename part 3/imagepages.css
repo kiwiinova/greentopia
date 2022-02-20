@@ -180,7 +180,7 @@ button {
  @media screen and (min-width: 320px) and (max-width: 480px) {
       .product-img {
 /*       margin: 0 auto; */
-      padding: 10% 20%;
+      padding: 10% 20% 20%;
       display: block;
       background-repeat: no-repeat;
       background-size: contain ;
@@ -188,6 +188,9 @@ button {
 /*       margin-left: auto;
       margin-right: auto;
       height: auto; */
+   }
+   .post {
+     font-size: 12px;
    }
 }
 

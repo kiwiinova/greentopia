@@ -173,7 +173,6 @@ button {
   }
 
   @media screen and (max-width: 300px) {
-
       .product .meta {
           width: 100%;
       }
@@ -181,7 +180,7 @@ button {
 
 @media (max-width: 500px) {
   header {
-/*     padding: 20px; */
+    padding: 20px;
     float: none;
     display: block;
     text-align: left;

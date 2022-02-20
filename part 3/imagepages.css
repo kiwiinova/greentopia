@@ -193,8 +193,12 @@ button {
       margin-right: auto  */
    }
    .post {
-      text-align: justify;
-      max-width:480px;
+/*       text-align: justify;
+      max-width:480px; */
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
 }
 

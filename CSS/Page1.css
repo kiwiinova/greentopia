@@ -126,6 +126,7 @@ header label {
   #menu:checked ~ .navbar {
     display: initial;
   } 
+  
 }
 
 footer {

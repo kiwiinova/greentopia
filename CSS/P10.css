@@ -4,7 +4,7 @@
 body{
 	margin: 0;
 	color: black;
-	background-color: white;
+	background-color: rgb(217,245,233);
 	width: 100%;
 	heigth: 100%;
 	font-family: "Shadows Into Light Two";
@@ -26,13 +26,9 @@ footer{
 
 h1{
 	text-align: center;
-	background-color: #FFDAB9;
+	background-color: #8FBC8F;
 }
-		
-h3{
-	text-align: center;
-	background-color: beige;
-}	
+
 
 h5{
 	text-align: right;
@@ -85,7 +81,7 @@ label{
 	position: relative;
 	left: 33px;
 	top: 5px;
-	background-color: #4CAF50;
+	background-color: #8FBC8F;
 	border: none;
 	color: black;
 	padding: 10px 50px;

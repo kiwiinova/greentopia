@@ -4,7 +4,7 @@
 body{
 	margin: 0;
 	color: black;
-	background-color: #8FBC8F;
+	background-color: white;
 	width: 100%;
 	height: 100%;
 }
@@ -27,7 +27,7 @@ body{
 h1{
 	text-align: center;
 	font-size: 40px;
-	background-color: #FFDAB9;
+	background-color: rgb(217,245,233);
 }
 
 h3{
@@ -37,7 +37,7 @@ h3{
 }
 		
 .column img{
-	border: 6px outset #FFDAB9;
+	border: 6px outset #8FBC8F;
 	width: 200px;
 	height: auto;
 	max-width: 100%;
@@ -66,7 +66,7 @@ footer{
 
 .column a{
 	display: inline;
-	color: antiquewhite;
+	color: #8FBC8F;
 	text-align: center;
 	text-decoration: none;
 }

@@ -134,12 +134,7 @@ header label {
   #menu:checked ~ .navbar {
     display: initial;
   } 
-  
-  .responsive {
-    width: 100%;
-  height: auto;
-  
-}
+ 
 
 footer {
   height: 5vh;

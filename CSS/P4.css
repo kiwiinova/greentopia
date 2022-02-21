@@ -102,7 +102,7 @@ body{
 
 .place_order {
     font-family: "Shadows Into Light Two";
-    background-color: orange;
+ background-color: #8FBC8F;
     border-radius: 7px;
     text-align: center;
     margin: auto;
@@ -115,7 +115,7 @@ body{
 
 .continue_shopping {
     font-family: "Shadows Into Light Two";
-    background-color: orange;
+   background-color: #8FBC8F;
     border-radius: 7px;
     padding: 3% 20%;
     margin: auto;

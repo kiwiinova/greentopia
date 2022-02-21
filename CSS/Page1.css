@@ -151,7 +151,7 @@ footer {
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  position: relative;
+  position: fixed;
   left: 1250px;
  
 }

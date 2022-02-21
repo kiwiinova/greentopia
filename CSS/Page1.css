@@ -24,11 +24,6 @@ body, html{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  
-  height:auto;
-  max-width:100%;
-  border:none;
-  display:block;
 }
 
 header {

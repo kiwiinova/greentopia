@@ -2,10 +2,10 @@
     display: inline-flex;
     padding: 5px;
     background-color: #f8f8f8;
-/*     padding-Left: 20px; */
+    padding-Left: 20px;
     width: 300px;
     border-radius: 3%;
-/*     margin-left: -30px; */
+    margin-left: -30px;
 }
 
 .con1 {
@@ -70,6 +70,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(217, 245, 233);
 }
 
 * {

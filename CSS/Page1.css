@@ -153,8 +153,10 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   position: fixed;
-  left: 1250px;
- 
+/*   left: 1250px; */
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
 }
 
 }

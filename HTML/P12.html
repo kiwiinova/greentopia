@@ -298,7 +298,7 @@
                 <p>TOTAL PRICE: <span id="totalP"></span>$</p>
                 <br>
                 <div style="text-align: center">
-                    <a href="P11.html"> &larr; Go Back</a>
+                    <a href="Page11.html"> &larr; Go Back</a>
                 </div>
 
             </div>
@@ -314,7 +314,29 @@
             var appleT = document.getElementById("totalapple").value;
             var bananaT = document.getElementById("totalbanana").value;
             var cucumberT = document.getElementById("totalcucumber").value;
-            var totalPrice = +appleT + +bananaT + +cucumberT;
+            var lettuceT = document.getElementById("totallettuce").value;
+            var orangeT = document.getElementById("totalorange").value;
+            var tomatoT = document.getElementById("totaltomato").value;
+            var beefT = document.getElementById("totalbeef").value;
+            var chickenT = document.getElementById("totalchicken").value;
+            var fishbassT = document.getElementById("totalfishbass").value;
+            var salmonT = document.getElementById("totalsalmon").value;
+            var shrimpT = document.getElementById("totalshrimp").value;
+            var turkeyT = document.getElementById("totalturkey").value;
+            var creamT = document.getElementById("totalcream").value;
+            var briceT = document.getElementById("totalbrice").value;
+            var butterT = document.getElementById("totalbutter").value;
+            var milkT = document.getElementById("totalmilk").value;
+            var weggT = document.getElementById("totalwegg").value;
+            var yogourtT = document.getElementById("totalyogourt").value;
+            var baguetteT = document.getElementById("totalbaguette").value;
+            var bbreadT = document.getElementById("totalbbread").value;
+            var lasagnaT = document.getElementById("totallasagna").value;
+            var macaroniT = document.getElementById("totalmacaroni").value;
+            var spaguettiT = document.getElementById("totalspaguetti").value;
+            var wbreadT = document.getElementById("totalwbread").value;
+
+            var totalPrice = +appleT + +bananaT + +cucumberT + +lettuceT + +orangeT + +tomatoT + +beefT + +chickenT + +fishbassT + +salmonT + +shrimpT + +turkeyT + +creamT + +bbreadT + +butterT + +milkT + +weggT + +yogourtT + +baguetteT + +bbreadT + +lasagnaT + +macaroniT + +spaguettiT + +wbreadT;
 
             document.getElementById("totalP").innerHTML = totalPrice.toFixed(2);
 

@@ -20,7 +20,7 @@ body, html{
 
 .bg {
   background-image: url("../Images/Banner.png");
-  height: 95%; 
+  height: auto%; 
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

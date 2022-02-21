@@ -178,9 +178,15 @@ hr {
 
 /* Change styles for cancel button and delete button on extra small screens */
 @media screen and (max-width: 300px) {
-
     .cancelbtn,
     .deletebtn {
         width: 100%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+   body {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
     }
 }

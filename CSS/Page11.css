@@ -16,14 +16,6 @@ body {
   margin: 40px auto 0;
 }
 
-.heading {
-  font-size: 50px;
-  text-align: center;
-  color: green;
-  margin-bottom: 40px;
-  font-weight: 1000;
-}
-
 .table {
   width: 100%;
 }

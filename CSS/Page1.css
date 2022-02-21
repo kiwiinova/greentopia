@@ -135,7 +135,7 @@ header label {
     display: initial;
   } 
   
-  body .responsive {
+  .responsive {
     width: 100%;
   height: auto;
   

@@ -20,18 +20,12 @@ body, html{
 
 .bg {
   background-image: url("../Images/Banner.png");
-  /*height: 95%; 
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  
-  height:auto;
-        max-width:100%;
-        border:none;
-        display:block;
+  height: 95%; 
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+ 
 }
 
 header {

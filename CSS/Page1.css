@@ -18,15 +18,14 @@ body, html{
 }
 
 .bg {
-  background: url("../Images/Banner.png");
+  background: url("../Images/Banner.png")no-repeat left top;
   position: absolute;
   height: 95%; 
   top:0;
   left:0;
-  background-position: center center;
+/*   background-position: center center; */
   background-repeat: no-repeat;
 /*   background-size: cover; */
-  background:url (dynamic_width_bg.jpg) no-repeat left top;
   background-size: 100%;
 }
 

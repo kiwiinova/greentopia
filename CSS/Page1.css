@@ -27,15 +27,15 @@ body, html{
   display: inline-block; */
   height: auto !important;
 /*   width: 130px; */
-/*   cursor: pointer;
+  cursor: pointer;
   order: 4;
-  margin-left: auto; */
-  order: 4;
+  margin-left: auto; 
+/*   order: 4;
   width: 46px;
   height: 20px;
   border-radius: 5%;
   overflow: hidden;
-  margin-top: -6px;
+  margin-top: -6px; */
 }
 
 .img-fluid

@@ -34,6 +34,8 @@ body, html{
 }
 
 .bg {
+  width: 100%;
+  height: auto;
   background-image: url("../Images/Banner.png");
   height: 95%; 
   background-position: center center;

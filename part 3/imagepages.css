@@ -71,9 +71,8 @@ button {
       width: 300px;
       height: auto;
       background: #fff;
-      padding: 0;
+      padding: none;
       border: 2px solid #fff;
-/*       font-family: TT Commons; */
       transition: ease-in-out 0.6s all 0s;
   }
 

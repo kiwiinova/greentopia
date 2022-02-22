@@ -32,8 +32,8 @@ body, html{
   margin-left: auto; */
   order: 4;
   width: 46px;
-  height: 46px;
-  border-radius: 50%;
+  height: 20px;
+  border-radius: 5%;
   overflow: hidden;
   margin-top: -6px;
 }

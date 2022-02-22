@@ -60,6 +60,7 @@ header .navbar ul li a:hover {
   background: black;
   color: white;
   list-style: none;
+  text-decoration: none;
 }
 
 header .navbar ul li ul {
@@ -79,6 +80,7 @@ header .navbar ul li ul li {
 header .navbar ul li:hover > ul {
   display: initial;
   list-style: none;
+  text-decoration: none;
 }
 
 #menu {

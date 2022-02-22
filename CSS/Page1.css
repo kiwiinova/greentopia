@@ -19,12 +19,15 @@ body, html{
 }
 
 .shopping_cart {
-  float: right;
+/*   float: right;
   position: relative;
   bottom: -15px;
   height: 20px !important;
   padding-right: 5px;
-  display: inline-block;
+  display: inline-block; */
+  cursor: pointer;
+  order: 4;
+  margin-left: auto;
 }
 
 .img-fluid

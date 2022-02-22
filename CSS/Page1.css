@@ -18,6 +18,15 @@ body, html{
 /*   background-attachment: fixed; */
 }
 
+.shopping_chart {
+  float:right;
+  position: relative;
+  bottom: -15px;
+  height: auto;
+  padding-right: 5px;
+  display: inline-block;
+}
+
 .img-fluid
 {
   max-width:100%;

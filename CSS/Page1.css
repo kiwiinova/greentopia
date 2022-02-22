@@ -25,7 +25,8 @@ body, html{
   height: 20px !important;
   padding-right: 5px;
   display: inline-block; */
-  height: 20px !important;
+  height: auto !important;
+  width: 130px;
   cursor: pointer;
   order: 4;
   margin-left: auto;
@@ -43,6 +44,9 @@ body, html{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+  position:absolute;
+max-width: 100%;
 
 }
 

@@ -17,20 +17,18 @@ body, html{
 /*   background-attachment: fixed; */
 }
 
-.beige {
-  background: url("../Images/beige.png")no-repeat left top;
-  position: absolute;
+.bg {
+  background: url("../Images/Banner.png")no-repeat left top;
   height: 95%; 
-  display: flex;
   top:0;
   left:0;
-/*   background-position: center center; */
-/*   background-repeat: no-repeat; */
+/*   background-position: center center; 
+  background-repeat: no-repeat; */
 /*   background-size: cover; */
   background-size: 100%;
 }
 
-.bg{
+/* .bg{
   position: relative;
   display: block;
   margin-left:auto;
@@ -38,7 +36,7 @@ body, html{
 /*   top: 50%;
   left: 20%; */
   background: url("../Images/Transparentlogo.jpg");
-}
+} */
 
 header {
   position: fixed;

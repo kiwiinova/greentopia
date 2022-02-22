@@ -26,7 +26,8 @@ body, html{
   background-repeat: no-repeat; 
 /*   background-size: cover; */
   background-size: 100%;
-  display:flex;
+  padding-bottom:0px;
+  padding-top:0px;
 }
 
 header {

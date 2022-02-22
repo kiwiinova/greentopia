@@ -19,6 +19,7 @@ body, html{
 
 .bg {
   background: url("../Images/Banner.png");
+  position: absolute;
   height: 95%; 
   top:0;
   left:0;

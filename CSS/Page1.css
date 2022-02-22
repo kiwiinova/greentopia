@@ -27,6 +27,13 @@ body, html{
   background-size: 100%;
 }
 
+.beige{
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url("../Images/beige.png");
+}
+
 header {
   position: fixed;
   top: 0;

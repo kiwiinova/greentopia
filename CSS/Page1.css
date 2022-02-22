@@ -44,9 +44,9 @@ body, html{
   background-repeat: no-repeat;
   background-size: cover;
   
+  position:absolute;
+max-width: 100%;
 
-height: auto;
-width: auto; 
 }
 
 header {

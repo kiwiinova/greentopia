@@ -20,9 +20,9 @@ body, html{
 
 .shopping_cart {
   float: right;
-  position: fixed;
+  position: relative;
   bottom: -15px;
-  height: 10px !important;
+  height: 20px !important;
   padding-right: 5px;
   display: inline-block;
 }

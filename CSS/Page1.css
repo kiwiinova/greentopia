@@ -26,10 +26,15 @@ body, html{
   padding-right: 5px;
   display: inline-block; */
   height: auto !important;
-  width: 130px;
-  cursor: pointer;
+/*   width: 130px; */
+/*   cursor: pointer;
   order: 4;
-  margin-left: auto;
+  margin-left: auto; */
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
 }
 
 .img-fluid

@@ -45,6 +45,7 @@ header .navbar ul {
 header .navbar ul li {
   position: relative;
   float: left;
+  list-style: none
 }
 
 header .navbar ul li a {

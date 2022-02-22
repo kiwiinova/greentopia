@@ -59,6 +59,7 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   background: black;
   color: white;
+  list-style: none;
 }
 
 header .navbar ul li ul {
@@ -67,6 +68,7 @@ header .navbar ul li ul {
   width: 200px;
   background: rgb(179, 209, 181);
   display: none;
+  
 }
 
 header .navbar ul li ul li {

@@ -18,11 +18,11 @@ body, html{
 /*   background-attachment: fixed; */
 }
 
-/*.img-fluid
+.img-fluid
 {
   max-width:100%;
   height:auto;
-}*/
+}
 
 .bg {
   background-image: url("../Images/Banner.png");

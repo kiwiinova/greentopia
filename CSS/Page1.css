@@ -25,6 +25,7 @@ body, html{
   height: 20px !important;
   padding-right: 5px;
   display: inline-block; */
+  height: 20px !important;
   cursor: pointer;
   order: 4;
   margin-left: auto;

@@ -17,8 +17,8 @@ body, html{
 /*   background-attachment: fixed; */
 }
 
-.bg {
-  background: url("../Images/Banner.png")no-repeat left top;
+.beige {
+  background: url("../Images/beige.png")no-repeat left top;
   position: absolute;
   height: 95%; 
   top:0;
@@ -29,12 +29,14 @@ body, html{
   background-size: 100%;
 }
 
-.beige{
+.bg{
   position: relative;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url("../Images/beige.png");
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+/*   top: 50%;
+  left: 20%; */
+  background: url("../Images/Transparentlogo.jpg");
 }
 
 header {

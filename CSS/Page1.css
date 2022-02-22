@@ -19,10 +19,10 @@ body, html{
 }
 
 .shopping_cart {
-  float:right;
-  position: relative;
+  float: right;
+  position: fixed;
   bottom: -15px;
-  height: 1px;
+  height: 1px !important;
   padding-right: 5px;
   display: inline-block;
 }

@@ -135,19 +135,20 @@ button {
       text-align: center;
   }
 
-  .product .product-btns ul li {
+  .product .product-btns li {
       display: inline-block;
       list-style: none;
       padding-right: 10px;
   }
 
-  .product .product-btns ul li a {
+  .product .product-btns a {
       font-size: 16px;
       color: #333;
       display: block;
       width: 30px;
       height: 30px;
       text-align: center;
+      vertical-align: middle; 
       line-height: 37px;
       border: 2px dotted #333;
       border-radius: 60px;

@@ -78,6 +78,7 @@ header .navbar ul li ul li {
 
 header .navbar ul li:hover > ul {
   display: initial;
+  list-style: none;
 }
 
 #menu {

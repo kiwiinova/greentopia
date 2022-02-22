@@ -145,7 +145,7 @@ footer {
   font-weight: bold;
   background: green;
   width: 150px;
-  padding: 10px;
+  padding: 4px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -153,7 +153,10 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   position: fixed;
-  left: 1250px;
+/*   left: 1250px; */
+   bottom:0px;
+   right:0px;
+   height:5vh;
  
 }
 

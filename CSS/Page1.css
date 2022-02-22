@@ -174,8 +174,10 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   } */
+   position: relative;
    background-image:url(../Images/Banner.png);
    background-repeat:no-repeat;
-   background-size:cover;
+/*    background-size:cover; */
+   background-size:100% 100vh;
 }
 }

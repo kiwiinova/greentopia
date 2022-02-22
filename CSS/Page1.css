@@ -21,6 +21,7 @@ body, html{
   background: url("../Images/beige.png")no-repeat left top;
   position: absolute;
   height: 95%; 
+  display: flex;
   top:0;
   left:0;
 /*   background-position: center center; */

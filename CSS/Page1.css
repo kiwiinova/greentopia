@@ -19,6 +19,7 @@ body, html{
 
 .bg {
   background: url("../Images/Banner.png")no-repeat left top;
+   height: 100vh;
 /*   height: 95%;  */
   display: block !important;
   background-position: center center; 

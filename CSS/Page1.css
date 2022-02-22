@@ -166,12 +166,16 @@ footer {
 
 }
 
-/* @media only screen and (max-width:970px) {
+@media only screen and (max-width:970px) {
   .bg {
-  height: auto; 
+/*   height: auto; 
   max-width:auto;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  }
-} */
+  } */
+   background-image:url(../Images/Banner.png);
+   background-repeat:no-repeat;
+   background-size:cover;
+}
+}

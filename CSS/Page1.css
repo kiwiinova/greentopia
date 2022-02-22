@@ -168,16 +168,11 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 480px) { 
 /* @media only screen and (max-width:970px) { */
   .bg {
-/*   height: auto; 
-  max-width:auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  } */
+   background-position: center center;
    position: relative;
    background-image:url(../Images/Banner.png);
    background-repeat:no-repeat;
-/*    background-size:cover; */
-   background-size:100% 100vh;
+    background-attachment: fixed;
+   background-size:cover;
 }
 }

@@ -20,8 +20,8 @@ body, html{
 .bg {
   background: url("../Images/Banner.png")no-repeat left top;
   height: 95%; 
-/*   top:0;
-  left:0; */
+  width: 100%;
+  padding-top: 100%;
   background-position: center center; 
   background-repeat: no-repeat; 
 /*   background-size: cover; */

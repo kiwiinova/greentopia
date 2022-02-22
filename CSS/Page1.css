@@ -18,11 +18,13 @@ body, html{
 }
 
 .bg {
-  background-image: url("../Images/Banner.png");
+  background: url("../Images/Banner.png");
   height: 95%; 
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+/*   background-size: cover; */
+  background:url (dynamic_width_bg.jpg) no-repeat left top;
+  background-size: 100%;
 }
 
 header {

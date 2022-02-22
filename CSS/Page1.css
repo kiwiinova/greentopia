@@ -22,7 +22,7 @@ body, html{
   float: right;
   position: fixed;
   bottom: -15px;
-  height: 1px !important;
+  height: 10px !important;
   padding-right: 5px;
   display: inline-block;
 }

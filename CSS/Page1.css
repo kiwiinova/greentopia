@@ -11,38 +11,10 @@
 
 body, html{
   height: 100vh;
-  width: 100vw;
 /*   max-width:100%; */  
 /*   height: auto; */
   margin:0;
 /*   background-attachment: fixed; */
-}
-
-.shopping_cart {
-/*   float: right;
-  position: relative;
-  bottom: -15px;
-  height: 20px !important;
-  padding-right: 5px;
-  display: inline-block; */
-  height: auto !important;
-/*   width: 130px; */
-  cursor: pointer;
-  order: 4;
-  margin-left: auto; 
-  padding-top: 20px 7%;  
-/*   order: 4;
-  width: 46px;
-  height: 20px;
-  border-radius: 5%;
-  overflow: hidden;
-  margin-top: -6px; */
-}
-
-.img-fluid
-{
-  max-width:100%;
-  height:auto;
 }
 
 .bg {
@@ -51,10 +23,6 @@ body, html{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  
-  position:absolute;
-max-width: 100%;
-
 }
 
 header {
@@ -120,14 +88,13 @@ header label {
   display: none;
 }
 
-@media (max-width: 500px ) {
+@media (max-width: 500px) {
   header {
 /*     padding: 20px; */
     float: none;
     display: block;
     text-align: left;
   }
-
 
   header label {
     display: initial;
@@ -159,8 +126,8 @@ header label {
   #menu:checked ~ .navbar {
     display: initial;
   } 
+  
 }
- 
 
 footer {
   height: 5vh;
@@ -178,7 +145,7 @@ footer {
   font-weight: bold;
   background: green;
   width: 150px;
-  padding: 4px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -186,13 +153,11 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   position: fixed;
-/*   left: 1250px; */
-  position: fixed;
-  bottom: 0px;
-  right: 0px; 
-  height: 5vh;
+  left: 1250px;
+ 
 }
 
+}
 
 /* @media only screen and (max-width:970px) {
   .bg {

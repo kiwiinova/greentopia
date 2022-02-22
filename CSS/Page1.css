@@ -18,7 +18,7 @@ body, html{
 /*   background-attachment: fixed; */
 }
 
-.shopping_chart {
+.shopping_cart {
   float:right;
   position: relative;
   bottom: -15px;
@@ -39,10 +39,7 @@ body, html{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
- 
- 
 }
-
 
 header {
   position: fixed;

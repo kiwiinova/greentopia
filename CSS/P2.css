@@ -82,6 +82,9 @@ h3{
 	.column{
 		width: 50%;
 	}
+	body{
+		padding: 80px;
+	}
 }
 
 

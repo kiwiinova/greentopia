@@ -191,10 +191,11 @@ button {
       background: #DEB887;
       border: none;
       padding: 10px 18px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #FFFFFF;
       cursor: pointer;
-      outline: none;  
+      outline: none; 
+      box-shadow: 0px 5px 5px #F5F5F5;
 }
 
 .minusBtn, .plusBtn{

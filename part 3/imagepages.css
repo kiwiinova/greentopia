@@ -1,4 +1,4 @@
-body {
+/* body { */
       background: #fff;
       flex-direction:column; 
       justify-content:center;
@@ -200,7 +200,7 @@ button {
 
 .minusBtn, .plusBtn{
       display: none;
-      font-size: 3rem;
+/*       font-size: 3rem; */
       font-weight: 700;
 }
 

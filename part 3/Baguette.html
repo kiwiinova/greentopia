@@ -44,12 +44,15 @@
 <center>   
 <body>
    <div class="cd-cart cd-cart--empty js-cd-cart">
+      ::before
   <a href="#0" class="cd-cart__trigger text-replace">
-    Cart
+     ::before
+   " Cart "
     <ul class="cd-cart__count"> <!-- cart items count -->
       <li>0</li>
       <li>0</li>
     </ul> <!-- .cd-cart__count -->
+     ::after
   </a>
 
   <div class="cd-cart__content">
@@ -119,7 +122,7 @@
         </div>
         <div class="product-btns">
             <ul>
-                <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="cd-add-to-cart js-cd-add-to-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                  <input type="number" name="number of items" min="0" placeholder="Choose your quantity" style="width:150px; height:30px; font-size: 15px">
             </ul>

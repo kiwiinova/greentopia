@@ -196,7 +196,6 @@ footer {
   header {
     padding: 10px 20px;
     flex-direction: column;
-    height: 50px
   }
 header .navbar ul li {
   position: relative;

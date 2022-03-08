@@ -192,7 +192,9 @@ button {
 .btn button{
       background: #DEB887;
       border: none;
-      padding: 10px 18px;
+      padding: 5px 15px 0 15px;
+      text-align: center;
+/*       padding: 10px 18px; */
       font-size: 0.9rem;
       color: #FFFFFF;
       cursor: pointer;

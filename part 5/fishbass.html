@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fish Bass</title>
+    
+    <link rel="stylesheet" href="P8.css">
+<style>
+    body{
+	margin: 0;
+	color: black;
+	background-color: white;
+	width: 100%;
+	font: Cambria, 'Hoefler Text', 'Liberation Serif', 'Times New Roman', 'serif';
+    background-color: rgb(217,245,233);
+    
+} 
+    .Fish
+    {
+	padding: 15px;
+ 	text-align: left;
+    }
+    .button{
+	padding: 25px;
+        text-align: left;
+    }
+    
+    @media screen (max-width: 880px){
+        .Fish{width:100%}
+    }
+    
+    @media screen and (max-width: 880px)
+    {
+        .Fish{width:100%}
+    }  
+    
+    @media screen and (max-width: 1024px)
+    {
+        .Fish{width: auto}
+    }
+    </style>
+    </head>
+    
+   <div class="Fish">
+    <h2 style="font-size: 170%; padding: 10px; background-color:#8FBC8F;text-align: center">FISH BASS</h2>
+<body id="M&F_FishBass">
+    <div>
+    <label for="M&F_FishBass"> Name of the product: </label>
+        <input type="text" id="M&F_FishBass_product" name="FishBass" placeholder="name of the product"> 
+        <br>
+    <label for="M&F_FishBass">Price of Fish Bass: </label>
+        <input type="number" min="0.00" max="10000.00" step="0.01" id="M&F_FishBass_price" name="FishBass" placeholder="Price">
+        <br>
+    <label for="M&F_FishBass">Quantity of Fish Bass: </label>   
+        <input type="number" id="M&F_FishBass_quantity" name="FishBass" placeholder="Quantity"> 
+        <br>
+    <label for="FishBass">Description:</label>
+        <br>
+        <textarea id="M&F_FishBass_description" name="FishBass" rows="6" cols="50">   
+        </textarea>
+    </div> 
+</body> 
+    <br>
+        
+    <body class="button">
+  <div>  
+    <button type="Save" value="Save" style="color: black; font-size:15px; width: 60px; background-color:#8FBC8F; border-color: darkgreen; align-content: flex-start" > Save </button>
+    </div> 
+    </body>
+    
+    </div>
+</html>

@@ -93,8 +93,10 @@ h2 {
       margin-left: auto;
       margin-right: auto;
       height: auto;
-      transform-origin: 0 0;
-      transition: transform .25s, visibility .25s ease-in;
+/*       transform-origin: 0 0;
+      transition: transform .25s, visibility .25s ease-in; */
+        -webkit-transition: 0.4s ease;
+      transition: 0.4s ease;
   }
 
 /*   .product .meta .category a {
@@ -171,9 +173,17 @@ h2 {
       border: 2px dashed rgb(243, 82, 82);
   } */
 
-  .zoom:hover {
-      transform: scale(2);
-      /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  .zoom {
+    float: left;
+    position: relative;
+    width: 640px;
+    height: 360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+  .zoom:hover .product-img img{
+      -webkit-transform: scale(1.08);
+      transform: scale(1.08);
   }
 
 .main{

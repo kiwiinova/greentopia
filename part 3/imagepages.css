@@ -186,10 +186,11 @@ button {
      margin-top: 40px !important;
    }
 }
-@media screen and (min-width: 500px) and (max-width: 570px)
+@media screen and (min-width: 500px) and (max-width: 570px) {
 center {
     padding: 250px 20px 50px;
     flex-direction: column-reverse;
+   }
 }
 @media screen and (min-width: 571px) and (max-width: 940px) {
       center {

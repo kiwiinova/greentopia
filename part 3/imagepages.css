@@ -186,7 +186,7 @@ button {
      margin-top: 40px !important;
    }
 }
-@media screen and (max-width: 940px) {
+@media screen and (min-width: 500px) and (max-width: 940px) {
       center {
             padding: 150px 20px 50px;
             flex-direction: column-reverse;

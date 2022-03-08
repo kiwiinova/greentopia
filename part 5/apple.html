@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple</title>
+    
+    <link rel="stylesheet" href="P8.css">
+<style>
+    .Fruits
+    {
+	padding: 15px;
+ 	text-align: left;
+    }
+    .button{
+	padding: 25px;
+        text-align: left;
+    }
+    
+    @media screen (max-width: 880px){
+        .Fruits{width:100%}
+    }
+    
+    @media screen and (max-width: 880px)
+    {
+        .Fruits{width:100%}
+    }  
+    
+    @media screen and (max-width: 1024px)
+    {
+        .Fruits{width: auto}
+    }
+    </style>
+    </head>
+    
+    <div class="Fruits">   
+    <h2 style="font-size: 170%; padding: 10px; background-color:#8FBC8F; text-align: center; align-content: center">APPLES</h2>
+
+   <body id="F&G_Apple">
+    <div>
+    <label for="F&G_Apple"> Name of the product: </label>
+        <input type="text" id="F&G_Apples_product" name="Apple" placeholder="name of the product"> 
+        <br>
+    <label for="F&G_Apple">Price of Apples: </label>
+        <input type="number" min="0.00" max="10000.00" step="0.01" id="F&G_Apple_price" name="Apple" placeholder="Price">
+        <br>
+    <label for="F&G_Apple">Quantity of Apples: </label>   
+        <input type="number" id="F&G_Apple_quantity" name="Apple" placeholder="Quantity"> 
+        <br>
+    <label for="F&G_Apple">Description:</label>
+        <br>
+        <textarea id="F&G_Apple_description" name="Apple" rows="6" cols="50">   
+        </textarea>
+    </div> 
+    </body>
+    <br>
+        
+    <body class="button">
+  <div>  
+    <button type="Save" value="Save" style="color: black; font-size:15px; width: 60px; background-color:#8FBC8F; border-color: darkgreen; align-content: flex-start" > Save </button>
+    </div> 
+    </body>
+    
+    </div>
+</html>

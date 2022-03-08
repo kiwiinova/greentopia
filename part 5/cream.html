@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cream</title>
+    
+    <link rel="stylesheet" href="P8.css">
+<style>
+     .Dairy
+    {
+	padding: 15px;
+ 	text-align: left;
+    }
+    .button{
+	padding: 25px;
+        text-align: left;
+    } 
+    
+    @media screen (max-width: 880px){
+        .Dairy{width:100%}
+    }
+    
+    @media screen and (max-width: 880px)
+    {
+        .Dairy{width:100%}
+    }  
+    
+    @media screen and (max-width: 1024px)
+    {
+        .Dairy{width: auto}
+    }
+    </style>
+    </head>
+    
+  <div class="Dairy">
+   <h2 style="font-size: 170%; padding: 10px; background-color:#8FBC8F;text-align: center">CREAM</h2>
+<body id="D&E_Cream">
+    <div>
+    <label for="D&E_Cream"> Name of the product: </label>
+        <input type="text" id="D&E_Cream_product" name="Cream" placeholder="name of the product"> 
+        <br>
+    <label for="D&E_Cream">Price of Cream: </label>
+        <input type="number" min="0.00" max="10000.00" step="0.01" id="D&E_Cream_price" name="Cream" placeholder="Price">
+        <br>
+    <label for="D&E_Cream">Quantity of Cream: </label>   
+        <input type="number" id="D&E_Cream_quantity" name="Cream" placeholder="Quantity"> 
+        <br>
+    <label for="D&E_Cream">Description:</label>
+        <br>
+        <textarea id="D&E_Cream_description" name="Cream" rows="6" cols="50">   
+        </textarea>
+    </div> 
+</body> 
+<br>
+        
+    <body class="button">
+  <div>  
+    <button type="Save" value="Save" style="color: black; font-size:15px; width: 60px; background-color:#8FBC8F; border-color: darkgreen; align-content: flex-start" > Save </button>
+    </div> 
+    </body>
+    
+    </div>
+</html>

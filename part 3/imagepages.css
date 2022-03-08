@@ -33,7 +33,6 @@ h2 {
   height: 100%;
   flex-direction: column;
   -ms-flex-direction: column;
-  background: red;
 }
 
 .more {

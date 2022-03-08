@@ -1,4 +1,4 @@
-  body {
+body {
       background: #fff;
       flex-direction:column; 
       justify-content:center;
@@ -26,6 +26,14 @@ h1 {
 h2 {
   font-size:20px;
   color: lightslategray;  
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  background: red;
 }
 
 .more {
@@ -180,12 +188,12 @@ button {
    }
 
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
    body{
      display: block;
      margin-left: auto;
      margin-right: auto;
      margin-top: 100px !important;
    }
-}
+} */
 

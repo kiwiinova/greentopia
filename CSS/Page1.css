@@ -190,11 +190,13 @@ footer {
 }
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width: 500px) and (max-width: 940px) {
   header {
     padding: 10px 20px;
     flex-direction: column;
   }
+  header .navbar ul li ul {
+    width: 100px;
 }
 
   

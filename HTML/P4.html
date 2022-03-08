@@ -66,10 +66,14 @@ Montreal, Quebec A1B 2C3
 			
 		
             <div class="flex-item-left">
-                <p> Your item number 1 is 3 yogurt(s) at the price of $3,55.
+               <div class="flex-item-left">
+                <div>
+                    <p> Your item number 1 is </p> <span id="quantity1"></span>
+                    <p> yogurt(s) at the price of $3,55.</p>
 
                     <script>
-                        let q = 3*3.55;
+                        let q = 3 * 3.55;
+
                     </script>
 
                     <div class="inputnum">
@@ -77,8 +81,8 @@ Montreal, Quebec A1B 2C3
                         <input type="number" id="quantity1" name="quantity" min="0">
                     </div>
 
-		    <button class="button">Delete</button>
-				</p>
+                    <button class="button">Delete</button>
+                </div>
 
                 <p> Your item number 2 is 1 pack of shrimp(s) at the price of $9,78.
                      <script>

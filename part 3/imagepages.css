@@ -10,7 +10,7 @@
   }
 
 section {
-    padding: 20px;
+    padding: none;
 }
 
 h1 {
@@ -79,7 +79,7 @@ h2 {
       height: auto;
       background: #fff;
       padding: none;
-      margin-top: 50px;
+      margin-top: 70px;
       border: 2px solid #fff;
 /*       transition: ease-in-out 0.6s all 0s; */
   }
@@ -182,7 +182,7 @@ h2 {
       display: flex;
       justify-content:center;
       align-items: center;  
-      display: block;
+/*       display: block; */
       padding: 0 15px;
 }
 

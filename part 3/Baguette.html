@@ -78,6 +78,16 @@
         </div>
     </section>
     <script>
+        let btn = document.querySelector('.mainbtn');
+        let btn = document.querySelector('.minusbtn');
+        let btn = document.querySelector('.plusbtn');
+        
+     btn.addEventListener("click",()=>{
+      btn.innerText = 1;
+      pbtn.style.display = 'inline-block';
+      mbtn.style.display = 'inline-block';
+     })
+     
         $(document).ready(function(){
             $(".read").click(function(){
                 $(this).prev().toggle();

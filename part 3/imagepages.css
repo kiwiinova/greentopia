@@ -200,6 +200,7 @@ button {
 
 .minusBtn, .plusBtn{
       display: none;
+      font-size: 3rem;
       font-weight: 700;
 }
 

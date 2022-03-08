@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>White Bread</title>
+    
+    <link rel="stylesheet" href="P8.css">
+      <link rel="stylesheet" href="../CSS/Page1.css">
+
+    
+<style>
+   @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
+    body{
+	width: 100%;
+	font-family: "Shadows Into Light Two";
+    background-color: rgb(217,245,233);
+    align-content: center;
+    }
+    
+    .Bread
+    {
+	padding: 15px;
+ 	text-align: center;
+    }
+    .button{
+    text-align: center;
+    }
+    h2{
+        margin-top: 80px;
+    }
+    
+     @media screen and (min-width: 320px) and (max-width: 480px) { 
+     h2{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 40px !important;
+   }
+}
+    @media screen and (min-width: 500px) and (max-width: 570px) {
+        body {
+    padding: 250px 20px 50px;
+    flex-direction: column-reverse;
+   }
+}
+    @media screen and (min-width: 571px) and (max-width: 940px) {
+      body {
+            padding: 150px 20px 50px;
+            flex-direction: column-reverse;
+      }
+}
+    
+    </style>
+    </head>
+    
+    <header>
+	<input type="checkbox" id="menu" />
+      	<label for="menu"><i class="material-icons">menu</i></label>
+
+
+	 <nav class="navbar">
+        <ul>
+          <li><a href="../HTML/P7.html">Product List</a></li>
+          <li><a href="../part 9/usrerList.html">User List</a></li>
+          <li><a href="../HTML/P11.html">Order List</a></li>
+	  <li><a href="../index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+      <div class="Bread">   
+    <h2 style="font-size: 170%; padding-bottom:10px; padding-top: 10px; background-color:#8FBC8F; text-align: center; align-content: center">WHITE BREAD</h2>
+
+     <body id="B&P_WhiteBread">
+    <div>
+        <br>
+    <label for="B&P_WhiteBread"> Name of the product: </label>
+        <input type="text" id="B&P_WhiteBread_product" name="WhiteBread" placeholder="name of the product" style="width: 130px"> 
+        <br>
+    <label for="B&P_WhiteBread">Price of White Bread: </label>
+        <input type="number" min="0.00" max="10000.00" step="0.01" id="B&P_WhiteBread_price" name="WhiteBread" placeholder="Price">
+        <br>
+    <label for="B&P_WhiteBread">Quantity of White Bread: </label>   
+        <input type="number" id="B&P_WhiteBread_quantity" name="WhiteBread" placeholder="Quantity"> 
+        <br>
+    <label for="B&P_WhiteBread">Description:</label>
+        <br>
+        <textarea id="B&P_WhiteBread_description" name="WhiteBread" rows="6" cols="50">   
+        </textarea>
+    </div> 
+</body> 
+    <br>
+     
+        
+    <body class="button">
+  <div>  
+    <button type="Save" value="Save" style="color: black; font-size:15px; width: 60px; background-color:#8FBC8F; border-color: darkgreen; align-content: flex-start" > Save </button>
+    </div> 
+    </body>
+    
+    </div>
+    
+
+        
+</html>

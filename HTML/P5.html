@@ -17,7 +17,7 @@
             display: grid;
             font-size: 1.55;
 			font-family: "Shadows Into Light Two";
-            padding-left: 5px;
+           
         }
 
         .button {
@@ -33,7 +33,7 @@
 		
 		*{
 			font-family: "Shadows Into Light Two";
-            padding: 5px;
+            
 		}
         
         
@@ -86,19 +86,19 @@
             <form target="_self" autocomplete="on">
     
                 <div class="space">
-                    <label for="email"><span style="color: red; margin-left: 5px">*</span>Email Address:</label><br> 
+                    <label for="email"><span style="color: red;">*</span>Email Address:</label><br> 
                     
-                    <input type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required style="margin-left: 5px"><br>
+                    <input style="width: 200px;" type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required><br>
                 </div>
                 <div class="space">
-                    <label for="password"><span style="color: red; margin-left: 5px">*</span>Password (8 characters minimum):</label><br>
-                    <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25" style="margin-left: 5px"><br>
+                    <label for="password"><span style="color: red;">*</span>Password (8 characters minimum):</label><br>
+                    <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25"><br>
                 </div>
                
                 <div>
-                    <input type="checkbox" onclick="myFunction()" style="margin-left: 5px"> Show Password<br>
+                    <input type="checkbox" onclick="myFunction()" > Show Password<br>
                 </div>
-                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()" style="margin-left: 5px">
+                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()" >
                    <button type="button" class="Forgot Password">Forgot Password</button>
                 <br>
                 
@@ -150,5 +150,4 @@
 
     </div>
 </body>
-
 </html>

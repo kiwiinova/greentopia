@@ -1,14 +1,11 @@
 <!DOCTYPE html>
+<html lang="en-us">
 
-<html lang = "en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>New Product</title>
-    
-    <link rel="stylesheet" href="P8.css">
-      <link rel="stylesheet" href="../CSS/Page1.css">
-
+    <title>Log In | GreenTopia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Page1.css"/>
     
     <style>
 		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
@@ -37,55 +34,102 @@
 		}
 
     </style>
+</head>
 
-    </head>
-    
-    <header>
-	<input type="checkbox" id="menu" />
-      	<label for="menu"><i class="material-icons">menu</i></label>
+     <header>
+      <input type="checkbox" id="menu" />
+      <label for="menu"><i class="material-icons">menu</i></label>
 
-
-	 <nav class="navbar">
+      <nav class="navbar">
         <ul>
-          <li><a href="../HTML/P7.html">Product List</a></li>
-          <li><a href="../part 9/usrerList.html">User List</a></li>
-          <li><a href="../HTML/P11.html">Order List</a></li>
-	  <li><a href="../index.html">Logout</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="#">Aisles +</a>
+            <ul>
+              <li><a href="HTML/P2.html #fruitsveggies">Fruits and Veggies</a></li>
+
+              <li><a href="HTML/P2.html #dairyeggs">Dairy and Eggs</a></li>
+              <li><a href="HTML/P2.html #breadspasta">Bread</a></li>
+              <li><a href="HTML/P2.html #meatsfish">Meat and Fish</a></li>
+            </ul>
+          </li>
+         <li><a href="../HTML/P4.html"><i class="material-icons"></i>Shopping Cart</a></li>
+          <li><a href="../HTML/P5.html">Login</a></li>
         </ul>
       </nav>
     </header>
     
-      <div class="NewProduct">   
-    <h2 style="font-size: 170%; padding-bottom:10px; padding-top: 10px; background-color:#8FBC8F; text-align: center; align-content: center">NEW PRODUCT</h2>
+<body style="background-color: ">
+    <header>
+        <div style="background-color: darkseagreen; font-family: cursive;"><br><br><br>
+            <p style="font-size: 40px; color: white; text-align: center;"> Sign In To Your Account </p><br><br>
+        </div>
+    </header>
 
-   <body id="null">
-    <div>
+    <div class="center">
         <br>
-    <label for="null"> Name of the product: </label>
-        <input type="text" id="null" name="New Product" placeholder="name of the product" style="width: 130px"> 
-        <br>
-    <label for="null">Price of new product: </label>
-        <input type="number" min="0.00" max="10000.00" step="0.01" id="null" name="New Product" placeholder="Price">
-        <br>
-    <label for="null">Quantity of new product: </label>   
-        <input type="number" id="null" name="New Product" placeholder="Quantity"> 
-        <br>
-    <label for="null">Description:</label>
-        <br>
-        <textarea id="null" name="New Product" rows="6" cols="50">   
-        </textarea>
-    </div> 
-</body> 
-
-  <br>
-    <body class="button">
-  <div>  
-    <button type="Save" value="Save" style="color: black; font-size:15px; width: 60px; background-color:#8FBC8F; border-color: darkgreen; align-content: flex-start" > Save </button>
-    </div> 
-    </body>
+        <fieldset>
+            <legend>LOG IN</legend>
+            <form target="_self" autocomplete="on">
     
+                <div class="space">
+                    <label for="email"><span style="color: red">*</span>Email Address:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required><br>
+                </div>
+                <div class="space">
+                    <label for="password"><span style="color: red">*</span>Password (8 characters minimum):</label><br>
+                    <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25"><br>
+                </div>
+               
+                <div>
+                    <input type="checkbox" onclick="myFunction()">Show Password<br>
+                </div>
+                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()">
+                <input type="reset" value="Reset" class="button"><br>
+            </form>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("password");
+                    var y = document.getElementById("cpassword");
+                    if (x.type == "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                    if (y.type == "password") {
+                        y.type = "text";
+                    } else {
+                        y.type = "password";
+                    }
+
+                }
+
+                function myFunctionC() {
+                    var y = document.getElementById("cpassword");
+                    if (y.type == "cpassword") {
+                        y.type = "text";
+                    } else {
+                        y.type = "cpassword";
+                    }
+                }
+
+                function confirmPassword() {
+                    var x = document.getElementById("password").value;
+                    var y = document.getElementById("cpassword").value;
+                    if (x != y) {
+                        alert("Passwords do not match! Please Try Again.");
+                        return false;
+                    }
+                    return true;
+                }
+
+            </script>
+        </fieldset><br>
     </div>
-    
+    <div>
 
-        
+    </div>
+</body>
+
 </html>

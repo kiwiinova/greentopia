@@ -9,7 +9,7 @@
     
     <style>
 		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-        .center {
+        .loginBody {
             height: 200px;
             width: 400px;
             margin: auto;
@@ -66,7 +66,7 @@
         </div>
     </header>
 
-    <div class="center">
+    <div class="loginBody">
         <br>
         <fieldset>
             <legend>LOG IN</legend>
@@ -85,7 +85,12 @@
                     <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
                 <input type="submit" value="Submit" class="button" onclick="return confirmPassword()">
-                <input type="reset" value="Reset" class="button"><br>
+                   <button type="button" class="Forgot Password">Forgot Password</button>
+                <br>
+                
+                <p class="form__text" style="margin-left: 5px">
+            <a href="Part6.html" class="form__link">Don't have an account? Sign Up Now </a>
+        </p>
             </form>
 
             <script>

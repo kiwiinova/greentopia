@@ -21,8 +21,6 @@ body{
 table {
     font-family: arial, sans-serif;
     width: 1180px;
-/*    overflow-x: auto;*/
-/*    display: flex;*/
 }
 
 td, th {
@@ -46,6 +44,19 @@ img{
     cursor: pointer;
     margin: 4px;
     border: none;
+}
+
+.buttonAdd {
+    background-color: #8FBC8F;
+    color: white;
+    padding: 2% 15%;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+    left: 30%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* Darker background on mouse-over */

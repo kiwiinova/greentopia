@@ -40,3 +40,18 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.btn4 {
+  font-size: 20px;
+  font-weight: bold;
+  background: rgb(19, 168, 214);
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+

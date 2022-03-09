@@ -53,7 +53,7 @@
                <h2>$10,77 for a bag of 10</h2>
             </div>
         </div>
-        <div class="product-btns">
+<!--         <div class="product-btns">
              <ul>
                 <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
@@ -61,8 +61,9 @@
                     <input type="number" name="number of items" min="0" placeholder="Choose your quantity" style="width:150px; height:30px; font-size: 15px">
                
             </ul>
-        </div>
+        </div> -->
     </div>
+   
     <section>
         <div class="post">
             <h1> Product Description </h1>
@@ -76,6 +77,39 @@
             </button>
         </div>
     </section>
+    <script>
+        let btn = document.querySelector('.mainBtn');
+        let mbtn = document.querySelector('.minusBtn');
+        let pbtn = document.querySelector('.plusBtn');
+        
+     btn.addEventListener("click",()=>{
+      if(btn.innerText == 'ADD TO CART'){
+      btn.innerText = 1;
+      pbtn.style.display = 'inline-block';
+      mbtn.style.display = 'inline-block';
+      }
+     })
+     
+      mbtn.addEventListener("click",()=>{
+       if(btn.innerText == 40){
+          pbtn.style.display = 'inline-block';
+       }
+      if(btn.innerText < 2){
+        btn.innerText = 'ADD TO CART';
+        pbtn.style.display = 'none';
+        mbtn.style.display = 'none';
+      }else{
+       btn.innerText = btn.innerText - 1;
+      }
+     })
+  
+      pbtn.addEventListener("click",()=>{
+         btn.innerText = +(btn.innerText) + + 1;
+      if(btn.innerText == 40){
+        pbtn.style.display = 'none';
+      }
+     })
+ </script>
     <script>
         $(document).ready(function(){
             $(".read").click(function(){

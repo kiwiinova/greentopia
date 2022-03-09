@@ -107,7 +107,7 @@ header label {
   display: none;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 571px) {
   header {
 /*     padding: 20px; */
     float: none;

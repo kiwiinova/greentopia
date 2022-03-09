@@ -5,10 +5,12 @@
     <title>Log In | GreenTopia</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../CSS/Page1.css"/>
+   
+    <link rel="stylesheet" href="../CSS/Page1.css"/>
+    
     <style>
 		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-        .center {
+        .center{
             height: 200px;
             width: 400px;
             margin: auto;
@@ -21,7 +23,6 @@
         .button {
             cursor: pointer;
             width: 60px;
-            
         }
 
         .space {
@@ -29,22 +30,21 @@
 
         }
 		
-/*
 		*{
 			font-family: "Shadows Into Light Two";
 		}
-*/
-          @media screen (max-width: 880px){
+        
+        @media screen (max-width: 880px){
               .body{width: auto}
-    }
+        }
     
-    @media screen and (max-width: 600px)
-    {
-        .body{width: auto}
-    } 
+        @media screen and (max-width: 600px)
+        {
+            .body{width: auto}
+        } 
 
     </style>
-    </head>
+</head>
 
     <header>
       <input type="checkbox" id="menu" />
@@ -56,30 +56,33 @@
           <li>
             <a href="#">Aisles +</a>
             <ul>
- 	      <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
-              <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
-              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Bread</a></li>
-              <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
+              <li><a href="HTML/P2.html #fruitsveggies">Fruits and Veggies</a></li>
+
+              <li><a href="HTML/P2.html #dairyeggs">Dairy and Eggs</a></li>
+              <li><a href="HTML/P2.html #breadspasta">Bread</a></li>
+              <li><a href="HTML/P2.html #meatsfish">Meat and Fish</a></li>
             </ul>
           </li>
-         <li><a href="../HTML/P4.html"><i class="material-icons">shopping_cart</i>Shopping Cart</a></li>
+         <li><a href="../HTML/P4.html"><i class="material-icons"></i>Shopping Cart</a></li>
           <li><a href="../HTML/P5.html">Login</a></li>
         </ul>
       </nav>
     </header>
     
-<body style="background-color: " class="body">
+<body style="background-color: ">
     <header>
         <div style="background-color: darkseagreen; font-family: cursive;"><br><br><br>
-            <p style="font-size: 40px; color: white; text-align: center;font-family: Shadows Into Light Two"> Sign In to your Account </p><br><br>
+            <p style="font-size: 40px; color: white; text-align: center;"> Sign In To Your Account </p><br><br>
         </div>
     </header>
 
     <div class="center">
         <br>
         <fieldset>
-            <legend>Log In:</legend>
+            <legend>LOG IN</legend>
             <form target="_self" autocomplete="on">
+                
+                
                 <div class="space">
                     <label for="email"><span style="color: red">*</span>Email Address:</label><br>
                     <input type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required><br>
@@ -91,12 +94,11 @@
                 <div>
                     <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
-                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()" >
+                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()">
                 <button type="button" class="Forgot Password">Forgot Password</button>
                 <br>
-                
-                <p class="form__text">
-            <a href="P6.html" class="form__link">Don't have an account? Sign Up Now </a>
+                  <p class="form__text" style="margin-left: 5px">
+            <a href="Part6.html" class="form__link">Don't have an account? Sign Up Now </a>
         </p>
             </form>
 

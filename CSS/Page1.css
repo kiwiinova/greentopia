@@ -80,6 +80,7 @@ a{
 
 header .navbar ul {
   list-style: none;
+	
 }
 
 header .navbar ul li {
@@ -128,7 +129,7 @@ header .navbar ul li:hover > ul {
 
 header .navbar .navbar-right {
     float: right;
-    position: absolute;
+/*     position: absolute; */
     right: 0;
   } 
 

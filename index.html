@@ -20,7 +20,7 @@
     
      <div class= "bg">
     
-     <div class="containers">
+<!--      <div class="containers">
          <div class="shopping-cart">
             <div class="shopping-cart-header">
                <i class="fa-solid fa-basket-shopping cart-icon"></i><span class="badge">3</span>
@@ -57,8 +57,9 @@
   <!--end shopping-cart -->
 </div>
 <!--end container --> 
-    
+     -->
     </div>
+    
     
     <header>
    
@@ -85,6 +86,33 @@
           </ul>
       </nav>
     </header>
+
+
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart<i class="fa-solid fa-basket-shopping cart-icon"></i></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Check Out</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
     
 <!--     <div class="topnav">
   <a class="active" href="#home">Home</a>

@@ -25,11 +25,12 @@ body{
 
 
  .logo img{
-	 position:absolute;
-/*   background-image: url("../Images/Banner.png");
+/* 	 position:absolute; */
+   background-image: url("../Images/Banner.png");
   background-repeat: no-repeat;
   background-size : cover; */
 	 width: 500px;
+	 height: 300px;
 	float:center;
 	 
 	 

@@ -28,8 +28,10 @@ body{
 /*   background-image: url("../Images/Banner.png");
   background-repeat: no-repeat;
   background-size : cover; */
-	 width: 1000px;
-	 position:relative;
+	 width: 500px;
+	float:center;
+	 
+	 
 	 
 
 	 

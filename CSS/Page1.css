@@ -119,8 +119,10 @@ header .navbar .navbar-right {
 }
 
 .containers {
-  margin: auto;
   width: 80%;
+  position: absolute;
+  margin-top: 100px;
+  right: 40px;
 }
 
 .badge {

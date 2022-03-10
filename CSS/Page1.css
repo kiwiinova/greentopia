@@ -52,11 +52,11 @@ header {
   padding: 15px 100px
 }
 
-header .navbar ul {
+header .navbar-left ul {
   list-style: none;
 }
 
-header .navbar ul li {
+header .navbar-left ul li {
   position: relative;
   float: left;
   list-style: none;
@@ -64,7 +64,7 @@ header .navbar ul li {
   margin: 0 10px;
 }
 
-header .navbar ul li a {
+header .navbar-left ul li a {
   font-size: 25px;
   padding: 20px 70px;
   list-style: none;
@@ -72,14 +72,14 @@ header .navbar ul li a {
   display: block;
 }
 
-header .navbar ul li a:hover {
+header .navbar-left ul li a:hover {
   background: black;
   color: white;
   list-style: none;
   text-decoration: none;
 }
 
-header .navbar ul li ul {
+header .navbar-left ul li ul {
   position: absolute;
   left: 0;
   width: 200px;
@@ -88,12 +88,12 @@ header .navbar ul li ul {
   
 }
 
-header .navbar ul li ul li {
+header .navbar-left ul li ul li {
   width: 100%;
   border-top: 1px solid black;
 }
 
-header .navbar ul li:hover > ul {
+header .navbar-left ul li:hover > ul {
   display: initial;
   list-style: none;
   text-decoration: none;

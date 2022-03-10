@@ -37,6 +37,8 @@
 .close {
   color: #aaaaaa;
   float: right;
+  right: 0%;
+  top: 0%;
   font-size: 28px;
   font-weight: bold;
 }

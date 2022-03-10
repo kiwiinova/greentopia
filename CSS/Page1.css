@@ -102,6 +102,9 @@ header .navbar ul li:hover ul {
 
 header .navbar-right {
     float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
 .container {
@@ -266,7 +269,7 @@ header label {
     display: initial;
   } 
   
-  .cd-cart__trigger,
+/*   .cd-cart__trigger,
 .cd-cart__content {
   position: fixed;
 /*   bottom: 20px; */
@@ -291,9 +294,9 @@ header label {
   transition-timing-function: cubic-bezier(.67,.17,.32,.95);
   background: var(--cd-color-3);
   box-shadow: 0 4px 30px rgba(#000, .17);
-}
+} */
 
-.cd-cart--open .cd-cart__layout {
+/* .cd-cart--open .cd-cart__layout {
   height: 100%;
   width: 100%;
   transition-delay: 0s;
@@ -317,7 +320,7 @@ header label {
   }
 }
   
-}
+} */
 
 footer {
   height: 5vh;

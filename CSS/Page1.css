@@ -12,14 +12,17 @@ $light-text: #A9A9A9;
   text-decoration: none;
 }
 
-body, html{
+body{
   height: 100vh;
 /*   max-width:100%; */  
 /*   height: auto; */
   margin:0;
 /*   background-attachment: fixed; */
   font-family: "Shadows Into Light Two" !important;
+	background-image: url("../Images/beige.png");
+	
 }
+
 
 .bg {
   background-image: url("../Images/Banner.png"), url("../Images/beige.png");

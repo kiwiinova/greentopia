@@ -64,8 +64,17 @@
           <li><a href="../HTML/P4.html"><i class="material-icons">shopping_cart</i>Shopping Cart</a></li>
           <li><a href="../HTML/P5.html">Login</a></li>
         <div class="navbar-right">                   
-<!--        <li><a href="#" id="cart"><i class="fa-solid fa-basket-shopping"></i> <span class="badge">3</span></a></li>  -->
-        <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart<i class="fa-solid fa-basket-shopping"></i></button></li>
+       <li><a href="#" id="cart"><i class="fa-solid fa-basket-shopping"></i> <span class="badge">3</span></a></li> 
+<!--         <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart<i class="fa-solid fa-basket-shopping"></i></button></li> -->
+        
+          <div id="myModal" class="modal">
+          
+            <div class="modal-content">
+              <span class ="close">&times;</span>
+              <p>dsdsds</p>
+            </div>
+            
+          </div>
            </div>
           </ul>
       </nav>
@@ -102,7 +111,26 @@
     <script src="script.js"></script>
    
     <script>
-
+      
+      var modal = document.getElementById("myModal");
+      
+      var btn = document.getElementById("cart");
+      
+      var span = document.getElementsByClassName("close")[0];
+      
+      btn.onclick = function() {
+        modal.style.display = "block";          
+      }
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+          if (event.target == modal) {
+         modal.style.display = "none";
+             }
+          }
 </script>
     
     <footer>

@@ -22,7 +22,7 @@ body, html{
 }
 
 .bg {
-  background: url("../Images/Banner.png")no-repeat left top;
+  background: url("../Images/Banner.png")no-repeat left top, url("../Images/beige.png");
   height: 95%;  
   background-position: center center; 
   background-repeat: no-repeat; 

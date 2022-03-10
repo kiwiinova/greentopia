@@ -7,6 +7,17 @@
 })();
 
 
+(function(){
+ 
+$('#cart').on('shown.bs.modal', function () {
+  $('.modal-content').trigger('focus')
+});
+ 
+ })();
+
+
+
+
 var shoppingCart = (function() {
   // =============================
   // Private methods and propeties

@@ -2,12 +2,12 @@ $main-color: #DC143C;
 $light-text: #A9A9A9;
 
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-/* @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css); */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Shadows Into Light Two";
+  font-family: "Shadows Into Light Two" !important;
   text-transform: capitalize !important;
   text-decoration: none;
 }

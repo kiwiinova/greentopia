@@ -343,6 +343,12 @@ header label {
   
 } */
 
+.show-cart li {
+  display: flex;
+}
+
+
+
 footer {
   height: 5vh;
   bottom: 0;

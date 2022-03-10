@@ -54,7 +54,8 @@ header {
 }
 
 a{
-  text-decoration:none;  
+  text-decoration:none; 
+  font-family: "Shadows Into Light Two";
 }
 
 header .navbar ul {

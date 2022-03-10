@@ -25,6 +25,7 @@ body{
 
 
  .logo img{
+	 position:absolute;
 /*   background-image: url("../Images/Banner.png");
   background-repeat: no-repeat;
   background-size : cover; */

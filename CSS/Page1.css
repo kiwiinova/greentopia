@@ -22,11 +22,15 @@ body, html{
 }
 
 .bg {
-  background: url("../Images/Banner.png")no-repeat left top;
+  background-image: url("../Images/Banner.png"), url("../Images/beige.png");
   height: 95%;  
   background-position: center center; 
   background-repeat: no-repeat; 
-/*   background-size: cover; */
+background-size: cover; 
+	padding:0px;
+	margin:0px;
+	width:150px;
+	height:50px;
   background-size: 100%;
 /*   min-height: 100%;
   min-width: 1024px;

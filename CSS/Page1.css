@@ -56,7 +56,7 @@ header .navbar ul {
   list-style: none;
 }
 
-header .navbar-left li {
+header .navbar ul li {
   position: relative;
   float: left;
   list-style: none;
@@ -79,7 +79,7 @@ header .navbar ul li a:hover {
   text-decoration: none;
 }
 
-header .navbar-left li ul {
+header .navbar ul li ul {
   position: absolute;
   left: 0;
   width: 200px;

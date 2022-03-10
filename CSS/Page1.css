@@ -24,9 +24,12 @@ body{
 }
 
 
-.bg {
-  background-image: url("../Images/Banner.png"), url("../Images/beige.png");
-  height: 95%;  
+ .logo {
+  background-image: url("../Images/Banner.png");
+background-repeat: no-repeat;
+	 background-size : cover;
+	 
+/*   height: 95%;  
   background-position: center center; 
   background-repeat: no-repeat; 
 background-size: cover; 
@@ -39,7 +42,7 @@ background-size: cover;
   min-width: 1024px;
 
   width: 100%;
-  height: auto; */
+  height: auto; */ */
 }
 
 header {

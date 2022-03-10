@@ -100,9 +100,9 @@ header .navbar ul li:hover > ul {
   text-decoration: none;
 }
 
-header .navbar-right {
+header .navbar .navbar-right {
     float: right;
-    position: absolute;
+/*     position: absolute; */
     top: 0;
     right: 0;
   }

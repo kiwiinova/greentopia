@@ -188,7 +188,7 @@ header .navbar .navbar-right {
 }
 
 .shopping-cart:after {
-/* 	bottom: 20%; */
+	bottom: 100%;
 	left: 89%;
 	border: solid transparent;
 	content: " ";

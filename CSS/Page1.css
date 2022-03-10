@@ -1,7 +1,7 @@
 $main-color: #DC143C;
 $light-text: #A9A9A9;
 
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap);
 
 * {
   margin: 0;

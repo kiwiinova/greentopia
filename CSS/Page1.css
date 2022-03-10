@@ -114,6 +114,10 @@ header .navbar .navbar-right {
     right: 0;
   }
 
+*:before, *:after {
+  box-sizing: border-box;
+}
+
 .container {
   margin: auto;
   width: 80%;

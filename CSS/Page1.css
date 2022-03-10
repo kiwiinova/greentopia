@@ -53,6 +53,10 @@ header {
   overflow: hidden;	
 }
 
+a{
+  text-decoration:none;  
+}
+
 header .navbar ul {
   list-style: none;
 }

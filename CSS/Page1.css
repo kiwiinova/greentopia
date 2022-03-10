@@ -26,8 +26,9 @@ body{
 
  .logo {
   background-image: url("../Images/Banner.png");
-background-repeat: no-repeat;
-	 background-size : cover;
+  background-repeat: no-repeat;
+  background-size : cover;
+	 
 	 
 /*   height: 95%;  
   background-position: center center; 

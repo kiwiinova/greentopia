@@ -247,7 +247,7 @@ footer {
 
  .btnAdmin {
  
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   background: green;
   width: 150px;
@@ -266,10 +266,10 @@ footer {
  
 }
 
-h2 {
+/* h2 {
 	font-size:30px;
 	margin: 14px;
-}
+} */
 
 
 

@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Shadows Into Light Two" !important;
+  font-family: "Shadows Into Light Two";
   text-transform: capitalize !important;
   text-decoration: none;
 }
@@ -20,7 +20,7 @@ body{
 /*   height: auto; */
   margin:0;
 /*   background-attachment: fixed; */
-  font-family: "Shadows Into Light Two" !important;
+  font-family: "Shadows Into Light Two";
 	background-image: url("../Images/beige.png");
 	
 }

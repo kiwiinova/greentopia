@@ -136,11 +136,11 @@ header .navbar .navbar-right {
 
 
 
-.whole-cart-window: hover {
+.whole-cart-window a: hover {
 	background-color: #ddd;
 }
 
-.cart-box a:hover .whole-cart-window {
+.cart-box:hover .whole-cart-window {
 	display: block;
 }
 

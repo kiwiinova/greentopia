@@ -21,13 +21,13 @@ body{
   margin:0;
 /*   background-attachment: fixed; */
   font-family: "Shadows Into Light Two";
-/* 	background-image: url("../Images/beige.png"); */
+	background-image: url("../Images/beige.png");
 	
 }
 
 
  .logo {
-	 background-image: url("../Images/beige.png");
+	 
 /* 	 position:absolute; */
    background-image: url("../Images/Banner.png");
   background-repeat: no-repeat;

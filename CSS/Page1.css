@@ -183,7 +183,7 @@ header .navbar .navbar-right {
 }
 .cart-icon{
     text-align: right;
-    
+    display: inline-block;
 }
 
 .cart-item{
@@ -223,6 +223,7 @@ margin-top: 35%;
      text-align: right;
  }
  .whole-cart-window{
+     display:none;
      border: solid lightgray 1px;
      border-top:none;
      position: fixed;

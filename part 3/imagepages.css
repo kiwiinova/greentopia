@@ -274,13 +274,13 @@ section div span{
 			color: white;
 		}
 		.select div h6,
-		.select div button{
+		.select div .btn{
 			position: absolute;
 			left: 45%;
 			top: 50%;
 			color: white;
 		}
-		.select div button{
+		.select div .btn{
 			left: 60%;
 			top: 55%;
 		}

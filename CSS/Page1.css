@@ -185,6 +185,7 @@ header .navbar .navbar-right {
     text-align: right;
     display: inline-block;
     background: green;
+	border: green;
 }
 
 .cart-item{

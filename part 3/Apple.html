@@ -21,21 +21,44 @@
       <input type="checkbox" id="menu" />
       <label for="menu"><i class="material-icons">menu</i></label>
 
-      <nav class="navbar">
+     <input type="checkbox" id="menu" />
+      <label for="menu"><i class="material-icons">menu</i></label>
+
+      <nav class ="navbar">
         <ul>
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
           <li>
-            <a href="#">Aisles +</a>
+            <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
             <ul>
               <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
               <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
-              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Bread</a></li>
+              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a></li>
               <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
             </ul>
           </li>
-         <li><a href="../HTML/P4.html"><i class="material-icons">shopping_cart</i>Shopping Cart</a></li>
-          <li><a href="/HTML/P5.html">Login</a></li>
-        </ul>
+          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp; Shopping Cart</a></li>
+          <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
+          
+          
+<!--         <div class="navbar-right">                    -->
+<!--        <li><a href="#" id="cart"><i class="fa-solid fa-basket-shopping"></i><span class="badge">3</span></a></li>  -->
+          <div class="cart-box">
+            <a><div class="cart-icon"></a>
+              <i class="fa-solid fa-basket-shopping fa-3x"></i>
+              <span class="badge">3</span>
+            </div>
+            <div class="whole-cart-window"> 
+              <a href="#">
+              <h2>Shopping Cart</h2>
+              <div class="cart-wrapper">
+              </div>
+          <div class="subtotal">Subtotal: $0.00</div>
+          <div class="checkout">Checkout</div>
+          <div class="view-cart">View Cart</div>
+              </a></div> 
+      </div>
+<!--           </div>  -->
+          </ul>
       </nav>
 </header>
    <center>
@@ -89,9 +112,10 @@
         </div>
     </section>
    <div class="select">
-      
-      
+         
    </div>
+   
+   <script type ="text/javascript"  src="script.js"></script>
     <script>
         let btn = document.querySelector('.mainBtn');
         let mbtn = document.querySelector('.minusBtn');

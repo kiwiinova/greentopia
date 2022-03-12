@@ -140,8 +140,7 @@ header .navbar .navbar-right {
 	background-color: #ddd;
 }
 
-.cart-box:hover .whole-cart-window {
-	visibility: visible;
+a:hover .whole-cart-window {
 	display: block;
 }
 
@@ -226,7 +225,7 @@ margin-top: 35%;
      text-align: right;
  }
  .whole-cart-window{
-     visibility:hidden;
+     display: none;
 	 position: absolute;
      border: solid lightgray 1px;
      border-top:none;

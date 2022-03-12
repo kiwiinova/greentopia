@@ -391,6 +391,8 @@
 
 // add elements to cart code
 
+var noti = document.querySelector('.cart-box a');
+
 var select = document.querySelector('.select');
 var button = document.getElementsByTagName('button');
 for (var but of button) {

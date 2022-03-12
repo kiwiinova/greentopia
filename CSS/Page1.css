@@ -240,7 +240,7 @@ header label {
 footer {
   height: 5vh;
   bottom: 0;
-  position: relative;
+  position: fixed;
   background-color: rgb(216, 199, 199);
   width: 100%;
   color: black;
@@ -249,11 +249,11 @@ footer {
 
  .btnAdmin {
  
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
   background: green;
   width: 150px;
-  padding: 4px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;

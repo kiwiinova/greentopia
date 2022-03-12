@@ -142,6 +142,8 @@ header .navbar .navbar-right {
 
 .cart-box:hover .whole-cart-window {
 	display: block;
+	left:75%;
+	
 }
 
 .cart-box:hover .cart-icon {

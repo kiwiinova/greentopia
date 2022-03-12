@@ -141,6 +141,7 @@ header .navbar .navbar-right {
 }
 
 .cart-box:hover .whole-cart-window {
+	visibility: visible;
 	display: block;
 }
 
@@ -225,7 +226,7 @@ margin-top: 35%;
      text-align: right;
  }
  .whole-cart-window{
-     display:none;
+     visibility:hidden;
 	 position: absolute;
      border: solid lightgray 1px;
      border-top:none;

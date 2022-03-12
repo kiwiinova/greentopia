@@ -184,6 +184,7 @@ header .navbar .navbar-right {
 .cart-icon{
     text-align: right;
     display: inline-block;
+    background: green;
 }
 
 .cart-item{

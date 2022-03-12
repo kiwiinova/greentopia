@@ -208,7 +208,73 @@ margin-top: 35%;
      margin-top:5%;
  } 
 
+.fa-window-close{
+     color: brown;
+ }
+ .cancel{
+     text-align: right;
+ }
+ .whole-cart-window{
+     border: solid lightgray 1px;
+     border-top:none;
+     position: fixed;
+     top:12vh;
+     background-color: #fff;
+     margin-right:2%;
+ }
 
+ .hide{
+     display: none;
+ }
+.non-empty::after{
+  content: var(--after-content);
+  font-size: 25px;
+  width:25px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top:-20px;
+  right:20%;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+}
+.card-item img{
+    width:45%;
+}
+.card-item .details{
+    text-align: center;    
+}
+.card-item p,.card-item h3 {
+    margin-top:10px;   
+}
+.card-item span{
+    display: block;
+    margin-top:10px;
+}
+.add-to-cart-btn{
+    width: fit-content;
+    margin:auto;
+    /* margin-top:10px; */
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: brown;
+    border-radius: 3px;
+    font-size: large;
+    color:#fff
+}
 
 
 #menu {

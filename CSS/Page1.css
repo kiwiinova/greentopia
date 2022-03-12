@@ -368,11 +368,11 @@ footer {
 
 @media screen and (min-width: 780px) {
   /* @media only screen and (max-width:970px) { */
-  .bg {
+  .logo {
     max-width: 100%;
     background-position: center center;
     position: relative;
-    background-image: url(../Images/Banner.png);
+    background-image: url(../Images/Transparentlogo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

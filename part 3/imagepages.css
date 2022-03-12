@@ -221,6 +221,81 @@ h2 {
 }
 
 
+section div span{
+			position: absolute;
+		    top: 14px;
+		    left: 13px;
+		    background: red;
+		    width: 300px;
+		    height: 186px;
+		    display: none;
+		}
+		section div span img{
+			width: 100%;
+			height: 100%;
+		}
+		section div:nth-child(1)>span.active{
+			animation: first 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+
+.select{
+			width: 60%;
+			height: 580px;
+			padding: 5%;
+			background: #222;
+			position: absolute;
+			top: -1000px;
+			left: 20%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+		}
+		.select.display{
+			top: 10px;
+		}
+		.select div{
+			width: 100%;
+			height: 200px;
+			display: flex;
+			padding: 5px;
+			border: 1px solid white;
+			position: relative;
+			margin: 5px auto;
+		}
+		.select div img{
+			width: 300px;
+			height: 100%;
+		}
+		.select div p{
+			padding: 35px;
+			color: white;
+		}
+		.select div h6,
+		.select div button{
+			position: absolute;
+			left: 45%;
+			top: 50%;
+			color: white;
+		}
+		.select div button{
+			left: 60%;
+			top: 55%;
+		}
+		.select div span{
+			display: none;
+		}
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 300px) {
       .product .meta {
           width: 100%;

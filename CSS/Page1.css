@@ -26,7 +26,7 @@ body{
 }
 
 
- .logo img{
+ .logo {
 	 background-image: url("../Images/beige.png");
 /* 	 position:absolute; */
    background-image: url("../Images/Banner.png");

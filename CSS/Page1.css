@@ -140,7 +140,7 @@ header .navbar .navbar-right {
 	background-color: #ddd;
 }
 
-a:hover .whole-cart-window {
+.cart-box a:hover .whole-cart-window {
 	display: block;
 }
 

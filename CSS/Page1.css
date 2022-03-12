@@ -276,6 +276,10 @@ margin-top: 35%;
     color:#fff
 }
 
+.cart-icon:hover .whole-cart-window{
+    display: block;
+}
+
 
 #menu {
   display: none;

@@ -223,7 +223,23 @@
 
 // displayCart();
 
+var timer;
 
+$(".cart-box").on("mouseover", function() {
+  clearTimeout(timer);
+openSubmenu();
+}).on("mouseleave", function() {
+  timer = setTimeout(
+  closeSubmenu
+  , 1000);
+});
+
+function openSubmenu() {
+  $(".whole-cart-window").addClass("open");
+}
+function closeSubmenu() {
+  $(".whole-cart-window").removeClass("open");
+}
 
 
 class CartItem{

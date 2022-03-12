@@ -140,7 +140,7 @@ header .navbar .navbar-right {
 	background-color: #ddd;
 }
 
-.cart-icon:hover .whole-cart-window {
+.cart-box .cart-icon:hover .whole-cart-window {
 	display: block;
 }
 
@@ -151,7 +151,7 @@ header .navbar .navbar-right {
 .cart-box{
     width: 26% !important;
     position: absolute;
-    left:72%;
+    left:100%;
     top:25%;
     /* border:solid 1px blue; */
     padding:10px 20px;

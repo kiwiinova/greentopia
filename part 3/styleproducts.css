@@ -28,7 +28,7 @@ h2{
     padding:15px 10px;
 }
 
-.cart-wrapper{
+/* .cart-wrapper{
     overflow-y: auto;
     max-height: 350px;
     width:24vw;
@@ -113,7 +113,7 @@ margin-top: 35%;
   background-color: red;
   border-radius: 50%;
 }
-
+ */
 .card-wrapper{
     display: flex;
     flex-wrap: wrap;

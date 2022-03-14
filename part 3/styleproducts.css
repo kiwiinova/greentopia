@@ -45,6 +45,7 @@ h2{
     overflow-y: auto;
     max-height: 350px;
     width:24vw;
+    margin-top:10%
 }
 .subtotal{
     text-align: right;
@@ -77,7 +78,7 @@ h2{
 }
 
 .cart-item img{
-    width:100%;
+    width:26%;
 }
 .cart-item .details{
     padding-left:10%;

@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+:root {
+  --after-content: "2";
+}
+
 body {
   height: 100vh;
   /*   max-width:100%; */
@@ -51,7 +55,254 @@ background-size: cover;
  height: auto; */
 }
 
+header {
+  font-family: "Shadows Into Light Two";
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*   height:12vh; */
+  background: green;
+  padding-top: 20px 7%;
+  display: flex;
+  align-items: center;
+  /*   justify-content: space-between; */
+  justify-content: space-around;
+  z-index: 10;
+  /*   z-index: 1000; */
+  /*    */
+  width: 100%;
+  /*   position: absolute; */
+  /*   padding: 15px 100px; */
+}
 
+a {
+  text-decoration: none;
+  font-family: "Shadows Into Light Two";
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+  /*    */
+  margin: 0 10px;
+}
+
+header .navbar ul li a {
+  float: left;
+  font-size: 25px;
+  padding: 20px 70px;
+  list-style: none;
+  color: black;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background: black;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: rgb(179, 209, 181);
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+header .navbar ul li:hover > ul {
+  display: initial;
+  list-style: none;
+  text-decoration: none;
+}
+
+header .navbar .navbar-right {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.whole-cart-window a hover {
+  background-color: #ddd;
+}
+
+.cart-box:hover .whole-cart-window {
+  display: block;
+  left: 75%;
+}
+
+.cart-box:hover .cart-icon {
+  background-color: #3e8e41;
+}
+
+.cart-box {
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  /* border:solid 1px blue; */
+  padding: 10px 20px;
+}
+
+.cart-wrapper {
+  overflow-y: auto;
+  max-height: 350px;
+  width: 24vw;
+}
+.subtotal {
+  text-align: right;
+  padding: 5%;
+}
+.checkout,
+.view-cart {
+  width: 95%;
+  text-align: center;
+  cursor: pointer;
+  background-color: brown;
+  font-size: large;
+  color: #fff;
+  margin: 10px auto;
+  padding: 10px 15px;
+}
+.view-cart {
+  background-color: #fff;
+  border: 2px solid brown;
+  color: brown;
+}
+.cart-icon {
+  text-align: right;
+  display: inline-block;
+  background: green;
+  border: green;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  padding: 5% 2%;
+  border-bottom: solid 1px lightgray;
+}
+
+.cart-item img {
+  width: 100%;
+}
+.cart-item .details {
+  padding-left: 10%;
+}
+
+.cart-item h3 {
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.cart-item .price {
+  display: block;
+  text-align: right;
+  margin-top: 35%;
+}
+
+.quantity {
+  display: block;
+  margin-top: 5%;
+}
+
+.fa-window-close {
+  color: brown;
+}
+.cancel {
+  text-align: right;
+}
+.whole-cart-window {
+  display: none;
+  position: absolute;
+  border: solid lightgray 1px;
+  border-top: none;
+  position: fixed;
+  top: 12vh;
+  background-color: #fff;
+  margin-right: 2%;
+}
+
+/*  .hide{
+    display: none;
+} */
+/* .non-empty::after{
+ content: var(--after-content);
+ font-size: 25px;
+ width:25px;
+ display: inline-block;
+ text-align: center;
+ position: relative;
+ top:-20px;
+ right:20%;
+ background-color: red;
+ border-radius: 50%;
+} */
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+.card-item img {
+  width: 45%;
+}
+.card-item .details {
+  text-align: center;
+}
+.card-item p,
+.card-item h3 {
+  margin-top: 10px;
+}
+.card-item span {
+  display: block;
+  margin-top: 10px;
+}
+.add-to-cart-btn {
+  width: fit-content;
+  margin: auto;
+  /* margin-top:10px; */
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: brown;
+  border-radius: 3px;
+  font-size: large;
+  color: #fff;
+}
+
+/* .cart-icon:hover .whole-cart-window{
+   display: block;
+} */
+
+#menu {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
 
 @media (max-width: 645px) {
   header {

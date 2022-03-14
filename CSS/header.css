@@ -77,3 +77,14 @@ header .navbar .navbar-right {
   position: absolute;
   right: 0;
 }
+
+#menu {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}

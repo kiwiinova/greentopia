@@ -375,7 +375,7 @@ footer h2{
   height: 5vh;
 }
 
-@media screen and (max-width:720px) { 
+@media screen and (max-width:1000px) { 
   .logo {
     max-width: 300px !important;
     background-position: center center;

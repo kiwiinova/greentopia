@@ -348,6 +348,10 @@ footer {
   font-size: small;
 }
 
+footer .h2{
+  margin-top:0px;
+}
+
 .btnAdmin {
   font-size: 20px;
   font-weight: bold;

@@ -10,10 +10,6 @@
   text-decoration: none;
 }
 
-:root {
-  --after-content: "2";
-}
-
 body {
   height: 100vh;
   /*   max-width:100%; */
@@ -55,16 +51,7 @@ background-size: cover;
  height: auto; */
 }
 
-#menu {
-  display: none;
-}
 
-header label {
-  font-size: 20px;
-  color: black;
-  cursor: pointer;
-  display: none;
-}
 
 @media (max-width: 645px) {
   header {

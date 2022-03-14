@@ -380,11 +380,15 @@ footer h2{
   .logo {
     max-width: 100%;
     background-position: center center;
-    position: relative;
+/*     position: relative; */
     background-image: url(../Images/Transparentlogo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
 

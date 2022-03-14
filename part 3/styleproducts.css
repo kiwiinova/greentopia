@@ -44,7 +44,6 @@ h2{
     overflow-y: auto;
     max-height: 350px;
     width:24vw;
-    margin-top:10%
 }
 .subtotal{
     text-align: right;
@@ -133,6 +132,7 @@ margin-top: 35%;
 .card-wrapper{
     display: flex;
     flex-wrap: wrap;
+    margin-top:10%
 }
 .card-item{
     display: flex;
@@ -144,7 +144,7 @@ margin-top: 35%;
 }
 .card-item img{
     display: block;
-      max-width: 100%;
+      max-width: 30%;
       object-fit: cover;
       text-align: center;
       margin-left: auto;

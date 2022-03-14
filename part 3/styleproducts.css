@@ -143,8 +143,15 @@ margin-top: 35%;
     align-items: center;
 }
 .card-item img{
-    width:45%;
+    display: block;
+      max-width: 100%;
+      object-fit: cover;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
 }
+
 .card-item .details{
     text-align: center;    
 }

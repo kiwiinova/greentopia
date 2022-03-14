@@ -13,17 +13,7 @@ box-sizing: border-box;
 body{
     width:100vw;
 }
-header{
-    position: fixed;
-    left:0;
-    right:0;
-    top:0;
-    height:12vh;
-    background-color: brown;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 h1{
     color: black;
     margin-top: 70px;

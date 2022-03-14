@@ -168,6 +168,12 @@ margin-top: 35%;
     font-size: large;
     color:#fff
 }
+
+section .read-more{
+    margin-top:50px;
+}
+
+
 .more {
     display: none
 }

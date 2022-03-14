@@ -55,9 +55,6 @@ h2{
     border: 2px solid brown;
     color: brown;
 }
-.cart-icon{
-    text-align: right;
-}
 
 .cart-item{
   display:grid;
@@ -95,14 +92,14 @@ margin-top: 35%;
  .cancel{
      text-align: right;
  }
- .whole-cart-window{
+/*  .whole-cart-window{
      border: solid lightgray 1px;
      border-top:none;
      position: fixed;
      top:12vh;
      background-color: #fff;
      margin-right:2%;
- }
+ } */
 
  .hide{
      display: none;

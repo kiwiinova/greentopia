@@ -166,3 +166,32 @@ margin-top: 35%;
     font-size: large;
     color:#fff
 }
+.more {
+    display: none
+}
+
+.post {
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+    max-width: 400px;
+
+}
+
+.post:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+ .read {
+    margin-top: 15px;
+    display: block;
+    background-color: green;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 20px;
+} 

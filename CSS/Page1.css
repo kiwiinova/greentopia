@@ -32,7 +32,11 @@ body {
   background-size: cover;
   width: 500px;
   height: 300px;
-  float: center;
+/*   float: center; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   /*   height: 95%;  
  background-position: center center; 

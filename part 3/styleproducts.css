@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+\
 
 *,
 *::after{
@@ -12,7 +12,6 @@ box-sizing: border-box;
 
 body{
     width:100vw;
-    font-family: 'Lato', sans-serif;
 }
 header{
     position: fixed;
@@ -26,7 +25,7 @@ header{
     align-items: center;
 }
 h1{
-    color: #fff;
+    color: black;
 }
 .cart-box{
     width:26% !important;
@@ -150,11 +149,13 @@ margin-top: 35%;
     text-align: center;    
 }
 .card-item p,.card-item h3 {
-    margin-top:10px;   
+    margin-top:10px; 
+    font-size: 40px;
 }
 .card-item span{
     display: block;
     margin-top:10px;
+    font-size: 20px;
 }
 .add-to-cart-btn{
     width: fit-content;

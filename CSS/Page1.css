@@ -377,17 +377,16 @@ footer h2{
 
 @media screen and (max-width:1000px) { 
   .logo {
-    max-width: 300px !important;
-    background-position: center center;
-/*     position: relative; */
-    background-image: url(../Images/Transparentlogo.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  background-image: url("../Images/Transparentlogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+/*   float: center; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   }
 }
 

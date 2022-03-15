@@ -147,15 +147,14 @@ header label {
   display: none;
 }
 
-.cart-box a {
+h1{
 		width: 3%;
 	    position: relative;
 	    top: 60px;
 	    left: 90%;
 	    cursor: pointer;
 	}
-
-.cart-box a:before{
+	h1:before{
 		content: attr(data-count);
 	    color: white;
 	    position: absolute;
@@ -169,10 +168,9 @@ header label {
 	    border-radius: 50%;
 	    opacity: 0;
 	}
-	.cart-box a.zero:before{
+	h1.zero:before{
 		opacity: 1;
 	}
-
 
 
 

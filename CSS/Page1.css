@@ -132,7 +132,7 @@ header .navbar ul li:hover > ul {
 header .navbar .navbar-right {
   float: right;
   position: absolute;
-  right: 0;
+  right: 40px;
 }
 
 

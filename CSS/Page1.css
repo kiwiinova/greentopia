@@ -150,8 +150,8 @@ header label {
 h1{
 		width: 3%;
 	    position: relative;
-	    top: 60px;
-	    left: 90%;
+	    top: 0px;
+	    left: 0%;
 	    cursor: pointer;
 	}
 	h1:before{

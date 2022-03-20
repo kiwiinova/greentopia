@@ -32,7 +32,7 @@ body{
     background-color: ghostwhite;
     padding: 10px;
     border-radius: 7px;
-    flex:35%;
+    flex:40%;
 }
 
 
@@ -69,27 +69,26 @@ body{
     cursor: pointer;
 }
 
-.place_order {
+.place-order {
     font-family: "Shadows Into Light Two";
- background-color: #8FBC8F;
+ 	background-color: #8FBC8F;
     border-radius: 7px;
-    text-align: center;
     margin: auto;
     display: flex;
     display: grid;
-    padding: 5% 30%;
+    padding: 3% 20%;
     font-size: 20px;
     cursor: pointer;
 }
 
 .continue_shopping {
     font-family: "Shadows Into Light Two";
-   background-color: #8FBC8F;
+   	background-color: #8FBC8F;
     border-radius: 7px;
-    padding: 3% 20%;
     margin: auto;
     display: flex;
     display: grid;
+	padding: 3% 20%;
     font-size: 20px;
     cursor: pointer;
 }
@@ -121,7 +120,7 @@ p{
     margin-left: 20px;
 }
 
-span.price{
+span.price-right{
     float: right;
     margin-right: 20px;
 }

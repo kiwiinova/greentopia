@@ -2,24 +2,28 @@
 <html>
 <head>
 <meta charset="utf-8">
-	    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
 
 <title>GreenTopia Grocery Store</title>
 
 <link rel="stylesheet" href="../CSS/P4.css">
-    <link rel="stylesheet" href="../CSS/Page1.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" href="../CSS/Page1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+<script src="../JavaScript/P4.js"></script>
+	
     </head>
       <header>
+	
    
       <input type="checkbox" id="menu" />
       <label for="menu"><i class="material-icons">menu</i></label>
 
       <nav class="navbar">
         <ul>
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
           <li>
-            <a href="#">Aisles +</a>
+            <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
             <ul>
               <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
               <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
@@ -27,18 +31,17 @@
               <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
             </ul>
           </li>
-          <li><a href="../HTML/P4.html"><i class="material-icons">shopping_cart</i>Shopping Cart</a></li>
-          <li><a href="../HTML/P5.html">Login</a></li>
+          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp; Shopping Cart</a></li>
+          <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
         </ul>
       </nav>
     </header>
 	<br><br><br><br><br><br><br>
     <body>
      
-        
+        <form name = "myForm" action = "">
         <div class="flex-container">
-			
-			
+						
         <div class="flex-item-left">
             <p> 
                 <b>Shipping address:</b> 
@@ -62,127 +65,76 @@ Montreal, Quebec A1B 2C3
             <hr>
             
             <p>
-                <b>Items:</b> 
+                <br><b>Items:</b> 
             </p>
 			
-			
-		
             <div class="flex-item-left">
-                <p> Your item number 1 is yogurt(s) at the price of $3,55.
+                <h3 class="productname">Yogurt<br><small>Cost: $3.55/each</small></h3>
+				<h4>Price: $<span class="price" data-price="3.55">3.55</span></h4>
+                 <div class="user-input">
+                   <div class="input-element">
+                      <span class="quantity-text" id="element1">Quantity</span>
+					 </div>
+                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1" onclick= "updateSummary();"/>
+					<button class="button">Delete</button>
+                 </div>
 
-                    <div class="inputnum">
-                        <label for="quantity1">Quantity</label>
-                        <input type="number" id="quantity1" name="quantity" min="1" max="40" value="1"/>
-                    </div>
-                    <script>
-                        var t = document.getElementById("quantity1").value;
-	                    let q = Number(t)*3.55.toFixed(2); 
-                    </script>
-
-		            <button class="button">Delete</button>
-<!--			     </p>-->
-
-                <p> Your item number 2 is pack(s) of shrimp(s) at the price of $9,78.
-                    
-
-                    <div class="inputnum">
-                        <label for="quantity2">Quantity</label>
-                        <input type="number" id="quantity2" name="quantity" min="1" max="40" value="1"/>
-                    </div>
+				<h3 class="productname">Shrimp<br><small>Cost: $9.78/each</small></h3>
+				<h4>Price: $<span class="price" data-price="9.78">9.78</span></h4>
+				<div class="user-input">
+                   <div class="input-element">
+                      <span class="quantity-text" id="element2">Quantity</span>
+				   </div>
+                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1" onclick= "updateSummary();"/>
+					<button class="button">Delete</button>
                 
-                    <script>
-                        var t = document.getElementById("quantity2").value;
-                        let w = Number(t)*9.78.toFixed(2);
-                    </script>
-				
-                    <button class="button">Delete</button>
-<!--			</p>-->
-                
-                <p> Your item number 3 is cream(s) at the price of $5,35.
-                     
-
-                    <div class="inputnum">
-                        <label for="quantity3">Quantity</label>
-                        <input type="number" id="quantity3" name="quantity" min="1" max="40" value="1"/>
-                    </div>
-                    <script>
-                        var t = document.getElementById("quantity3").value;
-                   
-                        let e = Number(t)*5.35.toFixed(2);
-                    </script>
-
-                    <button class="button">Delete</button>
-<!--			</p>-->
-                
+               <h3 class="productname">Cream<br><small>Cost: $5.35/each</small></h3>
+			   <h4>Price: $<span class="price" data-price="5.35">5.35</span></h4>
+				<div class="user-input">
+                   <div class="input-element">
+                      <span class="quantity-text" id="element3">Quantity</span>
+					 </div>
+                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1" onclick= "updateSummary();"/>
+					<button class="button">Delete</button>
              <a href="../index.html"><button class="continue_shopping">Continue Shopping</button></a>
-            
-      
-        </div>  
-	</div>
+       		 	</div>  
+				</div>
+			</div>
+			</div>
+			
              <div class="flex-item-right">
 
-                <h1> Order Summary</h1>
+                <h1>Order Summary</h1>
                 <p> 
                     Items (3): 
-                    <span class="price" id="demo0">
-                        <script>
-                            let x = (q+w+e).toFixed(2);
-                            document.getElementById("demo0").innerHTML="$"+x;
-                        </script>
-                    </span>
-                    
+					<span class="price-right">$<span id="subtotal">18.68</span></span>
                 </p>
                 <p>
                     Shipping and Handling:
-                    <span class="price">$4.69</span>
-                    <script>y=4.69;</script>
+                    <span class="price-right">$<span id="shipping">15.00</span></span>
                 </p>
                 <p>
                     Total before taxes:
-                    <span class="price" id="demo1">
-                        <script>
-                            let z = (Number(x)+Number(y)).toFixed(2);
-                            document.getElementById("demo1").innerHTML="$"+ z;
-                        </script>
-                    </span>
+					<span class="price-right">$<span id="total">33.68</span></span>
                  </p>
                 <hr>
                 <p>
-                    QST
-                    <span class="price" id="demo2">
-                        <script>
-                            let k = (z*0.09975).toFixed(2);
-                            document.getElementById("demo2").innerHTML="$"+k;
-                        </script>
-                    </span>
+                    QST:
+					<span class="price-right">$<span id="qst">3.36</span></span>
                 </p>
-                
                 <p>
-                    GST
-                    <span class="price" id="demo3">
-                        <script>
-                            let l = (z*0.05).toFixed(2);
-                            document.getElementById("demo3").innerHTML="$"+l;
-                        </script>
-                    </span>
+                    GST:
+					<span class="price-right">$<span id="gst">1.68</span></span>
                 </p>
                 <hr>
-            
-                <p>
-                    <h2>Total Price
-                    <span class="price" id="demo4">
-                        <script>
-                            let m = (Number(z)+Number(k)+Number(l)).toFixed(2);
-                            document.getElementById("demo4").innerHTML="$"+m;
-                        </script>
-                    </span>
+                    <h2>Total Price:
+						<span class="price-right">$<span id="finaltotal">38.72</span></span>
                     </h2>
-                 <button class="place_order">Place Order</button>
-<!--                </p>-->
-   
-<!--	</p>-->
+                 <button class="place-order">Place Order</button>
     </div>
+
 </div>
+</form>
 </body>
 </html>
 

@@ -37,7 +37,7 @@
       </nav>
     </header>
 	<br><br><br><br><br><br><br>
-    <body>
+    <body onload="updateSummary();">
      
         <form name = "myForm" action = "">
         <div class="flex-container">
@@ -75,7 +75,7 @@ Montreal, Quebec A1B 2C3
                    <div class="input-element">
                       <span class="quantity-text" id="element1">Quantity</span>
 					 </div>
-                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1" onclick= "updateSummary();"/>
+                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1"/>
 					<button class="button">Delete</button>
                  </div>
 
@@ -85,7 +85,7 @@ Montreal, Quebec A1B 2C3
                    <div class="input-element">
                       <span class="quantity-text" id="element2">Quantity</span>
 				   </div>
-                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1" onclick= "updateSummary();"/>
+                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1"/>
 					<button class="button">Delete</button>
                 
                <h3 class="productname">Cream<br><small>Cost: $5.35/each</small></h3>
@@ -94,7 +94,7 @@ Montreal, Quebec A1B 2C3
                    <div class="input-element">
                       <span class="quantity-text" id="element3">Quantity</span>
 					 </div>
-                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1" onclick= "updateSummary();"/>
+                    <input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1"/>
 					<button class="button">Delete</button>
              
        		 	</div>  

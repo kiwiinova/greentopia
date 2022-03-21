@@ -11,7 +11,6 @@
 <!--   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                 -->
    <link rel="stylesheet" href="styleproducts.css">
    <link rel="stylesheet" href="imagepages.css"> 
-   <link rel="stylesheet" href="../CSS/Page1.css"/>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="skeleton.css">
     <link rel="stylesheet" href="custom.css">
@@ -123,6 +122,49 @@
         </ul>
       </nav>
     </header>
+ 
+ <div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a>
+  <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
+   <ul>
+              <a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a>
+              <a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a>
+              <a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a>
+              <a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a>
+            </ul>
+  <a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a>
+  <a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a>
+  <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img alt="image of a shopping cart" src="C:\Users\Shamma\Desktop\shopping-basket-vector-icon-800x566.jpg" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                                    Total price: <strong id="totalPrice">0 $</strong>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+ 
+ 
+ 
 <center>   
 <body>
 <!--       <div class="product">
@@ -230,6 +272,16 @@ function myFunction() {
   }
 }
 </script>
+ <script>
+  function myFunction2() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+ </script>
      
 </body>
    </center>

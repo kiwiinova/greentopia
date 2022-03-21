@@ -17,7 +17,7 @@ body{
 }
 
 .flex-item-left{
-    margin: 30px;
+    margin: 60px 30px;
     border-style: groove;
     background-color: ghostwhite;
     border-radius: 7px;
@@ -27,7 +27,7 @@ body{
 
 .flex-item-right{
     height:30%;
-    margin: 30px;
+    margin: 60px 30px;
     border-style: groove;
     background-color: ghostwhite;
     padding: 10px;

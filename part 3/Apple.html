@@ -1,104 +1,77 @@
 <!DOCTYPE html>
-<html lang-"en">
-<head>
+<html lang="en">
+<!--<head>-->
+ <head>
    <meta charset = "UTF-8">
    <meta http-equiv = "X-UA-Compatible" content="IE-edge"> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?
   family=Poppins:700|Work+Sans&display=swap" rel="stylesheet"> 
   <!-- Stylesheet -->
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-   <link rel="stylesheet" href="../part 3/styleproducts.css">
-   <link rel="stylesheet" href="../CSS/Page1.css"/> 
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                
+   <link rel="stylesheet" href="styleproducts.css">
+   <link rel="stylesheet" href="imagepages.css"> 
+   <link rel="stylesheet" href="../CSS/Page1.css"/>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    /> -->
-</head> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+   </head>
    <header>
       <input type="checkbox" id="menu" />
       <label for="menu"><i class="material-icons">menu</i></label>
 
-      <nav class ="navbar">
+     <nav class="navbar">
         <ul>
           <li><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
           <li>
-            <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
+           <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
             <ul>
-              <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
-              <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
-              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a></li>
-              <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
+              <a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a>
+              <a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a>
+              <a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a>
+              <a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a>
             </ul>
           </li>
-          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp; Shopping Cart</a></li>
-          <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
-          
-          
-        <div class="navbar-right">                   
-<!--        <li><a href="#" id="cart"><i class="fa-solid fa-basket-shopping"></i><span class="badge">3</span></a></li>  -->
-<!--           <div class="cart-box"> -->
-<!--             <a><div class="cart-icon"></a> -->
-              <h1><i class="fa-solid fa-basket-shopping"></i></h1>
-<!--               <span class="badge">3</span> -->
-            </div>
-<!--             <div class="whole-cart-window"> 
-              <a href="#">
-              <h2>Shopping Cart</h2>
-              <div class="cart-wrapper">
-              </div>
-          <div class="subtotal">Subtotal: $0.00</div>
-          <div class="checkout">Checkout</div>
-          <div class="view-cart">View Cart</div>
-              </a></div>  -->
-<!--       </div> -->
-<!--           </div>  --
-          </ul>
+          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a></li>
+            <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
+        </ul>
       </nav>
-</header>
-   <center>
+    </header>
+<center>   
 <body>
-   <section class = "shop-section">
-      <div class="item">
-            <img src= "..\Images\Apples.jpg">
-            <h3>Red Apples</h3>
-            <span class="price">$10,77 for a bag of 10</span>
-               <span></span>
-               <button>Add Cart</button>
-            <div class="main">
-               <div class="btn">
-                <ul>
-                 <button class="minusBtn">-</button>
-                 <button class="mainBtn">ADD TO CART</button>
-                 <button class="plusBtn">+</button>
-                </ul>
-             </div>
-            </div> 
-        
-        </div>
+      <div class="product">
+        <div class="product-img">
+            <div class="zoom">
+            <img src= "..\Images\Apples.jpg" alt="Apple" title="Product">
+            </div>
          </div>
-   
-   </section>
-    <section class = "read-more>
-        <div class="post">
-            <h1> Product Description </h1>
-            The Red Delicious apple, dark red in color, has a crunchy yellow flesh that softens when cooked.
-            <span class = "dots">...</span>
-            <span class = "more"> 
-                It can be enjoyed as is, as a snack with peanut butter or sliced in a salad with grilled nuts.
-            </span>
-            
-            <button class="read">read more
-            </button>
+        <div class="product-info">
+            <h3>Apples</h3>
+            <div class="price">$10.77
+            </div>
         </div>
-    </section>
-   <div class="select">
-         
-   </div>
-   
-   <script type ="text/javascript"  src="script.js"></script>
+       
+       
+        <div class="main">
+     <div class="btn">
+      <ul>
+      <button class="minusBtn">-</button>
+      <button class="mainBtn">ADD TO CART</button>
+      <button class="plusBtn">+</button>
+      </ul>
+     </div>
+ </div>
+ </div>
+
+    <aside>
+        <h1a> Product Description </h1a> 
+        <p>These red mcIntosh apples are sold in a bag of 10.<span id="dots">...</span>
+            <span id="more">They are produced locally in Quebec without any pesticides or GMO (genetically modified organism).</span>
+        </p>
+        <button onclick="myFunction()" id="myBtn" class="read">Read more</button>
+    </aside>
+    
+    
     <script>
         let btn = document.querySelector('.mainBtn');
         let mbtn = document.querySelector('.minusBtn');
@@ -132,57 +105,26 @@
       }
      })
  </script>
+
+    
     <script>
-        $(document).ready(function(){
-            $(".read").click(function(){
-                $(this).prev().toggle();
-                $(this).siblings('.dots').
-                toggle();
-                if ($(this).text()=='read less'){
-                    $(this).text('read more');
-                }
-                else {
-                    $(this).text('read less');
-                }
-            });
-        });
-    </script>
-    <script type="text/javascript">
-       var noti = document.querySelector('h1');
-	var select = document.querySelector('.select');
-	var button = document.getElementsByTagName('button');
-	for(var but of button){
-		but.addEventListener('click', (e)=>{
-			var add = Number(noti.getAttribute('data-count') || 0);
-			noti.setAttribute('data-count', add +1);
-			noti.classList.add('zero')
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-			// image --animation to cart ---//
-			var image = e.target.parentNode.querySelector('img');
-			var span = e.target.parentNode.querySelector('span');
-			var s_image = image.cloneNode(false);
-			span.appendChild(s_image);
-			span.classList.add("active");
-			setTimeout(()=>{
-				span.classList.remove("active");
-				span.removeChild(s_image);
-			}, 500); 
-			
-
-			// copy and paste //
-			var parent = e.target.parentNode;
-			var clone = parent.cloneNode(true);
-			select.appendChild(clone);
-			clone.lastElementChild.innerText = "Buy-now";
-			
-			if (clone) {
-				noti.onclick = ()=>{
-					select.classList.toggle('display');
-				}	
-			}
-		})
-	}
-                                                     </script>                                                  
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+     
 </body>
    </center>
 </html>

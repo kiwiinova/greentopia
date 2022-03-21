@@ -1,21 +1,22 @@
 // JavaScript P3
 
-const price = document.getElementById('price');
-const product = price.dataset.product;
-const quantity = document.getElementById('quantity');
-const orignalPrice = price.innerText;
-localStorage.setItem(`oriPrice-${product}`,orignalPrice);
+var price = document.getElementById('price');
+var product = price.dataset.product;
+var quantity = document.getElementById('quantity');
+var orignalPrice = price.innerText;
+localStorage.setItem(`Price-${product}`,orignalPrice);
 
-if(localStorage.getItem(`quantity-${product}`) && localStorage.getItem(`newPrice-${product}`)){
+if(localStorage.getItem(`quantity-${product}`) && localStorage.getItem(`newPrice-${product}`))
+{
     price.innerText = localStorage.getItem(`newPrice-${product}`);
     quantity.value = localStorage.getItem(`quantity-${product}`);
 }
 
-quantity.addEventListener('input',updatePrice);
+quantity.addEventListener('input',update);
 
-function updatePrice(){
-    let value = quantity.value;
-    let newPrice = Number(localStorage.getItem(`oriPrice-${product}`) * value).toFixed(2);
+function update(){
+    var value = quantity.value;
+    var newPrice = Number(localStorage.getItem(`Price-${product}`) * value).toFixed(2);
     price.innerText = newPrice;
     localStorage.setItem(`quantity-${product}`,value);
     localStorage.setItem(`newPrice-${product}`,newPrice);

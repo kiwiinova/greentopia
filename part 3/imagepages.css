@@ -9,16 +9,18 @@
       margin-right: auto;
   }
 
-section {
-    padding: none;
+.section {
+    padding: 10%;
+/*    height: auto;*/
+    width:50%;
 }
 
-h1 {
+h1a {
     margin: 0 0 15px 0;
     color: black;
     font-size: 28px;
     font-weight: 700;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     letter-spacing: 1.0px;
     text-align: center;
 }

@@ -6,6 +6,9 @@
     <title>GreenTopia Grocery Store</title>
     <link rel="stylesheet" href="../CSS/Page1.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../part 3/normalize.css">
+    <link rel="stylesheet" href="../part 3/skeleton.css">
+    <link rel="stylesheet" href="../part 3/custom.css">
     <script src="https://kit.fontawesome.com/22f06b9912.js" crossorigin="anonymous"></script>
 <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="script.js"></script>  -->
@@ -13,7 +16,89 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+  
+  <script>
+        var cart = [];
+        $(function () {
+            if (localStorage.cart)
+            {
+                cart = JSON.parse(localStorage.cart);
+                showCart();
+            }
+        });
+
+        function addToCart() {
+            var sum= 0.0;
+            // $('#cart-content > tbody > tr').each(function() {
+            // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
+            var img1 = $('#item-list').find('.course-image').attr('src');
+            var price1 = $('.price .u-pull-right').text().replace("$", "");
+            var price = parseFloat(price1);
+            var name = $('h4').text();
+            var qty = $('.count').val();
+            var amount = (qty*price);
+
+            sum+=amount;
+            
+
+            $('#totalPrice').text('$'+ sum);
+            
+            
+
+           
+
+            // update qty if product is already present
+            for (var i in cart) {
+                if(cart[i].Name == name)
+                {
+                    cart[i].Quantity = qty;
+                    showCart();
+                    saveCart();
+                    return;
+                }
+            }
+            // create JavaScript Object
+            var item = {Image: img1, Name: name, Price: price, Quantity: qty }; 
+            cart.push(item);
+            console.log(cart);return false;
+            saveCart();
+            showCart();
+        }
+
+        function deleteItem(index){
+            cart.splice(index,1); // delete item at index
+            console.log(index);
+            showCart();
+            saveCart();
+        }
+
+        function saveCart() {
+            if ( window.localStorage)
+            {
+                localStorage.cart = JSON.stringify(cart);
+            }
+        }
+
+        function showCart() {
+            // if (cart.length == 0) {
+            //     $("#cart-content").css("visibility", "hidden");
+            //     return;
+            // }
+
+            $("#cart-content").css("visibility", "visible");
+            $("#cart-content tbody").empty();
+            for (var i in cart) {
+                var item = cart[i];
+                var row = "<tr><td>" + item.Image + "</td><td>" + item.Name + "</td><td>" +
+                             item.Quantity + "</td><td>" + item.Quantity * item.Price + " $" + "</td><td>"
+                             + "<button onclick='deleteItem(" + i + ")'>X</button></td></tr>";
+                $("#cart-content tbody").append(row);
+                buttonActivator();
+            }
+            $("button").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
+           
+    }    
+    </script>
   </head>
 
   <body>
@@ -44,23 +129,31 @@
           
           
         <div class="navbar-right">                   
-<!--        <li><a href="#" id="cart"><i class="fa-solid fa-basket-shopping"></i><span class="badge">3</span></a></li>  -->
-<!--           <div class="cart-box"> -->
-<!--             <a><div class="cart-icon"></a> -->
-              <h1><i class="fa-solid fa-basket-shopping"></i></h1>
-<!--               <span class="badge">3</span> -->
-            </div>
-<!--             <div class="whole-cart-window"> 
-              <a href="#">
-              <h2>Shopping Cart</h2>
-              <div class="cart-wrapper">
-              </div>
-          <div class="subtotal">Subtotal: $0.00</div>
-          <div class="checkout">Checkout</div>
-          <div class="view-cart">View Cart</div>
-              </a></div>  -->
+<!--               <h1><i class="fa-solid fa-basket-shopping"></i></h1> -->
+               <ul>
+                    <li class="submenu">
+                        <img alt="image of a shopping cart" src="C:\Users\Shamma\Desktop\basket-icon-7.jpg" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                                    Total price: <strong id="totalPrice">0 $</strong>
+                            </div>
+                    </li>
+                </ul>                      
       </div>
-<!--           </div>  -->
+
           </ul>
       </nav>
     </header>

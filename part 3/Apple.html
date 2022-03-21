@@ -8,100 +8,16 @@
    <link href="https://fonts.googleapis.com/css?
   family=Poppins:700|Work+Sans&display=swap" rel="stylesheet"> 
   <!-- Stylesheet -->
-<!--   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                 -->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                
    <link rel="stylesheet" href="styleproducts.css">
    <link rel="stylesheet" href="imagepages.css"> 
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="skeleton.css">
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="../CSS/Page1.css"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <script src="https://kit.fontawesome.com/22f06b9912.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script>
-        var cart = [];
-        $(function () {
-            if (localStorage.cart)
-            {
-                cart = JSON.parse(localStorage.cart);
-                showCart();
-            }
-        });
 
-        function addToCart() {
-            var sum= 0.0;
-            // $('#cart-content > tbody > tr').each(function() {
-            var img1 = $('img .course-image u-full-width').attr('src');
-            var price1 = $('.price .u-pull-right').text().replace("$", "");
-            var price = parseFloat(price1);
-            var name = $('h4').text();
-            var qty = $('.count').val();
-            var amount = (qty*price);
-
-            sum+=amount;
-            
-
-            $('#totalPrice').text('$'+ sum);
-            
-            
-
-           
-
-            // update qty if product is already present
-            for (var i in cart) {
-                if(cart[i].Name == name)
-                {
-                    cart[i].Quantity = qty;
-                    showCart();
-                    saveCart();
-                    return;
-                }
-            }
-            // create JavaScript Object
-            var item = {Image: img1, Name: name, Price: price, Quantity: qty }; 
-            cart.push(item);
-            console.log(cart);return false;
-            saveCart();
-            showCart();
-        }
-
-        function deleteItem(index){
-            cart.splice(index,1); // delete item at index
-            console.log(index);
-            showCart();
-            saveCart();
-        }
-
-        function saveCart() {
-            if ( window.localStorage)
-            {
-                localStorage.cart = JSON.stringify(cart);
-            }
-        }
-
-        function showCart() {
-            // if (cart.length == 0) {
-            //     $("#cart-content").css("visibility", "hidden");
-            //     return;
-            // }
-
-            $("#cart-content").css("visibility", "visible");
-            $("#cart-content tbody").empty();
-            for (var i in cart) {
-                var item = cart[i];
-                var row = "<tr><td>" + item.Image + "</td><td>" + item.Name + "</td><td>" +
-                             item.Quantity + "</td><td>" + item.Quantity * item.Price + " $" + "</td><td>"
-                             + "<button onclick='deleteItem(" + i + ")'>X</button></td></tr>";
-                $("#cart-content tbody").append(row);
-                buttonActivator();
-            }
-            $("button").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
-           
-    }  
-  </script>
    </head>
    <header>
-<!--       <input type="checkbox" id="menu" />
+      <input type="checkbox" id="menu" />
       <label for="menu"><i class="material-icons">menu</i></label>
 
      <nav class="navbar">
@@ -120,53 +36,10 @@
             <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
         </ul>
       </nav>
-    </header> -->
- 
- <div class="topnav" id="myTopnav">
-  <a href="index.html" class="active"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a>
-  <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
-   <ul>
-              <a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a>
-              <a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a>
-              <a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a>
-              <a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a>
-            </ul>
-  <a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a>
-  <a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a>
-  <div class="two columns u-pull-right">
-                <ul>
-                    <li class="submenu">
-                        <img alt="image of a shopping cart" src="C:\Users\Shamma\Desktop\shopping-basket-vector-icon-800x566.jpg" id="img-cart">
-                            <div id="shopping-cart">
-                                    <table id="cart-content" class="u-full-width">
-                                        <thead>
-                                            <tr>
-                                                <th>Image</th>
-                                                <th>Name</th>
-                                                <th>Quantity</th>
-                                                <th>Price</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-
-                                    <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
-                                    Total price: <strong id="totalPrice">0 $</strong>
-                            </div>
-                    </li>
-                </ul>
-            </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
- </header>
- 
- 
+    </header>
 <center>   
 <body>
-<!--       <div class="product">
+      <div class="product">
         <div class="product-img">
             <div class="zoom">
             <img src= "..\Images\Apples.jpg" alt="Apple" title="Product">
@@ -188,27 +61,7 @@
       </ul>
      </div>
  </div>
- </div> -->
- 
- 
- <div id="item-list" class="container">
-        <h1 id="heading" class="heading"></h1>
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img alt="image of an apple" src="..\Images\Apples.jpg" class="course-image u-full-width">
-                    <div class="info-card" data-name="html" data-price="15">
-                     <h4>Apples</h4>
-                       
-                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
-                        <input type = "number" class="count" value="1" />
-                        <a href="#" class="u-full-width button-primary button input add-to-cart"  data-id="1" onclick="addToCart(this)">Add to Cart</a>
-                    </div>
-                </div> <!--.card-->
-            </div>
-
-            </div>
-            </div>
+ </div>
 
     <aside>
         <h1a> Product Description </h1a> 
@@ -219,7 +72,7 @@
     </aside>
     
     
-<!--     <script>
+    <script>
         let btn = document.querySelector('.mainBtn');
         let mbtn = document.querySelector('.minusBtn');
         let pbtn = document.querySelector('.plusBtn');
@@ -252,7 +105,7 @@
       }
      })
  </script>
- -->
+
     
     <script>
 function myFunction() {
@@ -271,16 +124,6 @@ function myFunction() {
   }
 }
 </script>
- <script>
-  function myFunction2() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
- </script>
      
 </body>
    </center>

@@ -20,21 +20,49 @@
       <input type="checkbox" id="menu" />
       <label for="menu"><i class="material-icons">menu</i></label>
 
-     <nav class="navbar">
+      <nav class ="navbar">
         <ul>
-          <li><a href="../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+          <li><a href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
           <li>
-           <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
+            <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
             <ul>
-              <a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a>
-              <a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a>
-              <a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a>
-              <a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a>
+              <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
+              <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
+              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a></li>
+              <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
             </ul>
           </li>
-          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a></li>
-            <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
-        </ul>
+          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp; Shopping Cart</a></li>
+          <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
+          
+          
+        <div class="navbar-right">                   
+<!--               <h1><i class="fa-solid fa-basket-shopping"></i></h1> -->
+               <ul>
+                    <li class="submenu">
+                        <img alt="image of a shopping cart" src="../Images/basket-icon-7.jpg" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                                    Total price: <strong id="totalPrice">0 $</strong>
+                            </div>
+                    </li>
+                </ul>                      
+      </div>
+
+          </ul>
       </nav>
     </header>
 <center>   

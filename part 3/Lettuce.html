@@ -23,18 +23,18 @@
 
       <nav class="navbar">
         <ul>
-           <li><a href="../index.html">Home</a></li>
+           <li><a href="../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
           <li>
-            <a href="#">Aisles +</a>
+           <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
             <ul>
-              <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
-              <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
-              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Bread</a></li>
-              <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
+              <a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a>
+              <a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a>
+              <a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a>
+              <a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a>
             </ul>
           </li>
-          <li><a href="../HTML/P4.html"><i class="material-icons">shopping_cart</i>Shopping Cart</a></li>
-          <li><a href="../HTML/P5.html">Login</a></li>
+          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a></li>
+            <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
         </ul>
       </nav>
 </header>
@@ -49,9 +49,18 @@
        
         <div class="product-info">
             <h3>Romaine Lettuce</h3>
-           <div class="price"><span class="base">$6,00</span><span class="discount">$4,05</span>
+           <div class="price">3.55
             </div>
         </div>
+		  
+		 <h5>$<span id="price" data-product="lettuce">3.55</span></h5>
+		<div class="user-input">
+        	<div class="input-element">
+            	<span class="input-group-text" id="quantity-text">Quantity:</span>
+			</div>
+            <input type="number" class="form-control" id="quantity" placeholder="1" min="1" max="40">  
+		</div> 
+		  
 <!--         <div class="product-btns">
            <ul>
                 <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
@@ -61,13 +70,14 @@
         </div> -->
          
                  <div class="main">
-     <div class="btn">
+     <!--<div class="btn">
       <ul>
       <button class="minusBtn">-</button>
       <button class="mainBtn">ADD TO CART</button>
       <button class="plusBtn">+</button>
       </ul>
      </div>
+-->
  </div>
     </div>
     <section>
@@ -131,6 +141,7 @@
             });
         });
     </script>
+<script src="../JavaScript/P3.js"></script>	   	
 </body>
    </center>
 </html>

@@ -8,6 +8,7 @@ var cart = [];
         });
 
         function addToCart(index) {
+            var id = $('.data-id').val();
             var sum= 0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
@@ -28,10 +29,12 @@ var cart = [];
            $('#totalPrice').each(function(){
                    sum+= parseInt(amount);
            })
+                $('#totalPrice').html(sum.toFixed(2));
+//                 var value = qty.value;
+//                 var newPrice = Number(localStorage.getItem() * value).toFixed(2);
             
 
-           
-
+      
             // update qty if product is already present
             for (var i in cart) {
                 if(cart[i].Name == name)

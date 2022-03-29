@@ -87,9 +87,10 @@ var total = 0;
                              + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
                 buttonActivator();
-                    total += item.Quantity*item.Price;
-                    $('#totalPrice').text("$"+total+"");
+                    
             }
+                total += item.Quantity*item.Price;
+                    $('#totalPrice').text("$"+total+"");
             $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
            
     }  

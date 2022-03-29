@@ -1,5 +1,5 @@
 var cart = [];
-var total = 0;
+
         $(function () {
             if (localStorage.cart)
             {
@@ -11,6 +11,7 @@ var total = 0;
         function addToCart(index) {
             var id = $('.data-id').val();
             var sum= 0;
+            var total = 0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
             var img1 = $('#item-list').find('.item-image').attr('src');

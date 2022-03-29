@@ -19,19 +19,21 @@ var cart = [];
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
+//             var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
+             sum+=amount;
+             var itemTot = $('#totalPrice').text('$'+ sum);
 
-//             sum+=amount;
+//             sum+=parseFloat(amount);
             
 
 //            $('#totalPrice').text('$'+ sum);
             
-           $('#totalPrice').each(function(){
-                   sum+= parseFloat(amount);
-           })
+//            $('#totalPrice').each(function(){
+//                    sum+= parseFloat(amount);
+//            })
                 $('#totalPrice').html(sum.toFixed(2));
                 
-                localStorage.setItem('#totalPrice', sum);
+//                 localStorage.setItem('#totalPrice', sum);
                 
 //                 var value = qty.value;
 //                 var newPrice = Number(localStorage.getItem() * value).toFixed(2);

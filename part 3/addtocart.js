@@ -102,7 +102,7 @@ var cart = [];
                              + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
                     
-                totalCalculate();
+//                 totalCalculate();
                 buttonActivator();
                     
             }

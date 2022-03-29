@@ -61,6 +61,8 @@ var total = 0;
                 total += value;
         })
                 $('#totalValue').text(total.toFixed(2));
+                showCart();
+                saveCart();
         }
         totalCalculate();
 

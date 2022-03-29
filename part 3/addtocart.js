@@ -20,10 +20,10 @@ var cart = [];
             var amount = (qty*price);
             var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
 
-            sum+=parseInt($(this)val());
+            sum+=amount;
             
 
-            $('#totalPrice').html('$'+ sum);
+           $('#totalPrice').text('$'+ sum);
             
             
 

@@ -59,8 +59,8 @@ var total = 0;
             cart.splice(index,1); // delete item at index
             console.log(index);
                 
-            total = total - item.Quantity*item.Price;
-            $('#totalPrice').text("$"+total+"");
+//             total = total - item.Quantity*item.Price;
+//             $('#totalPrice').text("$"+total+"");
             showCart();
             saveCart();
         }

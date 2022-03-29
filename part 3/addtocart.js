@@ -50,7 +50,8 @@ var cart = [];
             console.log(cart);return false;
             saveCart();
             showCart();
-        });
+        }
+
         
         function totalCalculate() {
 //                 var total = 0;

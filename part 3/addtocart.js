@@ -11,11 +11,8 @@ var cart = [];
         function addToCart(index) {
             var id = $('.data-id').val();
             var sum= 0;
-            var total = 0;
-            // $('#cart-content > tbody > tr').each(function() {
-            // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
+            
             var img1 = $('#item-list').find('.item-image').attr('src');
-//             var img1 = $(this).data('img');
             var price1 = $('.price .u-pull-right').text().replace("$", "");
             var price = parseFloat(price1,2);
             var name = $('h4').text();

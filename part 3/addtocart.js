@@ -20,14 +20,6 @@ var total = 0;
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-//             var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
-//              totalPrice+=amount;
-//              var value = parseFloat(localStorage(getItem('totalPrice'));
-//                                     totalPrice+=amount;
-//              var itemTot = $('#totalPrice').text('$'+ sum);
-//              localStorage.setItem('totalPrice', value);
-
-//             sum+=parseFloat(amount);
             
 
 //            $('#totalPrice').text('$'+ sum);
@@ -55,7 +47,7 @@ var total = 0;
                 }
             }
             // create JavaScript Object
-            var item = {Image: img1, Name: name, Price: price, Quantity: qty, Itemtot: itemTot }; 
+            var item = {Image: img1, Name: name, Price: price, Quantity: qty}; 
             cart.push(item);
             console.log(cart);return false;
             saveCart();

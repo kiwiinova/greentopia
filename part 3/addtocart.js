@@ -26,7 +26,7 @@ var cart = [];
 //            $('#totalPrice').text('$'+ sum);
             
            $('#totalPrice').each(function(){
-                   sum+= parseInt($(this).val());
+                   sum+= parseInt(amount);
            })
             
 

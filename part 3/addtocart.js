@@ -8,7 +8,7 @@ var cart = [];
         });
 
         function addToCart(index) {
-            var sum= 0.0;
+            var sum= 0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
             var img1 = $('#item-list').find('.item-image').attr('src');
@@ -20,11 +20,14 @@ var cart = [];
             var amount = (qty*price);
             var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
 
-            sum+=amount;
+//             sum+=amount;
             
 
-           $('#totalPrice').text('$'+ sum);
+//            $('#totalPrice').text('$'+ sum);
             
+           $('#totalPrice').each(function(){
+                   sum+= parseInt($(this).val());
+           })
             
 
            

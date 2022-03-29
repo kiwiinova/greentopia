@@ -7,7 +7,7 @@ var cart = [];
             }
         });
 
-        function addToCart(index) {
+        function addToCart() {
             var sum= 0.0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
@@ -20,7 +20,7 @@ var cart = [];
             var amount = (qty*price);
             var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
 
-            sum+=amount;
+            sum+=parseInt($(this)val());
             
 
             $('#totalPrice').html('$'+ sum);

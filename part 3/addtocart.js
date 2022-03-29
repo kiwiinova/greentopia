@@ -57,6 +57,7 @@ var cart = [];
         
         function totalCalculate() {
 //                 var total = 0;
+                document.innerText('123456');
                 $('.price .u-pull-right').each(function(index) {
                 var value = $(this).text() != "" ? parseFloat($(this).text()) : 0;
                 total += value;
@@ -87,10 +88,10 @@ var cart = [];
         }
 
         function showCart() {
-            if (cart.length == 0) {
-                $("#cart-content").css("visibility", "hidden");
-                return;
-            }
+//             if (cart.length == 0) {
+//                 $("#cart-content").css("visibility", "hidden");
+//                 return;
+//             }
 
             $("#cart-content").css("visibility", "visible");
             $("#cart-content tbody").empty();

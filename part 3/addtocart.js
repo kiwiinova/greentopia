@@ -21,7 +21,7 @@ var cart = [];
             var qty = $('.count').val();
             var amount = (qty*price);
             $('#totalPrice').text('$'+ amount.toFixed(2));
-            totalCalculate()
+            totalCalculate();
             
 //            $('#totalPrice').each(function(){
 //                    sum+= parseFloat(amount);
@@ -60,13 +60,13 @@ var cart = [];
                 var value = $(this).text() != "" ? parseFloat($(this).text()) : 0;
                 total += value;
         })
-                $('#totalValue').text(total.toFixed(2))
+                $('#totalValue').text(total.toFixed(2));
         }
-        totalCalculate()
+        totalCalculate();
 
-        function update() {
-                var value = qty.value;
-                var total
+//         function update() {
+//                 var value = qty.value;
+//                 var total
 
         function deleteItem(index){
             cart.splice(index,1); // delete item at index

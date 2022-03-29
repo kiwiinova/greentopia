@@ -33,8 +33,8 @@
             var sum= 0.0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
-            // var img1 = $('#item-list').find('.course-image').attr('src');
-            var img1 = $(this).data('image');
+            // var img1 = $('#item-list').find('.-image').attr('src');
+            var img1 = $(this).data('img');
             var price1 = $('.price .u-pull-right').text().replace("$", "");
             var price = parseFloat(price1);
             var name = $('h4').text();
@@ -210,7 +210,7 @@ document.querySelector("a#clear-cart").addEventListener("click", ()=>{
         <div class="row">
             <div class="four columns">
                 <div class="card">
-                    <img alt="image of an apple" src="..\Images\Apples.jpg" class="course-image u-full-width">
+                    <img alt="image of an apple" src="..\Images\Apples.jpg" class="item-image u-full-width">
                     <div class="info-card" data-name="html" data-price="15">
                         <h4>Apples</h4>
                         <p>Juan Pedro</p>

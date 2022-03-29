@@ -14,11 +14,11 @@ var cart = [];
             var img1 = $('#item-list').find('.item-image').attr('src');
 //             var img1 = $(this).data('img');
             var price1 = $('.price .u-pull-right').text().replace("$", "");
-            var price = parseFloat(price1);
+            var price = parseFloat(price1,2);
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            var itemTot = (Math.round(qty*price * 100) / 100).toFixed(2);
+            var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
 
             sum+=amount;
             

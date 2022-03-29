@@ -20,8 +20,11 @@ var cart = [];
             var qty = $('.count').val();
             var amount = (qty*price);
 //             var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
-             sum+=amount;
-             var itemTot = $('#totalPrice').text('$'+ sum);
+             totalPrice+=amount;
+             var value = parseFloat(localStorage(getItem('totalPrice'));
+                                    totalPrice+=amount;
+//              var itemTot = $('#totalPrice').text('$'+ sum);
+             localStorage.setItem('totalPrice', value);
 
 //             sum+=parseFloat(amount);
             
@@ -31,7 +34,7 @@ var cart = [];
 //            $('#totalPrice').each(function(){
 //                    sum+= parseFloat(amount);
 //            })
-                $('#totalPrice').html(sum.toFixed(2));
+//                 $('#totalPrice').html(sum.toFixed(2));
                 
 //                 localStorage.setItem('#totalPrice', sum);
                 

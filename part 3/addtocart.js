@@ -21,7 +21,7 @@ var cart = [];
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            $('#totalPrice').text('$'+ amount.toFixed(2));
+//             $('#totalPrice').text('$'+ amount.toFixed(2));
             totalCalculate();
             
 //            $('#totalPrice').each(function(){

@@ -27,9 +27,12 @@ var cart = [];
 //            $('#totalPrice').text('$'+ sum);
             
            $('#totalPrice').each(function(){
-                   sum+= parseInt(amount);
+                   sum+= parseFloat(amount);
            })
                 $('#totalPrice').html(sum.toFixed(2));
+                
+                localStorage.setItem('#totalPrice', sum);
+                
 //                 var value = qty.value;
 //                 var newPrice = Number(localStorage.getItem() * value).toFixed(2);
             

@@ -1,5 +1,5 @@
 var cart = [];
-// var total = 0;
+var total = 0;
         $(function () {
             if (localStorage.cart)
             {
@@ -55,7 +55,7 @@ var cart = [];
         }
         
         function totalCalculate() {
-                var total = 0;
+//                 var total = 0;
                 $('.price .u-pull-right').each(function() {
                 var value = $(this).text() != "" ? parseFloat($(this).text()) : 0;
                 total += value;
@@ -102,8 +102,8 @@ var cart = [];
                 buttonActivator();
                     
             }
-                total += item.Quantity*item.Price;
-                    $('#totalPrice').text("$"+total+"");
+//                 total += item.Quantity*item.Price;
+//                     $('#totalPrice').text("$"+total+"");
             $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
            
     }  

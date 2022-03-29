@@ -56,15 +56,13 @@ var total = 0;
         
         function totalCalculate() {
 //                 var total = 0;
-                $('.price .u-pull-right').each(function() {
+                $('.price .u-pull-right').each(function(index) {
                 var value = $(this).text() != "" ? parseFloat($(this).text()) : 0;
                 total += value;
         })
                 $('#totalValue').text(total.toFixed(2));
-                showCart();
-                saveCart();
         }
-        totalCalculate();
+        
 
 //         function update() {
 //                 var value = qty.value;
@@ -88,10 +86,10 @@ var total = 0;
         }
 
         function showCart() {
-            // if (cart.length == 0) {
-            //     $("#cart-content").css("visibility", "hidden");
-            //     return;
-            // }
+            if (cart.length == 0) {
+                $("#cart-content").css("visibility", "hidden");
+                return;
+            }
 
             $("#cart-content").css("visibility", "visible");
             $("#cart-content tbody").empty();
@@ -101,6 +99,8 @@ var total = 0;
                              item.Quantity + "</td><td>" + item.Quantity*item.Price + " $" + "</td><td>"
                              + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
+                    
+                totalCalculate();
                 buttonActivator();
                     
             }

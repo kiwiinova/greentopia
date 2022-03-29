@@ -18,7 +18,7 @@ var cart = [];
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            var itemTot = parseFloat(qty*price, 2)
+            var itemTot = (Math.round(qty*price * 100) / 100).toFixed(2);
 
             sum+=amount;
             

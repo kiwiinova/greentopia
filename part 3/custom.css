@@ -153,6 +153,8 @@ ul {
 @media (min-width: 550px) {
     .card {
         text-align: left;
+        width:70%;
+        height: 70%;
     }
 }
 .info-card  {

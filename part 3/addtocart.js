@@ -41,6 +41,7 @@ var total = 0;
                 if(cart[i].Name == name)
                 {
                     cart[i].Quantity = qty;
+                        
                     showCart();
                     saveCart();
                     return;
@@ -57,6 +58,9 @@ var total = 0;
         function deleteItem(index){
             cart.splice(index,1); // delete item at index
             console.log(index);
+                
+            total = total - item.Quantity*item.Price;
+            $('#totalPrice').text("$"+total+"");
             showCart();
             saveCart();
         }

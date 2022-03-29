@@ -1,4 +1,5 @@
 var cart = [];
+var total = 0;
         $(function () {
             if (localStorage.cart)
             {
@@ -20,11 +21,11 @@ var cart = [];
             var qty = $('.count').val();
             var amount = (qty*price);
 //             var itemTot = (Math.round((qty*price) * 100) / 100).toFixed(2);
-             totalPrice+=amount;
-             var value = parseFloat(localStorage(getItem('totalPrice'));
-                                    totalPrice+=amount;
+//              totalPrice+=amount;
+//              var value = parseFloat(localStorage(getItem('totalPrice'));
+//                                     totalPrice+=amount;
 //              var itemTot = $('#totalPrice').text('$'+ sum);
-             localStorage.setItem('totalPrice', value);
+//              localStorage.setItem('totalPrice', value);
 
 //             sum+=parseFloat(amount);
             
@@ -90,6 +91,8 @@ var cart = [];
                              + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
                 buttonActivator();
+                    total += item.Quantity*item.Price;
+                    $('#totalPrice').text("$"+total+"");
             }
             $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
            

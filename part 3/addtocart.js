@@ -1,5 +1,5 @@
 var cart = [];
-var total = 0;
+// var total = 0;
         $(function () {
             if (localStorage.cart)
             {
@@ -20,9 +20,8 @@ var total = 0;
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            
-
-//            $('#totalPrice').text('$'+ sum);
+            $('#totalPrice').text('$'+ amount.toFixed(2));
+            totalCalculate()
             
 //            $('#totalPrice').each(function(){
 //                    sum+= parseFloat(amount);
@@ -54,6 +53,20 @@ var total = 0;
             saveCart();
             showCart();
         }
+        
+        function totalCalculate() {
+                var total = 0;
+                $('.price .u-pull-right').each(function() {
+                var value = $(this).text() != "" ? parseFloat($(this).text()) : 0;
+                total += value;
+        })
+                $('#totalValue').text(total.toFixed(2))
+        }
+        totalCalculate()
+
+        function update() {
+                var value = qty.value;
+                var total
 
         function deleteItem(index){
             cart.splice(index,1); // delete item at index

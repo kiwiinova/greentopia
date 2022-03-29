@@ -2,7 +2,7 @@
 <html lang="en">
 <!--<head>-->
  <head>
-   <meta charset = "UTF-8">
+  <meta charset = "UTF-8">
    <meta http-equiv = "X-UA-Compatible" content="IE-edge"> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?
@@ -10,36 +10,68 @@
   <!-- Stylesheet -->
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                
    <link rel="stylesheet" href="styleproducts.css">
-   <link rel="stylesheet" href="imagepages.css"> 
+   <link rel="stylesheet" href="imagepages.css">
+   <link rel="stylesheet" href="../part 3/normalize.css">
+    <link rel="stylesheet" href="../part 3/skeleton.css">
+    <link rel="stylesheet" href="../part 3/custom.css">
    <link rel="stylesheet" href="../CSS/Page1.css"/>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+   <script type = "text/javascript" src="addtocart.js"></script>
 
    </head>
-   <header>
+    <header>
       <input type="checkbox" id="menu" />
       <label for="menu"><i class="material-icons">menu</i></label>
 
-     <nav class="navbar">
+      <nav class ="navbar">
         <ul>
-          <li><a href="../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+          <li><a href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
           <li>
-           <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
+            <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
             <ul>
-              <a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a>
-              <a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a>
-              <a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a>
-              <a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a>
+              <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
+              <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
+              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a></li>
+              <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
             </ul>
           </li>
-          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a></li>
-            <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
-        </ul>
+          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp; Shopping Cart</a></li>
+          <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
+          
+          
+        <div class="navbar-right">                   
+<!--               <h1><i class="fa-solid fa-basket-shopping"></i></h1> -->
+               <ul>
+                    <li class="submenu">
+                        <img alt="image of a shopping cart" src="../Images/basket-icon-7.jpg" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                                    Total price: <strong id="totalPrice">0 $</strong>
+                            </div>
+                    </li>
+                </ul>                      
+      </div>
+
+          </ul>
       </nav>
     </header>
 <center>   
 <body>
-      <div class="product">
+<!--       <div class="product">
         <div class="product-img">
             <div class="zoom">
             <img src= "..\Images\Brown Bread.jpg" alt="Brown Bread" title="Product">
@@ -70,7 +102,33 @@
 -->
  </div>
  </div>
+ -->
+	
+	
+	<div id="item-list" class="container">
+        <h1 id="heading" class="heading"></h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img alt="image of brown bread" src="..\Images\Brown bread .jpg" class="item-image u-full-width">
+                    <div class="info-card" data-name="html" data-price="5.65">
+                        <h4>Baguette</h4>
+               
+                       
+                        <p class="price">$7  <span class="u-pull-right ">$5.65</span></p>
+                        <input type = "number" class="count" value="1" />
+                        <a href="#" class="u-full-width button-primary button input add-to-cart"  data-id="5" onclick="addToCart(this)">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
 
+            </div>
+            </div>
+	
+	
+	
+	
+	
     <aside>
         <h1a> Product Description </h1a> 
         <p>The brown bread is sold already as a cut loaf.<span id="dots">...</span> <span id="more">It is made with biological whole wheat to enrich its flavour and strengthen its health benefits.</span>

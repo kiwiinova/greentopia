@@ -23,7 +23,7 @@ var cart = [];
             sum+=amount;
             
 
-            $('#totalPrice').text('$'+ sum);
+            $('#totalPrice').html('$'+ sum);
             
             
 

@@ -6,7 +6,8 @@ var cart = [];
                 showCart();
             }
         });
-
+        
+         $(document).ready(function() {
          $('.u-full-width button-primary button input add-to-cart').click(function addToCart(index) {
 //             function addToCart(index)    {
             var sum= 0.0;
@@ -43,6 +44,7 @@ var cart = [];
             saveCart();
             showCart();
         });
+                 });
 
         function deleteItem(index){
             cart.splice(index,1); // delete item at index

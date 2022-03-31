@@ -7,8 +7,8 @@ var cart = [];
             }
         });
 
-//         $(document).on('click', function addToCart(index)
-            function addToCart(index)    {
+         $(document).on('click', '.u-full-width button-primary button input add-to-cart' ,function addToCart(index) {
+//             function addToCart(index)    {
             var sum= 0.0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});

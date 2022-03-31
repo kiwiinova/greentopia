@@ -19,6 +19,7 @@ var cart = [];
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
+            var total = $('#totalPrice').text();
 //             var itemTot = parseFloat(qty*price)
 
             sum+=amount;
@@ -37,7 +38,7 @@ var cart = [];
                 }
             }
             // create JavaScript Object
-            var item = {Image: img1, Name: name, Price: price, Quantity: qty}; 
+            var item = {Image: img1, Name: name, Price: price, Quantity: qty, Total: total}; 
             cart.push(item);
             console.log(cart);return false;
             saveCart();
@@ -74,6 +75,7 @@ var cart = [];
                              item.Quantity + "</td><td>" + (item.Quantity*item.Price).toFixed(2) + " $" + "</td><td>"
                              + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
+                  $('#totalPrice').text('$'+ item.Total);
                 buttonActivator();
             }
             $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});

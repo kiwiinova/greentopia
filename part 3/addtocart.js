@@ -39,7 +39,7 @@ var cart = [];
                 }
             }
             // create JavaScript Object
-            var item = {Image: img1, Name: name, Price: price, Quantity: qty, Total: total}; 
+            var item = {Image: img1, Name: name, Price: price, Quantity: qty}; 
             cart.push(item);
             console.log(cart);return false;
             saveCart();

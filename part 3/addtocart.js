@@ -1,5 +1,4 @@
 var cart = [];
-
         $(function () {
             if (localStorage.cart)
             {
@@ -8,72 +7,45 @@ var cart = [];
             }
         });
 
-        function addToCart(index) {
-            var id = $('.data-id').val();
-            var sum= 0;
-            
-            var img1 = $('#item-list').find('.item-image').attr('src');
+        $(document).on('click', function addToCart(index) {
+            var sum= 0.0;
+            // $('#cart-content > tbody > tr').each(function() {
+            // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
+            var img1 = $('#item-list').find('.course-image').attr('src');
+            // var img1 = $(this).data('image');
             var price1 = $('.price .u-pull-right').text().replace("$", "");
-            var price = parseFloat(price1,2);
+            var price = parseFloat(price1);
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            $('#totalPrice').text('$'+ amount.toFixed(2));
-            totalCalculate();
-            
-//            $('#totalPrice').each(function(){
-//                    sum+= parseFloat(amount);
-//            })
-//                 $('#totalPrice').html(sum.toFixed(2));
-                
-//                 localStorage.setItem('#totalPrice', sum);
-                
-//                 var value = qty.value;
-//                 var newPrice = Number(localStorage.getItem() * value).toFixed(2);
+            var itemTot = parseFloat(qty*price)
+
+            sum+=amount;
             
 
-      
+            $('#totalPrice').text('$'+ sum);
+
             // update qty if product is already present
             for (var i in cart) {
                 if(cart[i].Name == name)
                 {
                     cart[i].Quantity = qty;
-                        
                     showCart();
                     saveCart();
                     return;
                 }
             }
             // create JavaScript Object
-            var item = {Image: img1, Name: name, Price: price, Quantity: qty}; 
+            var item = {Image: img1, Name: name, Price: price, Quantity: qty, Itemtot: itemTot }; 
             cart.push(item);
             console.log(cart);return false;
             saveCart();
             showCart();
-        }
-
-        
-        function totalCalculate() {
-//                 var total = 0;
-                document.innerText('123456');
-                $('.price .u-pull-right').each(function(index) {
-                var value = $(this).text() != "" ? parseFloat($(this).text()) : 0;
-                total += value;
-        })
-                $('#totalValue').text(total.toFixed(2));
-        }
-        
-
-//         function update() {
-//                 var value = qty.value;
-//                 var total
+        });
 
         function deleteItem(index){
             cart.splice(index,1); // delete item at index
             console.log(index);
-                
-//             total = total - item.Quantity*item.Price;
-//             $('#totalPrice').text("$"+total+"");
             showCart();
             saveCart();
         }
@@ -86,27 +58,22 @@ var cart = [];
         }
 
         function showCart() {
-//             if (cart.length == 0) {
-//                 $("#cart-content").css("visibility", "hidden");
-//                 return;
-//             }
+            // if (cart.length == 0) {
+            //     $("#cart-content").css("visibility", "hidden");
+            //     return;
+            // }
 
             $("#cart-content").css("visibility", "visible");
             $("#cart-content tbody").empty();
             for (var i in cart) {
                 var item = cart[i];
                 var row = "<tr><td><img src='"+ item.Image +"' >" + "</td><td>" + item.Name + "</td><td>" +
-                             item.Quantity + "</td><td>" + item.Quantity*item.Price + " $" + "</td><td>"
-                             + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
+                             item.Quantity + "</td><td>" + item.Itemtot + " $" + "</td><td>"
+                             + "<button onclick='deleteItem(" + i + ")'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
-                    
-//                 totalCalculate();
                 buttonActivator();
-                    
             }
-//                 total += item.Quantity*item.Price;
-//                     $('#totalPrice').text("$"+total+"");
-            $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
+            $("button").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
            
     }  
     let buttonActivator = () => {
@@ -126,5 +93,3 @@ document.querySelector("a#clear-cart").addEventListener("click", ()=>{
      while(rows)
           document.querySelectorAll("table#cart-content tbody")[0].removeChild(rows[0])  
 })
-
- 

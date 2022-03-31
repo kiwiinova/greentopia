@@ -77,7 +77,7 @@ var cart = [];
                              item.Quantity + "</td><td>" + (item.Quantity*item.Price).toFixed(2) + " $" + "</td><td>"
                              + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
-                sum+=(item.Quantity*item.Price).toFixed(2));
+                sum+=(item.Quantity*item.Price).toFixed(2);
 //                 $('#totalPrice').text('$'+ sum);
                 buttonActivator();
             }

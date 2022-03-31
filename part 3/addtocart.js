@@ -9,7 +9,8 @@ var cart = [];
         });
         
         $(document).ready(function () {
-            $("#addbutton").click(function()    {
+            $("#addbutton").click(function(event)    {
+                    event.preventDefault();
 //                 function addToCart() {
                     
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});

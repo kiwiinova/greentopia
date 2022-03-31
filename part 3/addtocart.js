@@ -7,7 +7,7 @@ var cart = [];
             }
         });
 
-         $(document).on('click', '.u-full-width button-primary button input add-to-cart' ,function addToCart(index) {
+         $('.u-full-width button-primary button input add-to-cart').click(function addToCart(index) {
 //             function addToCart(index)    {
             var sum= 0.0;
             // $('#cart-content > tbody > tr').each(function() {

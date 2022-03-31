@@ -69,7 +69,7 @@ var cart = [];
             for (var i in cart) {
                 var item = cart[i];
                 var row = "<tr><td><img src='"+ item.Image +"' >" + "</td><td>" + item.Name + "</td><td>" +
-                             item.Quantity + "</td><td>" + item.Itemtot + " $" + "</td><td>"
+                             item.Quantity + "</td><td>" + item.Quantity*item.Price + " $" + "</td><td>"
                              + "<button onclick='deleteItem(" + i + ")'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
                 buttonActivator();

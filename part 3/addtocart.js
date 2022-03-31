@@ -18,12 +18,12 @@ var cart = [];
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            var itemTot = parseFloat(qty*price)
+//             var itemTot = parseFloat(qty*price)
 
             sum+=amount;
             
 
-            $('#totalPrice').text('$'+ sum);
+//             $('#totalPrice').text('$'+ sum);
 
             // update qty if product is already present
             for (var i in cart) {
@@ -57,6 +57,7 @@ var cart = [];
                 localStorage.cart = JSON.stringify(cart);
             }
         }
+        $('#totalPrice').text('$'+ sum);
 
         function showCart() {
             // if (cart.length == 0) {

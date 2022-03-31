@@ -70,11 +70,11 @@ var cart = [];
                 var item = cart[i];
                 var row = "<tr><td><img src='"+ item.Image +"' >" + "</td><td>" + item.Name + "</td><td>" +
                              item.Quantity + "</td><td>" + item.Quantity*item.Price + " $" + "</td><td>"
-                             + "<button onclick='deleteItem(" + i + ")'>X</button></td></tr>";
+                             + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
                 buttonActivator();
             }
-            $("button").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
+            $("delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
            
     }  
     let buttonActivator = () => {

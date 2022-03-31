@@ -9,10 +9,10 @@ var cart = [];
         });
         
         $(document).ready(function () {
-            $("#addbutton").click(function(event)    {
-                    event.preventDefault();
-//                 function addToCart() {
+            $("#addbutton").click(function()    {
                     
+//                 function addToCart() {
+                    console.log('here');
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
             var img1 = $('#item-list').find('.item-image').attr('src');
             // var img1 = $(this).data('image');

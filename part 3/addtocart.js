@@ -34,7 +34,8 @@ var cart = [];
             console.log(cart);return false;
             saveCart();
             showCart();
-        }
+                    
+        });
                 
 
         function deleteItem(index){
@@ -49,7 +50,7 @@ var cart = [];
             {
                 localStorage.cart = JSON.stringify(cart);
             }
-        });
+        }
         
 
         function showCart() {

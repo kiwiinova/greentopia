@@ -74,8 +74,5 @@ var cart = [];
            
     }  
     
-$('#clear-cart').click(function(){
-$('#cart-content tbody').remove();
-});
 
 

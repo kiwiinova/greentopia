@@ -19,10 +19,11 @@ var cart = [];
             var name = $('h4').text();
             var qty = $('.count').val();
             var amount = (qty*price);
-            var total = $('#totalPrice').text();
+//             var total = $('#totalPrice').text();
 //             var itemTot = parseFloat(qty*price)
 
             sum+=amount;
+            $(this).find('.amount').text(''+amount);
             
 //              });
              $('#totalPrice').text('$'+ sum.toFixed(2));

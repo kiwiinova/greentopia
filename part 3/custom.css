@@ -144,7 +144,6 @@ ul {
 }
 .add-to-cart {
     margin:10px 0;
-    display: none;
 }
 .card {
     text-align: center;
@@ -176,4 +175,5 @@ ul {
 }
 .info-card .count {
         width: -webkit-fill-available;
+    display: none;
 }

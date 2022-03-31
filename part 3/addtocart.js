@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
 var cart = [];
         $(function () {
             if (localStorage.cart)
@@ -8,6 +8,7 @@ var cart = [];
             }
         });
         
+        $(document).ready(function () {
             $("#addbutton").click(function()    {
                     
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
@@ -38,6 +39,7 @@ var cart = [];
             showCart();
                     
         });
+                 });
                 
 
         function deleteItem(index){
@@ -77,5 +79,4 @@ var cart = [];
            
     }  
     
-});
 

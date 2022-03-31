@@ -22,8 +22,8 @@ var cart = [];
 //             var total = $('#totalPrice').text();
 //             var itemTot = parseFloat(qty*price)
 
-            sum+=amount;
-            $(this).find('.amount').text(''+amount);
+//             sum+=amount;
+//             $(this).find('.amount').text(''+amount);
             
 //              });
 //              $('#totalPrice').text('$'+ sum.toFixed(2));

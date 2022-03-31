@@ -38,7 +38,10 @@ var cart = [];
             console.log(cart);return false;
             saveCart();
             showCart();
-                                                                                    console.log(cart);
+                    
+            console.log('here');
+            console.log(cart);
+             
 
                     
         });

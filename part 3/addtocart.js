@@ -26,6 +26,7 @@ var cart = [];
             for (var i in cart) {
                 if(cart[i].Name == name)
                 {
+                                                                                    console.log('here');
                     cart[i].Quantity = qty;
                     showCart();
                     saveCart();
@@ -38,7 +39,6 @@ var cart = [];
             console.log(cart);return false;
             saveCart();
             showCart();
-                                                            console.log('here');
 
                     
         });

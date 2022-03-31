@@ -79,7 +79,7 @@ var cart = [];
                 $("#cart-content tbody").append(row);
                 sum+=(item.Quantity*item.Price).toFixed(2);
 //                 var new = localStorage.getItem(sum);
-//                     $('#totalPrice').text('$'+ sum);
+//                     $('#totalPrice').val('$'+ sum);
                 buttonActivator();
             }
             $('#totalPrice').text('$'+ sum);

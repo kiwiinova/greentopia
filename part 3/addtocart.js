@@ -11,7 +11,7 @@ var cart = [];
             var sum= 0.0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
-            var img1 = $('#item-list').find('.course-image').attr('src');
+            var img1 = $('#item-list').find('.item-image').attr('src');
             // var img1 = $(this).data('image');
             var price1 = $('.price .u-pull-right').text().replace("$", "");
             var price = parseFloat(price1);

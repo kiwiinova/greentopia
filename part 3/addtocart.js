@@ -24,7 +24,7 @@ var cart = [];
             sum+=amount;
             
 //              });
-             $('#totalPrice').text('$'+ sum);
+             $('#totalPrice').text('$'+ sum.toFixed(2));
 
             // update qty if product is already present
             for (var i in cart) {

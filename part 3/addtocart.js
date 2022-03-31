@@ -36,8 +36,9 @@ var cart = [];
             var item = {Image: img1, Name: name, Price: price, Quantity: qty}; 
             cart.push(item);
             console.log(cart);return false;
-            saveCart();
-            showCart();
+                    showCart();
+            saveCart();        
+           
                     
             console.log('here');
             console.log(cart);

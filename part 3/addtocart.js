@@ -78,7 +78,7 @@ var cart = [];
                              + "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>";
                 $("#cart-content tbody").append(row);
                 sum+=(item.Quantity*item.Price).toFixed(2);
-                var new = localStorage.getItem(sum);
+//                 var new = localStorage.getItem(sum);
 //                     $('#totalPrice').text('$'+ sum);
                 buttonActivator();
             }

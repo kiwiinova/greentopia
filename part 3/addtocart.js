@@ -7,7 +7,7 @@ var cart = [];
             }
         });
         
-            function addToCart()    {
+            $('.add-to-cart').click(function addToCart()    {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
             var img1 = $('#item-list').find('.item-image').attr('src');
             // var img1 = $(this).data('image');
@@ -27,7 +27,7 @@ var cart = [];
                     saveCart();
                     return;
                 }
-            }
+            });
             // create JavaScript Object
             var item = {Image: img1, Name: name, Price: price, Quantity: qty}; 
             cart.push(item);

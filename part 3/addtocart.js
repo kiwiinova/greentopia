@@ -7,9 +7,7 @@ var cart = [];
             }
         });
         
-         $(document).ready(function() {
-         $('.u-full-width button-primary button input add-to-cart').click(function addToCart(index) {
-//             function addToCart(index)    {
+            function addToCart(index)    {
             var sum= 0.0;
             // $('#cart-content > tbody > tr').each(function() {
             // var $img1 = $('<img width="30px" height="30px" src="' + addTocart.data("image") + '"/>').css({"position":"fixed","z-index":"999"});
@@ -43,8 +41,8 @@ var cart = [];
             console.log(cart);return false;
             saveCart();
             showCart();
-        });
-                 });
+        }
+                
 
         function deleteItem(index){
             cart.splice(index,1); // delete item at index

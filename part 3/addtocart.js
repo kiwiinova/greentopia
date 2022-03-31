@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var cart = [];
         $(function () {
             if (localStorage.cart)
@@ -76,5 +77,5 @@ var cart = [];
            
     }  
     
-
+});
 

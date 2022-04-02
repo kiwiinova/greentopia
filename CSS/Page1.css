@@ -125,6 +125,7 @@ header .navbar .navbar-right {
 
 #menu {
   display: none;
+left: 0px;
 }
 
 header label {

@@ -234,7 +234,7 @@ footer h2{
   height: 5vh;
 }
 
-@media screen and (max-width:639px) { 
+@media screen and (max-width:1157px) { 
   .logo {
   background-image: url("../Images/Transparentlogo.png");
   background-repeat: no-repeat;

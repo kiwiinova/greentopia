@@ -135,10 +135,10 @@ header label {
 }
 
 h1{
-		width: 3%;
+		width: 30%;
 	    position: relative;
-	    top: 0px;
-	    left: 0%;
+	    top: 2px;
+	    left: 35%;
 	    cursor: pointer;
 	}
 	h1:before{

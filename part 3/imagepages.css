@@ -308,7 +308,7 @@ section div span{
 
 
 
-  @media screen and (max-width: 300px) {
+/*   @media screen and (max-width: 300px) {
       .product .meta {
           width: 100%;
       }
@@ -333,4 +333,4 @@ center {
             flex-direction: column-reverse;
       }
 }
-
+ */

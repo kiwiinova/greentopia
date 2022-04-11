@@ -82,7 +82,7 @@ section .read-more{
 
  aside{
     margin:15px;
-/*     background-color: white; */
+    background-color: transparent;
     padding: 30px;
     width: 50%;
 /*     margin-top: 300px; */

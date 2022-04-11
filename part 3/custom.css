@@ -154,7 +154,7 @@ ul {
 @media (min-width: 550px) {
     .card {
         text-align: left;
-        width:30%;
+        width:50%;
         height: 70%;
     }
 }

@@ -80,7 +80,7 @@ section .read-more{
       font-weight: 700;
 }
 
-aside{
+/* aside{
     margin:15px;
     background-color: white;
     padding: 30px;
@@ -90,7 +90,7 @@ aside{
     left: 50%;
     position: fixed;
     transform: translate(-50%, -50%);
-}
+} */
 
 	section{
 			margin: 30px ;

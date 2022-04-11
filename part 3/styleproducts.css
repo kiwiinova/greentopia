@@ -82,14 +82,14 @@ section .read-more{
 
  aside{
     margin:15px;
-    background-color: white;
+/*     background-color: white; */
     padding: 30px;
     width: 50%;
 /*     margin-top: 300px; */
     top: 89%;
     left: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
+/*     position: fixed; */
+/*     transform: translate(-50%, -50%); */
 } 
 
 	section{

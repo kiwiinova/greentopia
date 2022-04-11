@@ -171,6 +171,7 @@ h1{
 
   header label {
     display: initial;
+    margin-left: 20px;
   }
 
   header .navbar {

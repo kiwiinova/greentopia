@@ -80,14 +80,14 @@ section .read-more{
       font-weight: 700;
 }
 
- aside{
-    margin:15px;
+ .aside{
+/*     margin:15px; */
     background-color: transparent;
     padding: 30px;
-    width: 50%;
+/*     width: 50%; */
 /*     margin-top: 300px; */
-    top: 89%;
-    left: 50%;
+/*     top: 89%;
+    left: 50%; */
 /*     position: fixed; */
 /*     transform: translate(-50%, -50%); */
 } 

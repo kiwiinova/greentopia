@@ -56,7 +56,6 @@ h2 {
 
  .read {
     margin-top: 15px;
-    display: block;
     background-color: green;
     color: white !important;
     border: none;
@@ -65,6 +64,10 @@ h2 {
     text-transform: capitalize;
     cursor: pointer;
     font-size: 20px;
+    overflow: hidden;
+	 width: -webkit-fill-available;
+	 text-overflow:ellipsis;
+	 display: inline-block;
 } 
 
 .number of items {

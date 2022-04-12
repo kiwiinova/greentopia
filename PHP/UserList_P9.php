@@ -1,0 +1,134 @@
+<?php
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/Page1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="deletebutton.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap">
+	
+	</head>
+
+<header>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+	<input type="checkbox" id="menu" />
+      	<label for="menu"><i class="material-icons">menu</i></label>
+
+
+	 <nav class="navbar">
+        <ul>
+          <li><a href="../HTML/P7.html">Product List</a></li>
+          <li><a href="../part 9/usrerList.html">User List</a></li>
+          <li><a href="../HTML/P11.html">Order List</a></li>
+	  <li><a href="../index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+<body>
+<center>
+<!-- 	style="margin:0; padding:20px">  -->
+        <table style="list-style-type:none; display: block; float: left;">
+            <tr>
+                <div class="con">
+                    <div class="con1">
+                        <img src="../Images/male.jpg" class="userimg">
+                        <div class="innercon">
+                        </div>
+                    </div>
+                    <div class="sidebox">
+                        <span class="spanstyle">
+                            <b> Min Yoongi </b>
+                        </span> <br>
+
+                        <span class="spanstyle2">
+                            Shopper
+                        </span>
+                        <a href="../PHP/EditUser_P10.php"><button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+								</button></a>
+                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                    </div>
+                </div>
+            </tr>
+            <tr>
+                <div class="con">
+                    <div class="con1">
+                        <img src="../Images/female.png" class="userimg">
+                        <div class="innercon">
+                        </div>
+                    </div>
+
+                    <div class="sidebox">
+                        <span class="spanstyle">
+                            <b>Nicki Minaj</b>
+                        </span> <br>
+
+                        <span class="spanstyle2">
+                            Shopper
+                        </span>
+                        <a href="../PHP/EditUser_P10.php"><button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+								</button></a>
+                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                    </div>
+                </div>
+            </tr>
+            <tr>
+                <div class="con">
+                    <div class="con1">
+                        <img src="../Images/male.jpg" class="userimg">
+                        <div class="innercon">
+                        </div>
+                    </div>
+
+                    <div class="sidebox">
+                        <span class="spanstyle">
+                            <b>Park Jimin</b>
+                        </span> <br>
+
+                        <span class="spanstyle2">
+                            Shopper
+                        </span>
+                        <a href="../PHP/EditUser_P10.php"><button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+							</button></a>
+                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                    </div>
+                </div>
+            </tr>
+        </table>
+	     </center>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>Delete Account</h1>
+                    <p>Are you sure you want to delete your account?</p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Delete</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+		<center> <a href="../HTML/P10.html"><button type="button" class="adduser">Add User</button></a> </center>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 .con {
-    display: inline-flex;
+    display: block;
     padding: 5px;
     background-color: #f8f8f8;
 /*     padding-Left: 20px; */

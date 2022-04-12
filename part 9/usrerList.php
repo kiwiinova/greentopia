@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -112,7 +116,7 @@
                 </div>
             </form>
         </div>
-		<center> <a href="../HTML/P10.html"><button type="button" class="adduser">Add User</button></a> </center>
+		<center> <a href="../PHP/AddUser_P10.php"><button type="button" class="adduser">Add User</button></a> </center>
         <script>
             // Get the modal
             var modal = document.getElementById('id01');

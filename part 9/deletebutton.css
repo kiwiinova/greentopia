@@ -18,7 +18,7 @@
     display: inline-flex;
 }
 
-.con:hover:nth-child(1) {
+.con:hover {
     box-shadow: 10px 10px 10 px #f8f8f84d;
     margin-left: -15px;
 }

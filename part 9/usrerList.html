@@ -10,7 +10,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="deletebutton.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap">
-	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+        $(document).ready(function(){
+            var userRemoved = $('.con').text();
+            
+            $('.btn-delete').click(function(){
+                $(this).closest('.con').remove();
+                localStorage.setItem('con', userRemoved);
+            });
+        });
+    </script>	
 	</head>
 
 <header>

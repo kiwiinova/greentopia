@@ -1,4 +1,4 @@
-<?php
+<?php 
     session_start();
 ?>
 
@@ -9,10 +9,11 @@
     <meta charset="utf-8">
     <title>GreenTopia Grocery Store</title>
 
-    <!-- CSS file -->
     <link rel="stylesheet" href="../CSS/P10.css">
-     <link rel="stylesheet" href="../CSS/Page1.css" />
+    <link rel="stylesheet" href="../CSS/Page1.css" />
     <link rel="stylesheet" href="../CSS/Page11.css" />
+
+    <script type="text/javascript" src="../JavaScript/AddUser.js"></script>
 
 </head>
 
@@ -23,10 +24,10 @@
 
      <nav class="navbar">
       <ul>
-        <li><a href="../HTML/P7.html">Product List</a></li>
-        <li><a href="../part 9/usrerList.html">User List</a></li>
-        <li><a href="../HTML/P11.html">Order List</a></li>
-        <li><a href="../index.html">Logout</a></li>
+        <li><a href="../PHP/ProductList_P7.php">Product List</a></li>
+        <li><a href="../PHP/UserList_P9.php">User List</a></li>
+        <li><a href="../PHP/OrderList_P11.php">Order List</a></li>
+        <li><a href="../index.php">Logout</a></li>
       </ul>
     </nav>
   </header>
@@ -38,40 +39,40 @@
         <section class="column-center">
             <li>
                 <div class="column1">
-                    <!-- Username Property -->
-                    <label for="username">Username: </label><br>
-                    <input type="text" id="username" name="username"> <br> <br>
+                    <!-- First Name Property -->
+                    <label for="fname">First Name: </label><br>
+                    <input type="text" id="fname" name="firstName"> <br> <br>
 
-                    <!-- Email Property -->
-                    <label for="email">Email: </label><br>
-                    <input type="text" id="email" name="email"> <br> <br>
+                    <!-- Last Name Property -->
+                    <label for="lname">Last Name: </label> <br>
+                    <input type="text" id="lname" name="lastName"> <br> <br>
 
                     <!-- Password Property -->
                     <label for="pwd">Password: </label> <br>
-                    <input type="password" id="pwd" name="pwd" minlength="8" required> <br> <br>
+                    <input type="password" id="pwd" name="password" minlength="8" required> <br> <br>
                 </div>
             </li>
 
             <li>
                 <div class="column2">
-                    <!-- Address Property -->
-                    <label for="address">Address: </label> <br>
-                    <input type="text" id="address" name="address"> <br> <br>
+                    <!-- Email Property -->
+                    <label for="email">Email: </label><br>
+                    <input type="text" id="email" name="emailAddress"> <br> <br>
 
                     <!-- Postal Code Property -->
                     <label for="postalcode">Postal Code: </label> <br>
-                    <input type="text" id="pcode" name="pcode"> <br> <br>
+                    <input type="text" id="pcode" name="postalCode"> <br> <br>
 
                     <!-- Save Button-->
-                    <button class="button" onclick="CreatedSuccessfully()">Create</button>
+                    <button class="button" onclick="SavedSuccessfully()">Save</button>
 
                 </div>
             </li>
         </section>
     </ul>
     <script>
-        function CreatedSuccessfully() {
-            var success = window.confirm("Your account has been created!");
+        function SavedSuccessfully() {
+            var success = window.confirm("Your profile has been updated!");
         }
 
     </script>

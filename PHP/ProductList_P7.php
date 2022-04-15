@@ -1,0 +1,415 @@
+<?php
+    session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+    
+    <header>
+        <meta charset="utf-8">
+        <title>List and Summary</title>
+        <link rel="stylesheet" href="../CSS/P7.css" >
+		<link rel="stylesheet" href="../CSS/Page1.css">
+       
+	     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+        
+		<input type="checkbox" id="menu" />
+      	<label for="menu"><i class="material-icons">menu</i></label>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="../PHP/ProductList_P7.php">Product List</a></li>
+          <li><a href="../PHP/UserList_P9.php">User List</a></li>
+          <li><a href="../PHP/OrderList_P11.php">Order List</a></li>
+	  <li><a href="../index.php">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+	
+    <body>
+		<br><br><br><br>
+        <div class="flex-container">
+            <div style = "overflow-x: auto">
+            <table> 
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Picture</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Options</th>
+                </tr> 
+                
+                <tr>
+                    <td>Banana (5-6 Bananas)</td>
+                    <td><img src="../Images/Banana.jpg"/></td>
+                    <td>600</td>
+                    <td>$3.50</td>
+                    <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/banana.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                <tr>
+                    <td>Oranges (bag of 5)</td>
+                    <td><img src="../Images/Oranges.jpg"/></td>
+                    <td>750</td>
+                    <td>$4.70</td>
+                    <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/orange.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                     <td>Tomatoes (bag of 5)</td>
+                     <td><img src="../Images/Tomatoes.jpg"/></td>
+                     <td>700</td>
+                     <td>$7.23</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/tomato.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                     <td>Apples (bag of 10)</td>
+                     <td><img src="../Images/Apples.jpg"/></td>
+                     <td>1000</td>
+                     <td>$10.77</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/apple.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Lettuce</td>
+                   <td><img src="../Images/Lettuce.jpg"/></td>
+                   <td>150</td>
+                   <td>$4.05</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/lettuce.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Cucumbers</td>
+                   <td><img src="../Images/Cucumbers.jpg"/></td>
+                   <td>300</td>
+                   <td>$3.55</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/cucumber.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Beef (pack of 2)</td>
+                   <td><img src="../Images/Beef.jpg"/></td>
+                   <td>80</td>
+                   <td>$24.57</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/beef.html"><button class="button">
+							 <i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Chicken (full chicken)</td>
+                   <td><img src="../Images/Chicken.jpg"/></td>
+                   <td>100</td>
+                   <td>$16.34</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/chicken.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Shrimp (bag of shrimp)</td>
+                   <td><img src="../Images/Shrimp.jpg"/></td>
+                   <td>130</td>
+                   <td>$18.98</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/shrimp.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Turkey</td>
+                   <td><img src="../Images/Turkey.jpg"/></td>
+                   <td>80</td>
+                   <td>$42.00</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/turkey.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Fish Bass</td>
+                   <td><img src="../Images/Fish bass.jpg"/></td>
+                   <td>130</td>
+                   <td>$19.45</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/fishbass.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Salmon</td>
+                   <td><img src="../Images/Salmon.jpg"/></td>
+                   <td>200</td>
+                   <td>$27.87</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/salmon.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Brown Eggs (12 eggs)</td>
+                   <td><img src="../Images/Brown Eggs.jpg"/></td>
+                   <td>100</td>
+                   <td>$6.50</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/brownegg.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Butter</td>
+                   <td><img src="../Images/Butter.jpg"/></td>
+                   <td>80</td>
+                   <td>$7.54</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/butter.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>White Eggs (12 eggs)</td>
+                   <td><img src="../Images/White Eggs.jpg"/></td>
+                   <td>150</td>
+                   <td>$5.40</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/whiteegg.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+						 </button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Milk</td>
+                   <td><img src="../Images/Milk.jpg"/></td>
+                   <td>125</td>
+                   <td>$9.75</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/milk.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Cream</td>
+                   <td><img src="../Images/Cream.jpg"/></td>
+                   <td>90</td>
+                   <td>$6.25</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/cream.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Yogurt</td>
+                   <td><img src="../Images/Yogurt.jpg"/></td>
+                   <td>95</td>
+                   <td>$5.98</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/yogurt.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>White Bread</td>
+                   <td><img src="../Images/White Bread.jpg"/></td>
+                   <td>230</td>
+                   <td>$4.48</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/whitebread.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+							</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Baguette</td>
+                   <td><img src="../Images/Baguette.jpg"/></td>
+                   <td>150</td>
+                   <td>$3.25</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/baguette.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Macaroni</td>
+                   <td><img src="../Images/Macaroni.jpg"/></td>
+                   <td>145</td>
+                   <td>$4.10</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/macaroni.html"><button class="button">
+							<i class="fa fa-edit"> Edit</i>
+								</button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Brown Bread</td>
+                   <td><img src="../Images/Brown Bread.jpg"/></td>
+                   <td>100</td>
+                   <td>$5.65</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/brownbread.html"><button class="button">
+                            <i class="fa fa-edit"> Edit</i>
+						 </button></a>
+                    </td>
+                </tr> 
+                
+                 <tr>
+                   <td>Lasagna (frozen lasagna)</td>
+                   <td><img src="../Images/Lasagna.jpg"/></td>
+                   <td>50</td>
+                   <td>$17.22</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/lasagna.html"><button class="button">
+                            <i class="fa fa-edit"> Edit</i>
+						 </button></a>
+                    </td>
+                </tr> 
+                 <tr>
+                   <td>Spaghetti</td>
+                   <td><img src="../Images/Spaghetti.jpg"/></td>
+                   <td>160</td>
+                   <td>$3.30</td>
+                     <td>
+                         <button class="button">
+                            <i class="fa fa-remove"> Remove</i>
+                        </button>
+                        <a href="../part 8/spaghetti.html"><button class="button">
+                            <i class="fa fa-edit"> Edit</i>
+						 </button></a>
+                    </td>
+                </tr> 
+                   
+            </table>
+            </div>
+        </div>
+        
+        <br><br>
+        <button class="buttonAdd">
+          <i class="fa fa-plus"> Add</i>
+        </button>
+	<br><br>
+
+    </body>
+</html>

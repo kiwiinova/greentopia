@@ -1,0 +1,172 @@
+<?php
+    session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Log In | GreenTopia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../CSS/P2.css">
+
+    <link rel="stylesheet" href="../CSS/P4.css">
+	 <link rel="stylesheet" href="../CSS/Page1.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/22f06b9912.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+		@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+        .loginBody {
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            display: flex;
+            display: grid;
+            font-size: 1.55;
+			font-family: "Shadows Into Light Two";
+           
+        }
+
+        .button {
+            cursor: pointer;
+            padding: 10px 15px;
+        }
+        
+  
+
+        .space {
+            padding-bottom: 5px;
+
+        }
+       
+		
+		*{
+			font-family: "Shadows Into Light Two";
+            
+		}
+        
+        
+        @media screen (max-width: 880px){
+              .body{width: auto}
+        }
+    
+        @media screen and (max-width: 600px)
+        {
+        .body{width: auto}
+        } 
+        
+    </style>
+</head>
+
+    <header>
+	  <input type="checkbox" id="menu" />
+      <label for="menu"><i class="material-icons">menu</i></label>
+	
+		<nav class="navbar">
+        <ul>
+            <li><a href="../index.php"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+            <li>
+            <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
+            <ul>
+              <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
+              <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
+              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a></li>
+              <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
+            </ul>
+          </li>
+          <li><a href="../PHP/Summary_P4.php"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a></li>
+            <li><a href="../PHP/UserLogIn_P5.php"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
+        </ul>
+      </nav>
+
+	
+	</header>
+    <br><br>
+<body style="background-color: ">
+    <div style="margin-top: 100px"></div>
+        <div style="background-color: darkseagreen; font-family: cursive;"><br><br><br>
+            <p style="font-size: 40px; color: white; text-align: center;"> Sign In To Your Account </p><br><br>
+        </div>
+    
+
+    <div class="loginBody">
+        <br>
+        <fieldset style="padding: 12px">
+            <legend>LOG IN</legend>
+            <form target="_self" autocomplete="on">
+    
+                <div class="space">
+                    <label for="email"><span style="color: red;">*</span>Email Address:</label><br> 
+                    
+                    <input style="width: 200px;" type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required><br>
+                </div>
+                <div class="space">
+                    <label for="password"><span style="color: red;">*</span>Password (8 characters minimum):</label><br>
+                    <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25"><br>
+                </div>
+               
+                <div>
+                    <input type="checkbox" onclick="myFunction()" > Show Password<br>
+                </div>
+		    <div>
+                <input type="submit" value="Submit" class="button" onclick="return confirmPassword()" >
+                   <button type="button" class="button">Forgot Password</button>
+		    </div>
+                <br>
+                
+                <p class="form__text" style="margin-left: 5px">
+            <a href="../PHP/SignUp_P6.php" class="form__link">Don't have an account? Sign Up Now! </a><br>
+			<a href="../PHP/AdminLogIn_P5.php" class="form_link">Are you an Admin? Log In Here!</a>
+        </p>
+            </form>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("password");
+                    var y = document.getElementById("cpassword");
+                    if (x.type == "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                    if (y.type == "password") {
+                        y.type = "text";
+                    } else {
+                        y.type = "password";
+                    }
+
+                }
+
+                function myFunctionC() {
+                    var y = document.getElementById("cpassword");
+                    if (y.type == "cpassword") {
+                        y.type = "text";
+                    } else {
+                        y.type = "cpassword";
+                    }
+                }
+
+                function confirmPassword() {
+                    var x = document.getElementById("password").value;
+                    var y = document.getElementById("cpassword").value;
+                    if (x != y) {
+                        alert("Passwords do not match! Please Try Again.");
+                        return false;
+                    }
+                    return true;
+                }
+
+            </script>
+        </fieldset><br>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>

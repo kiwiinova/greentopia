@@ -1,5 +1,5 @@
 <?php
-  session_start();
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +11,18 @@
     <link rel="stylesheet" href="deletebutton.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap">
 	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+        $(document).ready(function(){
+            var userRemoved = $('.con').text();
+
+            $('.btn-delete').click(function(){
+                $(this).closest('.con').remove();
+                localStorage.setItem('con', userRemoved);
+            });
+        });
+    </script>	
+
 	</head>
 
 <header>
@@ -21,10 +33,10 @@
 
 	 <nav class="navbar">
         <ul>
-          <li><a href="../HTML/P7.html">Product List</a></li>
-          <li><a href="../part 9/usrerList.html">User List</a></li>
-          <li><a href="../HTML/P11.html">Order List</a></li>
-	  <li><a href="../index.html">Logout</a></li>
+          <li><a href="../PHP/ProductList_P7.php">Product List</a></li>
+          <li><a href="../PHP/UserList_P9.php">User List</a></li>
+          <li><a href="../PHP/OrderList_P11.php">Order List</a></li>
+	  <li><a href="../index.php">Logout</a></li>
         </ul>
       </nav>
     </header>
@@ -50,7 +62,7 @@
                         <a href="../PHP/EditUser_P10.php"><button type="button" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-edit"></span> Edit
 								</button></a>
-                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                        <button class="btn-delete">Delete</button>
                     </div>
                 </div>
             </tr>
@@ -73,7 +85,7 @@
                         <a href="../PHP/EditUser_P10.php"><button type="button" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-edit"></span> Edit
 								</button></a>
-                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                        <button class="btn-delete">Delete</button>
                     </div>
                 </div>
             </tr>
@@ -96,13 +108,13 @@
                         <a href="../PHP/EditUser_P10.php"><button type="button" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-edit"></span> Edit
 							</button></a>
-                        <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+                        <button class="btn-delete">Delete</button>
                     </div>
                 </div>
             </tr>
         </table>
 	     </center>
-        <div id="id01" class="modal">
+<!--    <div id="id01" class="modal">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
             <form class="modal-content" action="/action_page.php">
                 <div class="container">
@@ -115,8 +127,8 @@
                     </div>
                 </div>
             </form>
-        </div>
-		<center> <a href="../HTML/P10.html"><button type="button" class="adduser">Add User</button></a> </center>
+        </div> -->
+		<center> <a href="../PHP/AddUser_P10.php"><button type="button" class="adduser">Add User</button></a> </center>
         <script>
             // Get the modal
             var modal = document.getElementById('id01');

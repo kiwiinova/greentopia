@@ -37,7 +37,7 @@ function addUser() {
         }
 
         if(pcode.value.search(/^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$/)==-1){
-            var changePostal=document.getElementById('newPostalCode');
+            var changePostalCode=document.getElementById('newPostalCode');
             changePostalCode.innerHTML="Invalid postal code";
             changePostalCode.style.color="red";
         }

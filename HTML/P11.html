@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="../CSS/Page11.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+        $(document).ready(function(){
+            var orderRemoved = $('.container').text();
+            
+            $('.btn2').click(function(){
+                $(this).closest('.container').remove();
+                localStorage.setItem('container', orderRemoved);
+            });
+        });
+    </script>
   </head>
    <body>
  <header>
@@ -44,7 +55,7 @@
             >
           </td>
           <td align="center" rowspan="3">
-             <button onclick="document.getElementById('id01').style.display='block'">Delete</button>
+      
             <a href="#" class="btn2"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
           </td>
         </tr>

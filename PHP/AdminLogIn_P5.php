@@ -1,5 +1,6 @@
 <?php
-	session_start();
+
+session_start();
 
 $username="Admin";
 $password="Admin";
@@ -109,7 +110,14 @@ else
                     <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
 
-                <a href="../PHP/UserList_P9.php"><button type="button" class="SubmitButton" name="Submit">Submit</button></a>
+		       <form action=""  method="POST">
+            <label for="name" id="app_name_label"  > SUBMIT </label>
+            <input type="text" name="name" id="name_textfield">
+
+            <input type="submit" name"Submit" value="send" >
+        </form>
+	    
+                <a href="../PHP/UserList_P9.php"><button type="button" class="SubmitButton" name="Submit1">Submit</button></a>
 				<button type="button" class="Forgot Password">Forgot Password</button>
                 <br>
 

@@ -105,7 +105,7 @@ var cart = [];
 					'<button class="button">Delete</button>'
                 ' </div>'
                     
-                $("#cart-content tbody").append(row);
+                $("#list-content tbody").append(row);
                 sum+=parseFloat((item.Quantity*item.Price).toFixed(2));
             }
             $('#totalPrice').text('$'+ sum);

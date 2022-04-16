@@ -99,14 +99,14 @@ var cart = [];
             var sum = 0;
             for (var i in cart) {
                 var item = cart[i];
-                var row = "<h3 class='productname'>"+item.Name+"<br><small>Cost: $"+item.Price.toFixed(2)+"/each</small></h3>"
-			  "<h4>Price: $<span class='price' data-price='"+item.Price.toFixed(2)+"'>"+item.Price.toFixed(2)+"</span></h4>"
-                	  "<div class='user-input'>"
-                  	  "<div class='input-element'>"
-                   	  "<span class='quantity-text' id='element1'>Quantity</span>"
-			  "</div>"
-                          "<input type='number' class='form-control quantity' placeholder='1' min='1' max='40' value='1'/>"
-		       	  "<button class='button'>Delete</button>"
+                var row = "<h3 class='productname'>"+item.Name+"<br><small>Cost: $"+item.Price.toFixed(2)+"/each</small></h3>"+
+			  "<h4>Price: $<span class='price' data-price='"+item.Price.toFixed(2)+"'>"+item.Price.toFixed(2)+"</span></h4>"+
+                	  "<div class='user-input'>"+
+                  	  "<div class='input-element'>"+
+                   	  "<span class='quantity-text' id='element1'>Quantity</span>"+
+			  "</div>"+
+                          "<input type='number' class='form-control quantity' placeholder='1' min='1' max='40' value='1'/>"+
+		       	  "<button class='button'>Delete</button>"+
                		  " </div>";
                     
                 $("#list-content lbody").append(row);

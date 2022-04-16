@@ -28,6 +28,7 @@ var cart = [];
                 {
                     cart[i].Quantity = qty;
                     showCart();
+                    showList();
                     saveCart();
                     return;
                 }
@@ -36,6 +37,7 @@ var cart = [];
             var item = {Image: img1, Name: name, Price: price, Quantity: qty}; 
             cart.push(item);
             showCart();
+            showList();
             saveCart();  
             console.log(cart);return false;
                           
@@ -54,6 +56,7 @@ var cart = [];
             cart.splice(index,1); // delete item at index
             console.log(index);
             showCart();
+            showList();
             saveCart();
         }
 
@@ -88,30 +91,30 @@ var cart = [];
     }  
 
 
-//    function showCart() {
+   function showList() {
 
-//             $("#list-content").css("visibility", "visible");
-//             $("#list-content lbody").empty();
-//             var sum = 0;
-//             for (var i in cart) {
-//                 var item = cart[i];
-//                 var row = '<h3 class="productname">'+item.Name+'<br><small>Cost: $'+item.Price.toFixed(2)+'/each</small></h3>'
-// 			  '<h4>Price: $<span class="price" data-price="'+item.Price.toFixed(2)+'">'+item.Price.toFixed(2)+'</span></h4>' 
-//                 	  '<div class="user-input">'
-//                   	  '<div class="input-element">'
-//                    	  '<span class="quantity-text" id="element1">Quantity</span>'
-// 			  '</div>'
-//                           '<input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1"/>'
-// 		       	  '<button class="button">Delete</button>'
-//                		  ' </div>';
+            $("#list-content").css("visibility", "visible");
+            $("#list-content lbody").empty();
+            var sum = 0;
+            for (var i in cart) {
+                var item = cart[i];
+                var row = '<h3 class="productname">'+item.Name+'<br><small>Cost: $'+item.Price.toFixed(2)+'/each</small></h3>'
+			  '<h4>Price: $<span class="price" data-price="'+item.Price.toFixed(2)+'">'+item.Price.toFixed(2)+'</span></h4>' 
+                	  '<div class="user-input">'
+                  	  '<div class="input-element">'
+                   	  '<span class="quantity-text" id="element1">Quantity</span>'
+			  '</div>'
+                          '<input type="number" class="form-control quantity" placeholder="1" min="1" max="40" value="1"/>'
+		       	  '<button class="button">Delete</button>'
+               		  ' </div>';
                     
-//                 $("#list-content lbody").append(row);
-//                 sum+=parseFloat((item.Quantity*item.Price).toFixed(2));
-//             }
-//             $('#totalPrice').text('$'+ sum);
-//             $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
+                $("#list-content lbody").append(row);
+                sum+=parseFloat((item.Quantity*item.Price).toFixed(2));
+            }
+            $('#totalPrice').text('$'+ sum);
+            $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
            
-//     }  
+    }  
     
     
 

@@ -110,7 +110,7 @@ var cart = [];
                		  " </div>";
                     
                 $("#list-content lbody").append(row);
-//                 sum+=parseFloat((item.Quantity*item.Price).toFixed(2));
+                sum+=parseFloat((item.Quantity*item.Price).toFixed(2));
             }
             $('#totalPrice').text('$'+ sum);
             $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});

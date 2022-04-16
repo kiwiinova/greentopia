@@ -1,15 +1,18 @@
 <?php
 	session_start();
+
 $username="Admin";
 $password="Admin";
 
+if(isset($_POST['Submit'])){
+
 if(isset($_POST['username']) && $_POST['username'] == $username && $_POST['password'] == $password)
 {
-    header('Location: HTML/P7.css');
+    header('Location: ../PHP/UserList_P9.php');
 }
 else
 {
- 
+}}
 ?>
 
 <!DOCTYPE html>
@@ -106,7 +109,7 @@ else
                     <input type="checkbox" onclick="myFunction()">Show Password<br>
                 </div>
 
-                <a href="../PHP/UserList_P9.php"><button type="button" class="SubmitButton">Submit</button></a>
+                <a href="../PHP/UserList_P9.php"><button type="button" class="SubmitButton" name="Submit">Submit</button></a>
 				<button type="button" class="Forgot Password">Forgot Password</button>
                 <br>
 

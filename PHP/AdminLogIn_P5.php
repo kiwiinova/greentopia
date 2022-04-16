@@ -1,5 +1,15 @@
 <?php
-    session_start();
+	session_start();
+$username="Admin";
+$password="Admin";
+
+if(isset($_POST['username']) && $_POST['username'] == $username && $_POST['password'] == $password)
+{
+    header('Location: HTML/P7.css');
+}
+else
+{
+ 
 ?>
 
 <!DOCTYPE html>

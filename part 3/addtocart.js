@@ -107,7 +107,15 @@ var cart = [];
 			  "</div>"+
                           "<input type='number' class='form-control quantity' placeholder='1' min='1' max='40' value='"+item.Quantity+"'/>"+
 		       	  "<button class='button'>Delete</button>"+
-               		  " </div>";
+               		  " </div>"+
+		    	  "</div>"+
+			  "<a href='../index.html'><button class='continue_shopping'>Continue Shopping</button></a>"+
+			  "</div>"+
+			  "</div>"+	
+             		  "<div class='flex-item-right'>"+
+		    	  "<h1>Order Summary</h1>"+
+                          "<p>"+
+                          "Items ("+console.log(cart.length);+"):";
                     
                 $("#list-content lbody").append(row);
                 sum+=parseFloat((item.Quantity*item.Price).toFixed(2));

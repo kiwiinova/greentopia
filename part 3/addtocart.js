@@ -88,7 +88,7 @@ var cart = [];
     }  
 
 
-   function showList() {
+   function showCart() {
 
             $("#list-content").css("visibility", "visible");
             $("#list-content lbody").empty();

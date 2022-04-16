@@ -128,7 +128,7 @@ var cart = [];
             var sum = 0;
 //             for (var i in cart) {
 //                 var item = cart[i];
-                var row = "Item(s) ("+console.log(clothing.length)+")";
+                var row = "Item(s) ("+console.log(cart.length)+")";
                     
                 $("#Item-content ibody").append(row);
                 sum+=parseFloat((item.Quantity*item.Price).toFixed(2));

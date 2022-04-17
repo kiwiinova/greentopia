@@ -6,7 +6,7 @@ var cart = [];
                 cart = JSON.parse(localStorage.cart);
                 showCart();
 		    showList();
-		    showItemNumber();
+		
             }
         });
         
@@ -31,7 +31,7 @@ var cart = [];
                     cart[i].Quantity = qty;
                     showCart();
                     showList();
-			showItemNumber();
+			
                     saveCart();
                     return;
                 }
@@ -41,7 +41,7 @@ var cart = [];
             cart.push(item);
             showCart();
             showList();
-		    showItemNumber();
+		
             saveCart();  
             console.log(cart);return false;
                           
@@ -61,7 +61,7 @@ var cart = [];
             console.log(index);
             showCart();
             showList();
-		showItemNumber();
+	
             saveCart();
         }
 
@@ -121,22 +121,6 @@ var cart = [];
            
     }  
 
- function showItemNumber() {
 
-            $("#Item-content").css("visibility", "visible");
-            $("#Item-content ibody").empty();
-            var sum = 0;
-//             for (var i in cart) {
-//                 var item = cart[i];
-                var row = "Item(s) ("+console.log(cart.length)+")";
-                    
-                $("#Item-content ibody").append(row);
-                sum+=parseFloat((item.Quantity*item.Price).toFixed(2));
-//             }
-            $('#totalPrice').text('$'+ sum);
-            $(".delete").css({"border": "1px solid red", "border-radius": "50%", "padding": "5px 10px", "text-decoration": "none", "color": "red", "width": "30px", "height": "30px", "flex-direction" : "column", "justify-content" : "center" , "align-item" : "center", "cursor": "pointer"});
-           
-    }  
-    
     
 

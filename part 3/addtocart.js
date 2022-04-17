@@ -110,7 +110,7 @@ var cart = [];
                    	  "<span class='quantity-text' id='element1'>Quantity</span>"+
 			  "</div>"+
                           "<input type='number' class='form-control quantity' placeholder='1' min='1' max='40' value='"+item.Quantity+"'/>"+
-		       	  "<button class='button'>Delete</button>"+
+		       	  "<button onclick='deleteItem(" + i + ")' class='delete'>X</button></td></tr>"+
                		  " </div>";
                     
                 $("#list-content lbody").append(row);

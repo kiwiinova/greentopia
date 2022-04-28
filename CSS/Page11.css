@@ -3,7 +3,7 @@
 :root {
 	--dark: #e2fce6;
 	--darker: #e2fce6;
-	--darkest: #111827;
+	--darkest: #dff2fd;
 	--grey: #6B7280;
 	--pink: #2c5660;
 	--purple: #1d4e21;
@@ -20,7 +20,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	color: #FFF;
+	color: #6B7280;
 	background-color: var(--dark);
 }
 
@@ -154,5 +154,5 @@ main {
 }
 
 .task .actions .delete {
-	color: crimson;
+	color: rgb(221, 89, 115);
 }

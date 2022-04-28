@@ -1,145 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<link rel="stylesheet" href="../CSS/Page1.css"/>
 
 <head>
-    <title>Log In Admin | GreenTopia</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../CSS/P2.css">
-
-         <link rel="stylesheet" href="../CSS/P4.css">
-	 <link rel="stylesheet" href="../CSS/Page1.css"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-
-        .center {
-            height: 200px;
-            width: 400px;
-            margin: auto;
-            display: flex;
-            display: grid;
-            font-size: 1.55;
-            font-family: "Shadows Into Light Two";
-        }
-
-        .button {
-            cursor: pointer;
-            width: 60px;
-
-        }
-
-        .space {
-            padding-bottom: 5px;
-
-        }
-
-        /*
-		*{
-			font-family: "Shadows Into Light Two";
-		}
-*/
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./admin.css">
 </head>
- <header>
-	  <input type="checkbox" id="menu" />
-      <label for="menu"><i class="material-icons">menu</i></label>
-	
-		<nav class="navbar">
-        <ul>
-            <li><a href="../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
-            <li>
-            <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i>&nbsp; Aisles</a>
-            <ul>
-              <li><a href="../part 2/FruitsAndVeggies.html" #fruitsveggies>Fruits and Veggies</a></li>
-              <li><a href="../part 2/DairyAndEggs.html" #dairyeggs>Dairy and Eggs</a></li>
-              <li><a href="../part 2/BreadsAndPasta.html" #breadspasta>Breads and Pasta</a></li>
-              <li><a href="../part 2/MeatsAndFish.html" #meatsfish>Meat and Fish</a></li>
-            </ul>
-          </li>
-          <li><a href="../HTML/P4.html"><i class="fa fa-opencart" aria-hidden="true"></i>&nbsp;Shopping Cart</a></li>
-            <li><a href="../HTML/P5.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp; Login</a></li>
-        </ul>
-      </nav>
-
-	
-	</header>
-	<br><br><br><br><br><br><br>
-<body style="background-color: ">
-    
-	
-        <div style="background-color: darkseagreen; font-family: cursive;"><br><br><br>
-            <h2 style="font-size: 40px; color: white; text-align: center;font-family: Shadows Into Light Two"> Administration Log In </h2><br><br>
-        </div>
-    
-
-    <div class="center">
-        <br>
-        <fieldset>
-            <legend>Log In:</legend>
-            <form target="_self" autocomplete="on">
-                <div class="space">
-                    <label for="email"><span style="color: red">*</span>Email Address:</label><br>
-                    <input type="text" id="email" name="email" placeholder="Enter your Email Address" size="25" required ><br>
-                </div>
-                <div class="space">
-                    <label for="password"><span style="color: red">*</span>Password (8 characters minimum):</label><br>
-                    <input type="password" id="password" name="password" minlength="8" required placeholder="Enter your Password" size="25"><br>
-                </div>
-                <div>
-                    <input type="checkbox" onclick="myFunction()">Show Password<br>
-                </div>
-
-                <a href="../part 9/usrerList.html"><button type="button" class="SubmitButton">Submit</button></a>
-				<button type="button" class="Forgot Password">Forgot Password</button>
-                <br>
-
-            </form>
-
-             <script>
-                function myFunction() {
-                    var x = document.getElementById("password");
-                    var y = document.getElementById("cpassword");
-                    if (x.type == "password") {
-                        x.type = "text";
-                    } else {
-                        x.type = "password";
-                    }
-                    if (y.type == "password") {
-                        y.type = "text";
-                    } else {
-                        y.type = "password";
-                    }
-
-                }
-
-                function myFunctionC() {
-                    var y = document.getElementById("cpassword");
-                    if (y.type == "cpassword") {
-                        y.type = "text";
-                    } else {
-                        y.type = "cpassword";
-                    }
-                }
-
-                function confirmPassword() {
-                    var x = document.getElementById("password").value;
-                    var y = document.getElementById("cpassword").value;
-                    if (x != y) {
-                        alert("Passwords do not match! Please Try Again.");
-                        return false;
-                    }
-                    return true;
-                }
-
-            </script>
-        </fieldset><br>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">ADMIN LOGIN</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button href="index.html" class="form__button" type="submit">Continue</button>
+            <!-- <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p> -->
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button href="../part 9/usrerList.html" class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
     </div>
-    <div>
-
-    </div>
+    <script src="./src/main.js"></script>
 </body>
-
-</html>

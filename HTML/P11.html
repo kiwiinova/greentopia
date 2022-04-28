@@ -6,139 +6,66 @@
     <title>Lists of Orders</title>
     <link rel="stylesheet" href="../CSS/Page1.css" />
     <link rel="stylesheet" href="../CSS/Page11.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>
-        $(document).ready(function(){
-            var orderRemoved = $('.table').text();
-            
-            $('.btn2').click(function(){
-                $(this).closest('.table').remove();
-                localStorage.setItem('table', orderRemoved);
-            });
-        });
-    </script>
   </head>
-   <body>
- <header>
-    <input type="checkbox" id="menu" />
-    <label for="menu"><i class="material-icons">menu</i></label>
+  <body>
+    <header>
+      <input type="checkbox" id="menu" />
+      <label for="menu"><i class="material-icons">menu</i></label>
 
-    <nav class="navbar">
-      <ul>
-        <li><a href="../HTML/P7.html">Product List</a></li>
-        <li><a href="../part 9/usrerList.html">User List</a></li>
-        <li><a href="../HTML/P11.html">Order List</a></li>
-        <li><a href="../index.html">Logout</a></li>
-      </ul>
-    </nav>
-  </header>
- 
-    <br /><br />
-    <div class="container">
-      <table border="border" class="table" >
-        <caption>
-          <br /><br /><br /><br /><br />
-          Order #1
-        </caption>
-        <tr>
-          <th>Products</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </tr>
-        <tr>
-          <td align="center">1. Apple</td>
-          <td align="center" rowspan="3">
-            <a href="P12.html" class="btn1"
-              ><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a
-            >
-          </td>
-          <td align="center" rowspan="3">
-      
-            <a href="#" class="btn2"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
-          </td>
-        </tr>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../HTML/P7.html">Product List</a></li>
+          <li><a href="../part 9/usrerList.html">User List</a></li>
+          <li><a href="../HTML/P11.html">Order List</a></li>
+          <li><a href="../index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <td align="center">2. Banana</td>
+    <section class="first">
+      <h1>Task List 2021</h1>
+      <form id="new-task-form">
+        <input
+          type="text"
+          name="new-task-input"
+          id="new-task-input"
+          placeholder="Place a new order!"
+        />
+        <input type="submit" id="new-task-submit" value="Add order" />
+      </form>
+    </section>
+    <main>
+      <section class="task-list">
+        <h2>Orders</h2>
 
-        <tr>
-          <td align="center">3. Fish Bass</td>
-        </tr>
-      </table>
-     
-      <br />
-      <br />
-      <br />
+        <div id="tasks">
+          <!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+        </div>
+      </section>
+    </main>
 
-      <table border="border" class="table">
-        <caption>
-          Order #2
-        </caption>
-        <tr>
-          <th>Products</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </tr>
-        <tr>
-          <td align="center">1. Cucumbers</td>
-          <td align="center" rowspan="3">
-            <a href="P12.html" class="btn1"
-              ><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a
-            >
-          </td>
-          <td align="center" rowspan="3">
-            <a href="#" class="btn2"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
-          </td>
-        </tr>
-
-        <td align="center">2. Lettuce</td>
-
-        <tr>
-          <td align="center">3. Chicken</td>
-        </tr>
-      </table>
-      <br />
-      
-      <br /><br />
-
-      <table border="border" class="table">
-        <caption>
-          Order #3
-        </caption>
-        <tr>
-          <th>Products</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </tr>
-        <tr>
-          <td align="center">1. White Bread</td>
-          <td align="center" rowspan="3">
-            <a href="P12.html" class="btn1"
-              ><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a
-            >
-          </td>
-          <td align="center" rowspan="3">
-            <a href="#" class="btn2"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
-          </td>
-        </tr>
-        </tr>
-
-        <td align="center">2. Spaghetti</td>
-        
-        <tr>
-          <td align="center">3. Milk</td>
-          
-        </tr>
-      </table>
-      
-      <br /><br /><br /><br /><br />
-    </div>
-
-    <p align="center">
-      <a href="P12.html" class="btn4">Add an order</a>
-    </p>
-    <br /><br /><br /><br /><br /><br />
+    <script src="Page11.js"></script>
   </body>
 </html>
 

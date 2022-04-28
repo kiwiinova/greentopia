@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 
 :root {
-	--darker: #E2FCE6;
-	--darkest: #E2FCE6;
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
 	--grey: #6B7280;
-	--pink: #FFEEE2;
-	--purple: #FFDBDB;
-	--light: #E3E3FF;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
 }
 
 * {
